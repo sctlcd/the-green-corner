@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello Plants :)'
+    return 'Hello Plants. Coucou les plantes'
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
