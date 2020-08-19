@@ -1,0 +1,15 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+      {% for plant in plants %}
+        {{plant.scientifique_name}}
+        {{plant.common_name}}
+        {{plant.genus}}
+        {{plant.species}}
+        {{plant.family}}
+        {{plant.plant_type}}
+      {% endfor %}
+  </body>
+</html>
