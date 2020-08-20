@@ -6,6 +6,7 @@ from os import path
 if path.exists('env.py'):
     import env
 
+
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'the_green_corner'
 app.config['MONGO_URI'] = os.getenv('MONGO_URI')
@@ -14,6 +15,11 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
+@app.route('/home')
+def get_home():
+    return render_template("home.html")
+
+
 @app.route('/get_plants')
 def get_plants():
     return render_template("plants.html", plants = mongo.db.plants.find())
