@@ -78,7 +78,7 @@ For this project we could choose from one of the following ideas:
 - Create a jargon glossary/dictionary for a particular domain
 - Build a book review and recommendation site
 
-I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide using HTML, CSS, Materialize CSS, JavaScript, jQuery, FLask and Python.
+I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide using HTML, CSS, Materialize CSS, JavaScript, jQuery, FLask and Python and MongoDB.
 
 Back to [top](#TableOfContents)
 
@@ -189,6 +189,7 @@ Back to [top](#TableOfContents)
 
 - [Flask](https://palletsprojects.com/p/flask/) - Lightweight (micro) framework for building web applications
 - [Python](https://www.python.org/) - Programming language
+- [MongoDB](https://www.mongodb.com/) - Document oriented database
 
 Back to [top](#TableOfContents)
 
