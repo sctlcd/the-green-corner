@@ -23,12 +23,12 @@ p {
 }
 
 .sidenav-trigger {
-  color: #57962a;
+  color: #1C5925;
   /* #26a69a */
 }
 
-.blue.lighten-3, .teal.lighten-1 {
-  background-color: #6cbfff !important;
+.teal.lighten-3, .teal.lighten-1 {
+  background-color: #31628b !important;
 }
 
 .teal.lighten-1 {
@@ -36,7 +36,7 @@ p {
 }
 
 .teal-text.text-lighten-2 {
-  color: #fafafa !important;
+  color: #3caf4e !important;
   text-shadow: 0 0 20px black;
 }
 
@@ -45,7 +45,7 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* -------------------------------------------------------- parallax-container ---------------------------------*/
+/* -------------------------------------------------------- parallax-container -*/
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -66,7 +66,12 @@ p {
 }
 
 .light-blue-text {
-  color: #6cbfff !important;
+  color: #31628b !important;
+}
+
+
+.fa-leaf {
+  color: #31628b;
 }
 
 /* ----------------------------------------------------------- Footer ------------------------------------------*/
@@ -75,7 +80,7 @@ footer.page-footer {
 }
 
 .teal {
-  background-color: #57962a !important;
+  background-color: #1C5925 !important;
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
