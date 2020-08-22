@@ -31,13 +31,15 @@
           <div>
             <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down center">
-              <li><a href="#"><span class="fas fa-plus"></span>Add plant</a></li>
+              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
+              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
               <li><a href="#"><span class="fas fa-cog"></span>Manage Categories</a></li>
             </ul>
           </div>
           <div>
             <ul class="side-nav" id="mobile-sidenav">
-              <li><a href="#"><span class="fas fa-plus"></span>Add plant</a></li>
+              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
+              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
               <li><a href="#"><span class="fas fa-cog"></span>Manage categories</a></li>
             </ul>
           </div>

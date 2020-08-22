@@ -25,6 +25,18 @@ def get_plants():
     return render_template("plants.html", plants = mongo.db.plants.find())
 
 
+@app.route('/add_plant')
+def add_plant():
+    return render_template('addplant.html',
+                           plant_types=mongo.db.plant_types.find())
+
+
+@app.route('/delete_plant/<plant_id>')
+def delete_task(plant_id):
+    mongo.db.plants.remove({'_id': ObjectId(plant_id)})
+    return redirect(url_for('get_plants'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=os.environ.get('PORT'),

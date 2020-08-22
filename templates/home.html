@@ -31,13 +31,15 @@
           <div>
             <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down center">
-              <li><a href="#"><span class="fas fa-plus"></span>Add plant</a></li>
+              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
+              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
               <li><a href="#"><span class="fas fa-cog"></span>Manage Categories</a></li>
             </ul>
           </div>
           <div>
             <ul class="side-nav" id="mobile-sidenav">
-              <li><a href="#"><span class="fas fa-plus"></span>Add plant</a></li>
+              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
+              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
               <li><a href="#"><span class="fas fa-cog"></span>Manage categories</a></li>
             </ul>
           </div>
@@ -71,7 +73,7 @@
         <div class="row">
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">collections</i></h2>
+              <h2 class="center blue-text"><i class="material-icons">collections</i></h2>
               <h5 class="center">Centralized & accessible information</h5>
               <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
                 Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
@@ -79,7 +81,7 @@
           </div>
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+              <h2 class="center blue-text"><i class="material-icons">group</i></h2>
               <h5 class="center">Collective knowledge sharing</h5>
               <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
                 Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
@@ -87,7 +89,7 @@
           </div>
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">biotech</i></h2>
+              <h2 class="center blue-text"><i class="material-icons">biotech</i></h2>
               <h5 class="center">Participating in Science advancement</h5>
               <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
                 Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
