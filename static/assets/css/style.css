@@ -23,25 +23,16 @@ p {
 }
 
 .menu{
-  color: #808080;
+  color: #444;
 }
 
 .sidenav-trigger {
   color: #1C5925;
-  /* #26a69a */
-}
-
-.teal.lighten-3, .teal.lighten-1 {
-  background-color: #31628b !important;
-}
-
-.teal.lighten-1 {
-  box-shadow: 0 0 20px 0px black;
 }
 
 .teal-text.text-lighten-2 {
   color: #3caf4e !important;
-  text-shadow: 0 0 20px black;
+  text-shadow: 0 0 10px black;
 }
 
 .overlay {
@@ -49,7 +40,21 @@ p {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* -------------------------------------------------------- parallax-container -*/
+/* -------------------------------------------------------- buttons ---------------------------------*/
+.lighten-3, .lighten-1 {
+  background-color: #31628b ;
+}
+
+a.btn:hover, a.btn-large:hover {
+  background-color: #3997e5;
+  box-shadow: 0 0 5px 0px white;
+}
+
+.btn-support {
+  margin-bottom: 14px;
+}
+
+/* -------------------------------------------------------- parallax-container ---------------------------------*/
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -61,6 +66,7 @@ p {
   width: 100%;
 }
 
+/* ----------------------------------------------------------- Icons ------------------------------------------*/
 .icon-block {
   padding: 0 15px;
 }
@@ -73,13 +79,26 @@ p {
   color: #31628b !important;
 }
 
-
 .fa-leaf {
   color: #31628b;
 }
 
-.fa-github{
-  color: #808080;  
+.fa-github, .fa-twitter {
+  color: #98CAE9;
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+.footer-copyright .fa-github {
+  font-size: 14px;
+}
+
+.fa-github:hover, .fa-twitter:hover {
+  color: #dfac30;
+}
+
+#nav-mobile .fas, #mobile-sidenav .fas {
+  padding-right: 5px;
 }
 
 /* ----------------------------------------------------------- Footer ------------------------------------------*/
@@ -87,7 +106,7 @@ footer.page-footer {
   margin: 0;
 }
 
-.teal {
+.page-footer {
   background-color: #1C5925 !important;
 }
 

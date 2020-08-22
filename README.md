@@ -122,6 +122,9 @@ In keeping with the **TO_ADD**  idea, I have chosen a color scheme quite sober r
 - ![#3caf4e](https://placehold.it/15/3caf4e/3caf4e) `#3caf4e`- Green Pantone
 - ![#000000](https://placehold.it/15/3caf4e/3caf4e) `#000000`- Black
 - ![#fafafa](https://placehold.it/15/fafafa/fafafa) `#fafafa`
+- ![#444](https://placehold.it/15/444/444) `#444`
+- ![#3997e5](https://placehold.it/15/3997e5/3997e5) `#3997e5`
+- ![#dfac30](https://placehold.it/15/dfac30/dfac30) `#dfac30`
 
 #### Icons <a name="Icons"></a>
 
