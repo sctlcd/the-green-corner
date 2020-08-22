@@ -29,16 +29,18 @@
             </a>
           </div>
           <div>
-            <a href="#" data-activates="mobile-sidenav" class="button-collapse right grey"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-              <li><a href="#">Add new plant</a></li>
-              <li><a href="#">Manage Categories</a></li>
+            <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down center">
+              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
+              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
+              <li><a href="#"><span class="fas fa-cog"></span>Manage Categories</a></li>
             </ul>
           </div>
           <div>
             <ul class="side-nav" id="mobile-sidenav">
-              <li><a href="#">New plant</a></li>
-              <li><a href="#">Manage Categories</a></li>
+              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
+              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
+              <li><a href="#"><span class="fas fa-cog"></span>Manage categories</a></li>
             </ul>
           </div>
         </div>
@@ -57,7 +59,7 @@
             <h5 class="header col s12 light">A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</h5>
           </div>
           <div class="row center">
-            <a href="{{url_for('get_plants')}}" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+            <a href="{{url_for('get_plants')}}" id="download-button" class="btn-large waves-effect waves-light lighten-1">Get Started</a>
           </div>
           <br><br>
         </div>
@@ -71,24 +73,24 @@
         <div class="row">
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">collections</i></h2>
-              <h5 class="center">Centralized and accessible information</h5>
+              <h2 class="center blue-text"><i class="material-icons">collections</i></h2>
+              <h5 class="center blue-text">Centralized & accessible information</h5>
               <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
                 Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-              <h5 class="center">Collective knowledge sharing</h5>
+              <h2 class="center blue-text"><i class="material-icons">group</i></h2>
+              <h5 class="center blue-text">Collective knowledge sharing</h5>
               <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
                 Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="icon-block">
-              <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-              <h5 class="center">Participating in Science advancement</h5>
+              <h2 class="center blue-text"><i class="material-icons">biotech</i></h2>
+              <h5 class="center blue-text">Participating in Science advancement</h5>
               <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
                 Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
             </div>
@@ -112,10 +114,10 @@
       <div class="section">
         <div class="row">
           <div class="col s12 center">
-            <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Contact Us</h4>
+            <h3><i class="mdi-content-send"></i></h3>
+            <h4 class="blue-text">Contact Us</h4>
             <p class="left-align light">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
-            <a class="btn waves-effect waves-light blue lighten-3" target="_blank" href="https://gitter.im/">Chat</a>
+            <a class="btn waves-effect waves-light lighten-3" target="_blank" href="https://gitter.im/">Chat</a>
           </div>
         </div>
       </div>
@@ -133,36 +135,34 @@
     </div>
 
     <!-- footer -->
-    <footer class="page-footer teal">
+    <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l5 s12">
+          <div class="col l4 s12">
             <h5 class="white-text">Company Bio</h5>
             <p class="grey-text text-lighten-4">We are a team of students working on this project on our free time like it's a part time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
           </div>
-          <div class="col l6 s12">
+          <div class="col l7 s12">
             <h5 class="white-text">Help The Green Corner Grow</h5>
             <p class="grey-text text-lighten-4">
               Help support us by turning off adblock. If you still prefer to keep adblock on for this page but still want to support us, feel free to donate.
               We hope you have enjoyed using The Green Corner and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and
               continue development on this project and is greatly appreciated.</p>
-            <a class="btn waves-effect waves-light blue lighten-3" href="https://www.patreon.com/europe" target="_blank">Support Us</a>
+            <a class="btn waves-effect waves-light lighten-3 btn-support" href="https://www.patreon.com/europe" target="_blank">Support Us</a>
           </div>
           <div class="col l1 s12">
             <h5 class="white-text">Connect</h5>
             <ul>
-              <li><a class="white-text" href="#!">Link 1</a></li>
-              <li><a class="white-text" href="#!">Link 2</a></li>
-              <li><a class="white-text" href="#!">Link 3</a></li>
-              <li><a class="white-text" href="#!">Link 4</a></li>
+              <li class="inline"><a class="white-text" href="https://github.com/sctlcd/the-green-corner" target="_blank"><i class="fab fa-github"></i><span class="sr-only"></span></a></li>
+              <li class="inline"><a class="white-text" href="https://twitter.com"><i class="fab fa-twitter"></i><span class="sr-only"></span></a></li>
             </ul>
           </div>
         </div>
       </div>
       <div class="footer-copyright">
         <div class="container center">
-          <strong><i class="far fa-copyright"></i> 2020 by Lucinda Souchet <a class="brown-text text-lighten-3" href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github"></i><span class="sr-only">Github</span></a></strong>
+          <strong><i class="far fa-copyright"></i> 2020 by Lucinda Souchet <a class="text-lighten-3" href="https://github.com/sctlcd" target="_blank"><i class="fab fa-github"></i><span class="sr-only">Github</span></a></strong>
         </div>
       </div>
     </footer>

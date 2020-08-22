@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="row">
-  <h3 class="plants"><i class="fas fa-leaf"></i> Plants</h3>
+  <h3><i class="fas fa-plus"></i> Add plant</h3>
 
   {% for plant in plants %}
   <ul class="collapsible" data-collapsible="accordion">
@@ -11,7 +11,7 @@
           <i class="material-icons">expand_more</i>
         </div>
         <div class="plant_header col s5">
-          <strong>{{ plant.scientific_name }}</strong> <br /> <em>{{ plant.common_name }}</em>
+          <strong>{{ plant.scientifique_name }}</strong> <br /> <em>{{ plant.common_name }}</em>
         </div>
         <div class="col s5">
           <a href="#" class="waves-effect waves-light btn btn_small grey"><span class="far fa-trash-alt"></span></a>
@@ -19,14 +19,8 @@
         </div>
       </div>
       <div class="collapsible-body">
-        <div>
-          <label for="family">Family: </label>
-          <span id="family">{{ plant.family }}</span>
-        </div>
-        <div>
-          <label for="family">Plant type: </label>
-          <span id="family">{{ plant.plant_type }}</span>
-        </div>
+        <label for="family">Family: </label>
+        <span id="family">{{ plant.family }}</span>
       </div>
     </li>
   </ul>

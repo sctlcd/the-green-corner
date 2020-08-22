@@ -9,40 +9,60 @@ html, body {
   margin: 5px 10px 5px 10px;
 }
 
-.inline {
-  display: inline;
-}
-
 nav ul a,
 nav .brand-logo {
   color: #444;
 }
 
-p {
-  line-height: 2rem;
+.menu {
+  color: #444;
 }
 
 .sidenav-trigger {
-  color: #57962a;
-  /* #26a69a */
-}
-
-.blue.lighten-3, .teal.lighten-1 {
-  background-color: #6cbfff !important;
-}
-
-.teal.lighten-1 {
-  box-shadow: 0 0 20px 0px black;
+  color: #1C5925;
 }
 
 .teal-text.text-lighten-2 {
-  color: #fafafa !important;
-  text-shadow: 0 0 20px black;
+  color: #3caf4e !important;
+  text-shadow: 0 0 10px black;
+}
+
+h3.plants {
+  margin: 20px 0 50px 0;
+  color: #31628b;
+}
+
+/* -------------------------------------------------------- Common ---------------------------------*/
+p {
+  line-height: 2rem;
 }
 
 .overlay {
   color: #fafafa !important;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.inline {
+  display: inline;
+}
+
+/* -------------------------------------------------------- buttons ---------------------------------*/
+.lighten-3, .lighten-1 {
+  background-color: #31628b;
+}
+
+a.btn:hover, a.btn-large:hover {
+  background-color: #3997e5;
+  box-shadow: 0 0 5px 0px white;
+}
+
+.btn-support {
+  margin-bottom: 14px;
+}
+
+a.btn_small:hover {
+  background-color: #444 !important;
+  box-shadow: 0 0 5px 0px black;
 }
 
 /* -------------------------------------------------------- parallax-container ---------------------------------*/
@@ -57,6 +77,7 @@ p {
   width: 100%;
 }
 
+/* ----------------------------------------------------------- Icons ------------------------------------------*/
 .icon-block {
   padding: 0 15px;
 }
@@ -65,8 +86,36 @@ p {
   font-size: inherit;
 }
 
-.light-blue-text {
-  color: #6cbfff !important;
+.blue-text {
+  color: #31628b !important;
+}
+
+h3 .fa-leaf {
+  color: #31628b;
+}
+
+.fa-github, .fa-twitter {
+  color: #98CAE9;
+  font-size: 16px;
+  padding-left: 3px;
+}
+
+.footer-copyright .fa-github {
+  font-size: 14px;
+}
+
+.fa-github:hover, .fa-twitter:hover {
+  color: #3caf4e;
+}
+
+/* ----------------------------------------------------------- Navbar ------------------------------------------*/
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #31628b;
+}
+
+#nav-mobile .fas, #mobile-sidenav .fas {
+  padding-right: 5px;
 }
 
 /* ----------------------------------------------------------- Footer ------------------------------------------*/
@@ -74,8 +123,8 @@ footer.page-footer {
   margin: 0;
 }
 
-.teal {
-  background-color: #57962a !important;
+.page-footer {
+  background-color: #1C5925 !important;
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
