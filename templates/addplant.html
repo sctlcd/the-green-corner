@@ -3,36 +3,51 @@
 <div class="row">
   <h3><i class="fas fa-plus"></i> Add plant</h3>
 
-  {% for plant in plants %}
-  <ul class="collapsible" data-collapsible="accordion">
-    <li>
-      <div class="collapsible-header">
-        <div class="col s2">
-          <i class="material-icons">expand_more</i>
-        </div>
-        <div class="plant_header col s5">
-          <strong>{{ plant.scientifique_name }}</strong> <br /> <em>{{ plant.common_name }}</em>
-        </div>
-        <div class="col s5">
-          <a href="#" class="waves-effect waves-light btn btn_small grey"><span class="far fa-trash-alt"></span></a>
-          <a href="#" class="waves-effect waves-light btn btn_small grey"><span class="fas fa-edit"></span></a>
+  <form action="" method="POST" class="col s12">
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">assignment</i>
+        <input id="scientific_name" name="scientific_name" type="text">
+        <label for="icon_prefix">Scientific name</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">assignment</i>
+        <input id="common_name" name="common_name" type="text">
+        <label for="icon_prefix">Common name</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">assignment</i>
+        <input id="genus" name="genus" type="text">
+        <label for="icon_prefix">Genus</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">assignment</i>
+        <input id="species" name="species" type="text">
+        <label for="icon_prefix">Species</label>
+      </div>
+      <div class="input-field col s12">
+        <i class="material-icons prefix">assignment</i>
+        <input id="family" name="family" type="text">
+        <label for="icon_prefix">Family</label>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <i class="material-icons prefix">poll</i>
+          <select id="plant_type" name="plant_type">
+            <option value="" disabled selected>Choose Plant type</option>
+            {% for type in plant_types %}
+            <option value="{{type.plant_type}}">{{type.plant_type}}</option>
+            {% endfor %}
+          </select>
+          <label>Plant type</label>
         </div>
       </div>
-      <div class="collapsible-body">
-        <label for="family">Family: </label>
-        <span id="family">{{ plant.family }}</span>
-      </div>
-    </li>
-  </ul>
-  {% endfor %}
-
-  <!-- {% for plant in plants %}
-        {{plant.scientifique_name}}
-        {{plant.common_name}}
-        {{plant.genus}}
-        {{plant.species}}
-        {{plant.family}}
-        {{plant.plant_type}}
-      {% endfor %} -->
+    </div>
+    <div class="row">
+      <button class="btn waves-effect waves-light" type="submit" name="action">Add Plant
+        <i class="material-icons right">playlist_add</i>
+      </button>
+    </div>
+  </form>
 </div>
 {% endblock %}

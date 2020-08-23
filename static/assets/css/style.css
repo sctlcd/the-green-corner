@@ -78,11 +78,11 @@ p {
 }
 
 /* -------------------------------------------------------- buttons ---------------------------------*/
-.lighten-3, .lighten-1 {
+.btn, .lighten-3, .lighten-1 {
   background-color: #31628b;
 }
 
-a.btn:hover, a.btn-large:hover {
+.btn:hover, a.btn:hover, a.btn-large:hover {
   background-color: #3997e5;
   box-shadow: 0 0 5px 0px white;
 }
