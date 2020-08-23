@@ -32,6 +32,33 @@ h3.plants {
   color: #31628b;
 }
 
+/* -------------------------------------------------------- Sidenav ---------------------------------*/
+
+#mobile-sidenav a {
+  font-size: 18px;
+}
+
+.dropdown-content li > a {
+  color: #444;
+  font-size: 14.5px;
+}
+
+#dropdown-categories-nav-mobile li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#dropdown-categories-mobile-sidenav li {
+  font-size: 18px;
+}
+
+#dropdown-categories-mobile-sidenav .fa-cog {
+  margin-left: 30px;
+}
+
+#dropdown-categories-mobile-sidenav li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 /* -------------------------------------------------------- Common ---------------------------------*/
 p {
   line-height: 2rem;
@@ -106,6 +133,15 @@ h3 .fa-leaf {
 
 .fa-github:hover, .fa-twitter:hover {
   color: #3caf4e;
+}
+
+#nav-mobile .fa-leaf, #nav-mobile .fa-plus, #nav-mobile .fa-cog {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+#nav-mobile .fa-caret-down {
+  margin-left: 5px;
 }
 
 /* ----------------------------------------------------------- Navbar ------------------------------------------*/
