@@ -33,7 +33,6 @@ h3 {
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
-
 #mobile-sidenav a {
   font-size: 18px;
 }
@@ -42,7 +41,7 @@ h3 {
   font-size: 20px;
 }
 
-.dropdown-content li > a {
+.dropdown-content li>a {
   color: #444;
   font-size: 14.5px;
 }
@@ -168,7 +167,6 @@ footer.page-footer {
 }
 
 /* ----------------------------------------------------------- addplant.html ------------------------------------------*/
-
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
@@ -183,22 +181,22 @@ input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid #31628b;
-    box-shadow: 0 1px 0 0 #31628b;
+  box-shadow: 0 1px 0 0 #31628b;
 }
 
-input:not([type]):focus:not([readonly]) + label,
-input[type=text]:not(.browser-default):focus:not([readonly]) + label,
-input[type=password]:not(.browser-default):focus:not([readonly]) + label,
-input[type=email]:not(.browser-default):focus:not([readonly]) + label,
-input[type=url]:not(.browser-default):focus:not([readonly]) + label,
-input[type=time]:not(.browser-default):focus:not([readonly]) + label,
-input[type=date]:not(.browser-default):focus:not([readonly]) + label,
-input[type=datetime]:not(.browser-default):focus:not([readonly]) + label,
-input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label,
-input[type=tel]:not(.browser-default):focus:not([readonly]) + label,
-input[type=number]:not(.browser-default):focus:not([readonly]) + label,
-input[type=search]:not(.browser-default):focus:not([readonly]) + label,
-textarea.materialize-textarea:focus:not([readonly]) + label {
+input:not([type]):focus:not([readonly])+label,
+input[type=text]:not(.browser-default):focus:not([readonly])+label,
+input[type=password]:not(.browser-default):focus:not([readonly])+label,
+input[type=email]:not(.browser-default):focus:not([readonly])+label,
+input[type=url]:not(.browser-default):focus:not([readonly])+label,
+input[type=time]:not(.browser-default):focus:not([readonly])+label,
+input[type=date]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime]:not(.browser-default):focus:not([readonly])+label,
+input[type=datetime-local]:not(.browser-default):focus:not([readonly])+label,
+input[type=tel]:not(.browser-default):focus:not([readonly])+label,
+input[type=number]:not(.browser-default):focus:not([readonly])+label,
+input[type=search]:not(.browser-default):focus:not([readonly])+label,
+textarea.materialize-textarea:focus:not([readonly])+label {
   color: #31628b;
 }
 
@@ -206,7 +204,7 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
   color: #31628b;
 }
 
-.dropdown-content li > a, .dropdown-content li > span {
+.dropdown-content li>a, .dropdown-content li>span {
   font-size: 16px;
   color: #31628b;
   display: block;
@@ -244,10 +242,26 @@ input[type=number].valid:not(.browser-default):focus,
 input[type=search].valid:not(.browser-default),
 input[type=search].valid:not(.browser-default):focus,
 textarea.materialize-textarea.valid,
-textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
+textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dropdown {
   border-bottom: 0.3px solid #9e9e9e;
   -webkit-box-shadow: 0 0px 0 0 #9e9e9e;
-  /* box-shadow: 0 0px 0 0 #9e9e9e; */
+}
+
+#modal-delete {
+  background-color: #fafafa;
+}
+
+#modal-delete h4 {
+  color: #31628b;
+}
+
+.btn-flat {
+  background-color: #9e9e9e;
+  color: #fafafa;
+}
+
+.btn-flat:hover {
+  background-color: #444;
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
