@@ -28,11 +28,18 @@ def get_plants():
 @app.route('/add_plant')
 def add_plant():
     return render_template('addplant.html',
-                           plant_types=mongo.db.plant_types.find())
+                           plant_types=mongo.db.plant_types.find(), plants=mongo.db.plants.find())
+
+
+@app.route('/insert_plant', methods=['POST'])
+def insert_plant():
+    plants = mongo.db.plants
+    plants.insert_one(request.form.to_dict())
+    return redirect(url_for('get_plants'))
 
 
 @app.route('/delete_plant/<plant_id>')
-def delete_task(plant_id):
+def delete_plant(plant_id):
     mongo.db.plants.remove({'_id': ObjectId(plant_id)})
     return redirect(url_for('get_plants'))
 
