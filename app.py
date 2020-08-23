@@ -19,7 +19,7 @@ mongo = PyMongo(app)
 def get_home():
     return render_template("home.html")
 
-
+# ------------------------------------------------ Plants --------------------------------------------------
 @app.route('/get_plants')
 def get_plants():
     return render_template("plants.html", plants=mongo.db.plants.find())
@@ -38,11 +38,21 @@ def insert_plant():
     return redirect(url_for('get_plants'))
 
 
+@app.route('/edit_plant/<plant_id>')
+def edit_plant(plant_id):
+    the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
+    all_plant_types =  mongo.db.plant_types.find()
+    return render_template('editplant.html', plant=the_plant,
+                           plant_types=all_plant_types)
+
+
 @app.route('/delete_plant/<plant_id>')
 def delete_plant(plant_id):
     mongo.db.plants.remove({'_id': ObjectId(plant_id)})
     return redirect(url_for('get_plants'))
 
+
+# ------------------------------------------------  --------------------------------------------------
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
