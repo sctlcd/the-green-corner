@@ -46,6 +46,21 @@ def edit_plant(plant_id):
                            plant_types=all_plant_types)
 
 
+@app.route('/update_plant/<plant_id>', methods=["POST"])
+def update_plant(plant_id):
+    plants = mongo.db.plants
+    plants.update( {'_id': ObjectId(plant_id)},
+    {
+        'scientific_name':request.form.get('scientific_name'),
+        'common_name':request.form.get('common_name'),
+        'genus': request.form.get('genus'),
+        'species': request.form.get('species'),
+        'family':request.form.get('family'),
+        'plant_type':request.form.get('plant_type')
+    })
+    return redirect(url_for('get_plants'))
+
+
 @app.route('/delete_plant/<plant_id>')
 def delete_plant(plant_id):
     mongo.db.plants.remove({'_id': ObjectId(plant_id)})
