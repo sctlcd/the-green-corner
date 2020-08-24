@@ -28,7 +28,9 @@ def get_plants():
 @app.route('/add_plant')
 def add_plant():
     return render_template('addplant.html',
-                           plant_types=mongo.db.plant_types.find(), plants=mongo.db.plants.find())
+                           plant_types=mongo.db.plant_types.find(),
+                           plants=mongo.db.plants.find(),
+                           shade_tolerance=mongo.db.shade_tolerance.find())
 
 
 @app.route('/insert_plant', methods=['POST'])
@@ -42,8 +44,9 @@ def insert_plant():
 def edit_plant(plant_id):
     the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
     all_plant_types =  mongo.db.plant_types.find()
+    all_shade_tolerance = mongo.db.shade_tolerance.find()
     return render_template('editplant.html', plant=the_plant,
-                           plant_types=all_plant_types)
+                           plant_types=all_plant_types, shade_tolerance=all_shade_tolerance)
 
 
 @app.route('/update_plant/<plant_id>', methods=["POST"])
@@ -73,6 +76,17 @@ def delete_plant(plant_id):
 def get_categories():
     return render_template("categories.html", categories=mongo.db.categories.find(),
             plant_types=mongo.db.plant_types.find(), shade_tolerance=mongo.db.shade_tolerance.find())
+
+@app.route('/add_category')
+def add_category():
+    return render_template('addcategory.html',
+                           plant_types=mongo.db.plant_types.find(), shade_tolerance=mongo.db.shade_tolerance.find())
+
+@app.route('/insert_category', methods=['POST'])
+def insert_category():
+    categories = mongo.db.categories
+    categories.insert_one(request.form.to_dict())
+    return redirect(url_for('get_categories'))
 
 
 if __name__ == '__main__':
