@@ -247,6 +247,8 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   -webkit-box-shadow: 0 0px 0 0 #9e9e9e;
 }
 
+/* ---------------------------------------------------------- Delete modal ------------------------------------*/
+
 #modal-delete {
   background-color: #fafafa;
 }
@@ -262,6 +264,10 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 
 .btn-flat:hover {
   background-color: #444;
+}
+
+.waves-effect.waves-grey .waves-ripple {
+  background-color: rgba(158, 158, 158, 0.7);
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
