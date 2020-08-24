@@ -67,7 +67,13 @@ def delete_plant(plant_id):
     return redirect(url_for('get_plants'))
 
 
-# ------------------------------------------------  --------------------------------------------------
+# ------------------------------------------------ Categories --------------------------------------------------
+
+@app.route('/get_categories')
+def get_categories():
+    return render_template("categories.html", categories=mongo.db.categories.find(),
+            plant_types=mongo.db.plant_types.find(), shade_tolerance=mongo.db.shade_tolerance.find())
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
