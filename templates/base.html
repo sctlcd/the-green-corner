@@ -22,14 +22,14 @@
     <!-- navbar -->
     <div>
       <!-- Dropdown Structure -->
-      <ul id="dropdown-categories-nav-mobile" class="dropdown-content">
-        <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>View categories</a></li>
+      <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
+        <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
         <li class="divider"></li>
-        <li><a href="{{url_for('add_category')}}"><span class="fas fa-cog"></span>Add category</a></li>
+        <li><a href="{{url_for('add_plant')}}"><span class="fas fa-leaf"></span>Add Plants</a></li>
       </ul>
-      <ul id="dropdown-categories-mobile-sidenav" class="dropdown-content">
-        <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>View categories</a></li>
-        <li><a href="{{url_for('add_category')}}"><span class="fas fa-cog"></span>Add category</a></li>
+      <ul id="dropdown-plants-mobile-sidenav" class="dropdown-content">
+        <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
+        <li><a href="{{url_for('add_plant')}}"><span class="fas fa-leaf"></span>Add Plants</a></li>
       </ul>
       <nav class="white">
         <div class="nav-wrapper">
@@ -41,20 +41,20 @@
           <div>
             <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down center">
-              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
-              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
-              <!-- <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>Manage Categories</a></li> -->
               <!-- Dropdown Trigger -->
-              <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-nav-mobile"><span class="fas fa-cog"></span>Manage Categories <span class="fas fa-caret-down"></span></a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-nav-mobile"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
+              <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>Categories</a></li>
+              <!-- <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li> -->
+              <!-- <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>Manage Categories</a></li> -->
             </ul>
           </div>
           <div>
             <ul class="side-nav" id="mobile-sidenav">
-              <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>All plants</a></li>
-              <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li>
-              <!-- <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>Manage Categories</a></li> -->
               <!-- Dropdown Trigger -->
-              <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-mobile-sidenav"><span class="fas fa-cog"></span>Manage Categories <span class="fas fa-caret-down"></span></a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-mobile-sidenav"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
+              <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>Categories</a></li>
+              <!-- <li><a href="{{url_for('add_plant')}}"><span class="fas fa-plus"></span>Add plant</a></li> -->
+              <!-- <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>Manage Categories</a></li> -->
             </ul>
           </div>
         </div>
