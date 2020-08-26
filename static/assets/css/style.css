@@ -42,7 +42,7 @@ h3 {
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
-#mobile-sidenav a {
+#mobile-sidenav .dropdown-button {
   font-size: 16px;
 }
 
@@ -50,16 +50,46 @@ h3 {
   font-size: 20px;
 }
 
-#dropdown-categories-mobile-sidenav li, #dropdown-plants-mobile-sidenav li {
-  font-size: 18px;
+#dropdown-categories-mobile-sidenav li>a, #dropdown-plants-mobile-sidenav li>a {
+  font-size: 12px;
 }
 
-#dropdown-categories-mobile-sidenav .fa-cog, #dropdown-plants-mobile-sidenav .fa-leaf {
+#dropdown-categories-mobile-sidenav li>a .fa-cog, #dropdown-plants-mobile-sidenav li>a .fa-leaf {
   margin-left: 40px;
+  font-size: 16px;
 }
 
 #dropdown-categories-mobile-sidenav li:hover, #dropdown-plants-mobile-sidenav li:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+#mobile-sidenav {
+  background-color: #fafafa;
+}
+
+/* .dropdown-content li>a {
+  color: rgba(0, 0, 0, 0.87)
+  font-size: 14.5px;
+} */
+
+.side-nav li>a {
+    width: -webkit-fill-available;
+}
+
+#mobile-sidenav .square {
+  width: 80px;
+  height: 80px;
+}
+
+#mobile-sidenav .title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.side-nav .user-view, .side-nav .userView {
+    position: relative;
+    padding: 32px 32px 0;
+    margin-bottom: 8px;
 }
 
 /* -------------------------------------------------------- Navbar ---------------------------------*/
@@ -77,7 +107,7 @@ h3 {
 
 .dropdown-content li>a {
   color: rgba(0, 0, 0, 0.87);
-  font-size: 18px;
+  /* font-size: 18px; */
 }
 
 #dropdown-categories-nav-mobile li>a, #dropdown-plants-nav-mobile li>a {
@@ -93,6 +123,24 @@ h3 {
 #dropdown-categories-nav-mobile li>a:hover, #dropdown-plants-nav-mobile li>a:hover {
   background-color: rgba(0, 0, 0, 0.2);
   color: #31628b;
+}
+
+/* #nav-mobile .fa-leaf, #nav-mobile .fa-plus, #nav-mobile .fa-cog {
+  font-size: 18px;
+  margin-right: 3px;
+} */
+
+#nav-mobile .fa-caret-down {
+  margin-left: 5px;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #31628b;
+}
+
+#nav-mobile .fas, #mobile-sidenav .fas {
+  padding-right: 5px;
 }
 
 /* -------------------------------------------------------- Common ---------------------------------*/
@@ -169,25 +217,6 @@ h3 .fa-leaf, h3 .fa-edit {
 
 .fa-github:hover, .fa-twitter:hover {
   color: #3caf4e;
-}
-
-#nav-mobile .fa-leaf, #nav-mobile .fa-plus, #nav-mobile .fa-cog {
-  font-size: 18px;
-  margin-right: 3px;
-}
-
-#nav-mobile .fa-caret-down {
-  margin-left: 5px;
-}
-
-/* ----------------------------------------------------------- Navbar ------------------------------------------*/
-nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: #31628b;
-}
-
-#nav-mobile .fas, #mobile-sidenav .fas {
-  padding-right: 5px;
 }
 
 /* ----------------------------------------------------------- Footer ------------------------------------------*/
