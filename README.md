@@ -10,7 +10,6 @@
 # Table of Contents <a name="TableOfContents"></a>
 
 1. [About](#About)
-	- [How to use it?](#HowToUseIt)
 	- [Why this project?](#WhyThisProject)
 
 1. [UX](#UX)
@@ -60,13 +59,10 @@
 
 ## About <a name="About"></a>
 
-The general purpose of this website is TO_ADD. And this anytime, anywhere as this game is available on various devices as desktops, tablets and mobile.
+The general purpose of **The Green Corner** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
 
-**The Green Corner** is
-
-### How to use it? <a name="HowToUseIt"></a>
-
-TO_ADD
+I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Since I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written on a notebook, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to contain all my botanic experiences and knowledge centralized in one source. A few friends of mine are plant lovers and we like sharing information. With this app I can easily provide a single source for all my plant information and <em>My Green Corner</em> can easily be shared.
+In a future version of this app the users will have the possibility to authenticate so it will allow others to store their own plant information, <em>their own green corner</em> while having access to all plants information shared.
 
 ### Why this project? <a name="WhyThisProject"></a>
 
@@ -78,7 +74,7 @@ For this project we could choose from one of the following ideas:
 - Create a jargon glossary/dictionary for a particular domain
 - Build a book review and recommendation site
 
-I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide using HTML, CSS, Materialize CSS, JavaScript, jQuery, FLask and Python and MongoDB.
+My modern responsive Web tool for gathering plant specifications and identifying flora worldwide is built using HTML, CSS, Materialize CSS, JavaScript, jQuery, Flask, Jinja, Python and MongoDB.
 
 Back to [top](#TableOfContents)
 
@@ -125,6 +121,8 @@ In keeping with the **TO_ADD**  idea, I have chosen a color scheme quite sober r
 - ![#444](https://placehold.it/15/444/444) `#444`
 - ![#3997e5](https://placehold.it/15/3997e5/3997e5) `#3997e5`
 - ![rgba(0, 0, 0, 0.05)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.05)`
+- ![rgba(0, 0, 0, 0.2)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.2)
+- ![rgba(0, 0, 0, 0.87)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.87)
 
 #### Icons <a name="Icons"></a>
 
@@ -163,11 +161,10 @@ TO_ADD
 
 ### Features Left to Implement <a name="FeaturesLeftToImplement"></a>
 
- - Login feature to implement
- - Admin and user roles to implement
- - Photo of the plants to displayed
- - User can takes photos and upload them
- - Validation of the new plant uploaded
+ - A "profile photo" of the plants to displayed in the Plants list page.
+ - User can upload photos of plants for making the identification easier.
+ - Review and validation feature of a new added plant by other users.
+ - User authentication
 
 Back to [top](#TableOfContents)
 
@@ -184,15 +181,23 @@ Back to [top](#TableOfContents)
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base for markup text.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
-- [Materialize CS 0.100.2](https://materializecss.com/) - Responsive front-end framework based on Material Design
+- [Materialize CS 0.100.2](https://materializecss.com/) - used as responsive front-end framework, based on Material Design.
 - [JavaScript](https://www.javascript.com/) - Used for user interactions.
-- [jQuery](https://jquery.com/) - JavaScript library, used to simplify some of the DOM manipulations
+- [jQuery](https://jquery.com/) - JavaScript library, used to simplify some of the DOM manipulations.
 
 ##### Back-End Technologies <a name="Back-end-technologies"></a>
 
-- [Flask](https://palletsprojects.com/p/flask/) - Lightweight (micro) framework for building web applications
-- [Python](https://www.python.org/) - Programming language
-- [MongoDB](https://www.mongodb.com/) - Document oriented database
+- Flask
+	- [Flask 1.1.2](https://palletsprojects.com/p/flask/) - Used as a Lightweight (micro) framework for building web applications.
+	- [Jinja 2.11.2](https://jinja.palletsprojects.com/en/2.10.x/) - Used for templating with Flask.
+
+- Heroku
+	- [Heroku](https://www.heroku.com/) - Used for app hosting.
+
+- Python
+	- [Python 3.8](https://www.python.org/) - Used as the back-end programming language.
+	- [MongoDB Atlas]((https://www.mongodb.com/) - Used to store a document oriented database in the 'cloud'.
+	- [PyMongo 3.10.1](https://pymongo.readthedocs.io/en/stable/) - Used as the Python API for MongoDB.
 
 Back to [top](#TableOfContents)
 
@@ -301,7 +306,10 @@ Back to [top](#TableOfContents)
 
 - My inspiration comes from
 	- [Pl@ntNet](https://plantnet.org), le "Shazam" of Botanic, allowing you to identify plants that you photograph during your country walks.  
-  - [Garden](https://www.garden.ie), a website for garden lover
+	- [Aujardin](https://www.aujardin.info/), a site dedicated to gardening with advices on plant cultivation, maintenance and development of gardens, vegetable gardens, orchards,...
+	- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
+  - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), Inspiring ideas for home, gardening,...
+  - [Garden](https://www.garden.ie), a website which offers accurate horticultural advices.
 
 
 ### Content <a name="Content"></a>
@@ -313,8 +321,9 @@ TO_ADD
 Sources of the images used on this site:
 
 - From images sub-directory - [Github](https://github.com/sctlcd/match-the-memory/tree/master/app/assets/images)
-	- city-art-los-angeles-street-art-min.jpg - [Pexel | copyright ᒷ⟁⨃.ᖇ.ᕮ.∥.ᕮ](https://www.pexels.com/photo/city-art-los-angeles-street-art-2334805/)
-	- photo-of-multicolored-illustration-min.jpg - [Pexel | copyright Anni Roenkae](https://www.pexels.com/photo/photo-of-multicolored-illustration-2832382/)
+	- pexels-mike-145685.jpg - [Pexel | copyright Mike]()
+	- gooseberry-176450_1920.jpg - [Pixabay | copyright GLady]()
+	- pexels-skitterphoto-3795.jpg - [Pixabay] | copyright Greg Montani]()
 
 ### Code <a name="Code"></a>
 
