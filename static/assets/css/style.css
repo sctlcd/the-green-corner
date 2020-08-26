@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
+  font-family: 'B612', sans-serif;
 }
 
 .brand-logo img {
@@ -23,44 +26,32 @@ nav .brand-logo {
   color: #1C5925;
 }
 
-.teal-text.text-lighten-2 {
+h1.teal-text.text-lighten-2 {
   color: #3caf4e !important;
   text-shadow: 0 0 10px black;
+  font-size: 70px;
+}
+
+h2, h3, h4 {
+  color: #31628b;
 }
 
 h3 {
   margin: 20px 0 50px 0;
-  color: #31628b;
+  font-size: 46px;
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
 #mobile-sidenav a {
-  font-size: 18px;
+  font-size: 16px;
 }
 
-#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-plus, #mobile-sidenav a .fa-cog {
+#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog {
   font-size: 20px;
-}
-
-.dropdown-content li>a {
-  color: rgba(0, 0, 0, 0.87)
-  font-size: 14.5px;
-}
-
-#dropdown-categories-nav-mobile li>a, #dropdown-plants-nav-mobile li>a {
-  color: rgba(0, 0, 0, 0.87);
-  font-size: 14.5px;
-}
-
-
-#dropdown-categories-nav-mobile li>a:hover, #dropdown-plants-nav-mobile li>a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  color: #31628b;
 }
 
 #dropdown-categories-mobile-sidenav li, #dropdown-plants-mobile-sidenav li {
   font-size: 18px;
-  color:
 }
 
 #dropdown-categories-mobile-sidenav .fa-cog, #dropdown-plants-mobile-sidenav .fa-leaf {
@@ -69,6 +60,39 @@ h3 {
 
 #dropdown-categories-mobile-sidenav li:hover, #dropdown-plants-mobile-sidenav li:hover {
   background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------------------------------------- Navbar ---------------------------------*/
+#nav-mobile a {
+  font-size: 16px;
+}
+
+#nav-mobile li .dropdown-button .fa-leaf, #nav-mobile li .dropdown-button .fa-cog {
+  font-size: 20px;
+}
+
+#dropdown-categories-nav-mobile a .fa-leaf, #dropdown-plants-nav-mobile a .fa-cog {
+  font-size: 18px;
+}
+
+.dropdown-content li>a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 18px;
+}
+
+#dropdown-categories-nav-mobile li>a, #dropdown-plants-nav-mobile li>a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+}
+
+/* #dropdown-categories-nav-mobile li>a .fa-leaf, #dropdown-plants-nav-mobile li>a .fa-leaf { */
+#dropdown-categories-nav-mobile li>a .fa-cog, #dropdown-plants-nav-mobile li>a .fa-leaf {
+  font-size: 18px;
+}
+
+#dropdown-categories-nav-mobile li>a:hover, #dropdown-plants-nav-mobile li>a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #31628b;
 }
 
 /* -------------------------------------------------------- Common ---------------------------------*/
