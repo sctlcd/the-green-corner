@@ -12,6 +12,7 @@ html, body {
 nav ul a,
 nav .brand-logo {
   color: #444;
+  width: 12rem;
 }
 
 .menu {
@@ -42,23 +43,31 @@ h3 {
 }
 
 .dropdown-content li>a {
-  color: #444;
+  color: rgba(0, 0, 0, 0.87)
   font-size: 14.5px;
 }
 
-#dropdown-categories-nav-mobile li:hover {
+#dropdown-categories-nav-mobile li>a, #dropdown-plants-nav-mobile li>a {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14.5px;
+}
+
+
+#dropdown-categories-nav-mobile li>a:hover, #dropdown-plants-nav-mobile li>a:hover {
   background-color: rgba(0, 0, 0, 0.2);
+  color: #31628b;
 }
 
-#dropdown-categories-mobile-sidenav li {
+#dropdown-categories-mobile-sidenav li, #dropdown-plants-mobile-sidenav li {
   font-size: 18px;
+  color:
 }
 
-#dropdown-categories-mobile-sidenav .fa-cog {
-  margin-left: 30px;
+#dropdown-categories-mobile-sidenav .fa-cog, #dropdown-plants-mobile-sidenav .fa-leaf {
+  margin-left: 40px;
 }
 
-#dropdown-categories-mobile-sidenav li:hover {
+#dropdown-categories-mobile-sidenav li:hover, #dropdown-plants-mobile-sidenav li:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -117,7 +126,7 @@ a.btn_small:hover {
 }
 
 .blue-text {
-  color: #31628b !important;
+  color: #31628b!important;
 }
 
 h3 .fa-leaf, h3 .fa-edit {
