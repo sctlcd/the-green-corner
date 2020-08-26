@@ -161,10 +161,10 @@ TO_ADD
 
 ### Features Left to Implement <a name="FeaturesLeftToImplement"></a>
 
- - A "profile photo" of the plants to displayed in the Plants list page.
+ - A "profile photo" of the plants to be displayed in the Plants list page.
  - User can upload photos of plants for making the identification easier.
- - Review and validation feature of a new added plant by other users.
  - User authentication
+ - Review and validation feature of a new added plant by other users.
 
 Back to [top](#TableOfContents)
 
