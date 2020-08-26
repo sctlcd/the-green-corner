@@ -121,8 +121,8 @@ In keeping with the **TO_ADD**  idea, I have chosen a color scheme quite sober r
 - ![#444](https://placehold.it/15/444/444) `#444`
 - ![#3997e5](https://placehold.it/15/3997e5/3997e5) `#3997e5`
 - ![rgba(0, 0, 0, 0.05)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.05)`
-- ![rgba(0, 0, 0, 0.2)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.2)
-- ![rgba(0, 0, 0, 0.87)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.87)
+- ![rgba(0, 0, 0, 0.2)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.2)`
+- ![rgba(0, 0, 0, 0.87)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.87)`
 
 #### Icons <a name="Icons"></a>
 
