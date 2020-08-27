@@ -9,7 +9,7 @@ html, body {
 .brand-logo img {
   height: 50px;
   width: 50px;
-  margin: 5px 10px 5px 10px;
+  margin: 7px 15px 7px 15px;
 }
 
 nav ul a,
@@ -41,6 +41,10 @@ h3 {
   font-size: 46px;
 }
 
+h4 {
+  font-weight: 700;
+}
+
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
 #mobile-sidenav .dropdown-button {
   font-size: 16px;
@@ -51,12 +55,12 @@ h3 {
 }
 
 #dropdown-categories-mobile-sidenav li>a, #dropdown-plants-mobile-sidenav li>a {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 #dropdown-categories-mobile-sidenav li>a .fa-cog, #dropdown-plants-mobile-sidenav li>a .fa-leaf {
   margin-left: 40px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #dropdown-categories-mobile-sidenav li:hover, #dropdown-plants-mobile-sidenav li:hover {
@@ -67,29 +71,32 @@ h3 {
   background-color: #fafafa;
 }
 
-/* .dropdown-content li>a {
-  color: rgba(0, 0, 0, 0.87)
-  font-size: 14.5px;
-} */
-
 .side-nav li>a {
     width: -webkit-fill-available;
 }
 
 #mobile-sidenav .square {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 #mobile-sidenav .title {
+  color: #fafafa;
   font-size: 16px;
   font-weight: 700;
+  text-shadow: 0 0 15px black;
 }
 
 .side-nav .user-view, .side-nav .userView {
     position: relative;
-    padding: 32px 32px 0;
+    /* padding: 32px 32px 0; */
+    padding: 32px 32px 32px 64px;
     margin-bottom: 8px;
+}
+
+nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #31628b;
 }
 
 /* -------------------------------------------------------- Navbar ---------------------------------*/
@@ -101,21 +108,11 @@ h3 {
   font-size: 20px;
 }
 
-#dropdown-categories-nav-mobile a .fa-leaf, #dropdown-plants-nav-mobile a .fa-cog {
-  font-size: 18px;
-}
-
-.dropdown-content li>a {
-  color: rgba(0, 0, 0, 0.87);
-  /* font-size: 18px; */
-}
-
 #dropdown-categories-nav-mobile li>a, #dropdown-plants-nav-mobile li>a {
   color: rgba(0, 0, 0, 0.87);
   font-size: 14px;
 }
 
-/* #dropdown-categories-nav-mobile li>a .fa-leaf, #dropdown-plants-nav-mobile li>a .fa-leaf { */
 #dropdown-categories-nav-mobile li>a .fa-cog, #dropdown-plants-nav-mobile li>a .fa-leaf {
   font-size: 18px;
 }
@@ -125,22 +122,13 @@ h3 {
   color: #31628b;
 }
 
-/* #nav-mobile .fa-leaf, #nav-mobile .fa-plus, #nav-mobile .fa-cog {
-  font-size: 18px;
-  margin-right: 3px;
-} */
-
-#nav-mobile .fa-caret-down {
-  margin-left: 5px;
+#nav-mobile .fa-caret-down,  #mobile-sidenav .fa-caret-down {
+  /* margin-left: 10px; */
+  padding-left: 5px;
 }
 
-nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: #31628b;
-}
-
-#nav-mobile .fas, #mobile-sidenav .fas {
-  padding-right: 5px;
+#nav-mobile .fa-leaf, #nav-mobile .fa-cog, #mobile-sidenav .fa-leaf, #mobile-sidenav .fa-cog {
+  padding-right: 15px;
 }
 
 /* -------------------------------------------------------- Common ---------------------------------*/
@@ -317,6 +305,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 
 #modal-delete h4 {
   color: #31628b;
+  font-weight: 700;
 }
 
 .btn-flat {
