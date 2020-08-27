@@ -224,6 +224,10 @@ footer.page-footer {
   background-color: #1C5925 !important;
 }
 
+.connect {
+  margin-top: 20px;
+}
+
 /* ----------------------------------------------------------- addplant.html ------------------------------------------*/
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
