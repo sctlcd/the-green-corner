@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="row">
-  <h3><i class="fas fa-edit"></i> Edit plant</h3>
+  <h3><i class="fas fa-edit"></i> Edit Plant</h3>
 
   <form action="{{ url_for('update_plant', plant_id=plant._id) }}" method="POST" class="col s12">
     <div class="row">
