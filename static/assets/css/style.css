@@ -99,6 +99,14 @@ nav ul a:hover {
   color: #31628b;
 }
 
+.side-nav li div a {
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+
+.overlay-sidenav {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 /* -------------------------------------------------------- Navbar ---------------------------------*/
 #nav-mobile a {
   font-size: 16px;
