@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: 'B612', sans-serif;
+  font-size: 14px;
 }
 
 .brand-logo img {
@@ -136,7 +137,7 @@ nav ul a:hover {
 }
 
 #nav-mobile .fa-leaf, #nav-mobile .fa-cog, #mobile-sidenav .fa-leaf, #mobile-sidenav .fa-cog {
-  padding-right: 15px;
+  padding-right: 10px;
 }
 
 /* -------------------------------------------------------- Common ---------------------------------*/
@@ -167,10 +168,35 @@ p {
   margin-bottom: 14px;
 }
 
-a.btn_small:hover {
+a.btn_small:hover, .btn_small:hover  {
   background-color: #444 !important;
   box-shadow: 0 0 5px 0px black;
 }
+
+.btn {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 2.2rem;
+}
+
+a.btn, a.btn-flat {
+  font-size: 14px;
+}
+
+.btn-flat {
+  height: 32px;
+  line-height: 32px;
+  padding: 0 1rem;
+}
+
+/* .btn-crud {
+
+}
+
+.btn-crud:hover {
+  background-color: #444 !important;
+  box-shadow: 0 0 5px 0px black;
+} */
 
 /* -------------------------------------------------------- parallax-container ---------------------------------*/
 .parallax-container {
@@ -182,6 +208,15 @@ a.btn_small:hover {
 
 .parallax-container .section {
   width: 100%;
+}
+
+#index-banner .container {
+  margin-top: 60px;
+}
+
+.main-container {
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 
 /* ----------------------------------------------------------- Icons ------------------------------------------*/
@@ -224,8 +259,13 @@ footer.page-footer {
   background-color: #1C5925 !important;
 }
 
-.connect {
+.footer-container {
   margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.connect {
+  margin-top: 50px;
 }
 
 /* ----------------------------------------------------------- addplant.html ------------------------------------------*/
@@ -333,7 +373,6 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   background-color: rgba(158, 158, 158, 0.7);
 }
 
-
 .category-frame {
     border: none;
     -webkit-box-shadow: none;
@@ -362,7 +401,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
-@media only screen and (max-width : 992px) {
+/* @media only screen and (max-width : 992px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -371,10 +410,272 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   #index-banner .section {
     top: 10%;
   }
-}
+} */
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  body {
+    font-size: 10px;
+  }
+  h1.teal-text.text-lighten-2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  a.btn, a.btn-flat {
+    font-size: 10px;
+  }
+
+  #index-banner .container {
+    margin-top: 60px;
+  }
+
+  .main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer-container {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .contact, .help-grow {
+    margin-top: 10px;
+  }
+
+  .connect {
+    margin-top: 25px;
+  }
+
+  .brand-logo img {
+    height: 35px;
+    width: 35px;
+    margin: 10px 10px 7px 10px;
+  }
+
+  .btn {
+    height: 14px;
+    line-height: 14px;
+    padding: 0 0.3rem;
+  }
+
+  .btn-flat {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 1rem;
+  }
+}
+
+/* extra small - small phones */
+@media only screen and (min-width: 320px) and (max-width: 575px){
+
+  body {
+    font-size: 12px;
+  }
+
+  h1.teal-text.text-lighten-2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+
+  a.btn, a.btn-flat {
+    font-size: 12px;
+  }
+
+  #index-banner .container {
+    margin-top: 75px;
+  }
+
+  .main-container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .footer-container {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .contact, .help-grow {
+    margin-top: 15px;
+  }
+
+  .connect {
+    margin-top: 30px;
+  }
+
+  .brand-logo img {
+    height: 40px;
+    width: 40px;
+    margin: 7px 15px 7px 15px;
+  }
+
+  .btn {
+    height: 18px;
+    line-height: 18px;
+    padding: 0 0.8rem;
+  }
+
+  .btn-flat {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 1rem;
+  }
+}
+
+/* Small - phones */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+  body {
+    font-size: 12px;
+  }
+
+  h1.teal-text.text-lighten-2 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  a.btn, a.btn-flat {
+    font-size: 12px;
+  }
+
+  #index-banner .container {
+    margin-top: 70px;
+  }
+
+  .main-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact, .help-grow {
+    margin-top: 20px;
+  }
+
+  .connect {
+    margin-top: 30px;
+  }
+
+  .brand-logo img {
+    height: 45px;
+    width: 45px;
+    margin: 7px 15px 7px 15px;
+  }
+
+  .btn {
+    height: 20px;
+    line-height: 20px;
+    padding: 0 1.4rem;
+  }
+
+  .btn-flat {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 1rem;
+  }
+
+}
+
+/* Medium - tablets */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+
+  #index-banner .section {
+    top: 10%;
+  }
+
+  h1.teal-text.text-lighten-2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  #index-banner .container {
+    margin-top: 40px;
+  }
+
+  .main-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .footer-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .contact, .help-grow {
+    margin-top: 20px;
+  }
+
+  .connect {
+    margin-top: 30px;
+  }
+
+  .btn {
+    height: 26px;
+    line-height: 26px;
+    padding: 0 1.8rem;
+  }
+}
+
+/* Large - laptop & desktop */
+@media only screen and (min-width: 992px){
+ }
