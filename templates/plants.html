@@ -32,32 +32,51 @@
       </div>
       <div class="collapsible-body">
         <div>
-          <label for="scientific_name">Scientific_name: </label>
-          <span id="scientific_name">{{ plant.scientific_name }}</span>
+          <div>
+            <label for="identity">Identity</label>
+          </div>
+          <div>
+            <label for="scientific_name">Scientific_name: </label>
+            <span id="scientific_name">{{ plant.scientific_name }}</span>
+          </div>
+          <div>
+            <label for="common_name">Common_name: </label>
+            <span id="common_name">{{ plant.common_name }}</span>
+          </div>
+          <div>
+            <label for="genus">Genus: </label>
+            <span id="genus">{{ plant.genus }}</span>
+          </div>
+          <div>
+            <label for="species">Species: </label>
+            <span id="species">{{ plant.species }}</span>
+          </div>
+          <div>
+            <label for="family">Family: </label>
+            <span id="family">{{ plant.family }}</span>
+          </div>
         </div>
         <div>
-          <label for="common_name">Common_name: </label>
-          <span id="common_name">{{ plant.common_name }}</span>
+          <div>
+            <label for="identity">Botanic</label>
+          </div>
+          <div>
+            <label for="plant_type">Plant type: </label>
+            <span id="plant_type">{{ plant.plant_type }}</span>
+          </div>
         </div>
         <div>
-          <label for="genus">Genus: </label>
-          <span id="genus">{{ plant.genus }}</span>
+          <div>
+            <label for="identity">Culture</label>
+          </div>
+          <div>
+            <label for="plant_type">Shade tolerance: </label>
+            <span id="plant_type">{{ plant.shade_tolerance }}</span>
+          </div>
         </div>
-        <div>
-          <label for="species">Species: </label>
-          <span id="species">{{ plant.species }}</span>
-        </div>
-        <div>
-          <label for="family">Family: </label>
-          <span id="family">{{ plant.family }}</span>
-        </div>
-        <div>
-          <label for="plant_type">Plant type: </label>
-          <span id="plant_type">{{ plant.plant_type }}</span>
-        </div>
-        <div>
-          <label for="plant_type">Shade tolerance: </label>
-          <span id="plant_type">{{ plant.shade_tolerance }}</span>
+        <div class="">
+          <label for="textarea1">Note</label>
+          <span id="note" class="materialize-textarea">{{ plant.note }}</span>
         </div>
       </div>
     </li>
