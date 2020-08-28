@@ -1,18 +1,18 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="row">
-  <h3><i class="fas fa-plus"></i> Add Category</h3>
+  <h3><i class="fas fa-edit"></i> Edit Category</h3>
 
-  <form action="{{ url_for('insert_category') }}" method="POST" class="col s12">
+  <form action="{{ url_for('update_category', category_id=category._id) }}" method="POST" class="col s12">
     <div class="row">
       <div class="input-field col s12">
         <i class="material-icons prefix">assignment</i>
-        <input id="category_name" name="category_name" type="text">
-        <label for="icon_prefix">category name</label>
+        <input id="category_name" name="category_name" type="text" class="validate" value="{{category.category_name}}">
+        <label for="icon_prefix">Category name</label>
       </div>
     </div>
     <div class="row">
-      <button class="waves-effect waves-light btn grey" type="submit" name="action">Add Category
+      <button class="waves-effect waves-light btn grey" type="submit" name="action">Edit Category
         <i class="material-icons right">playlist_add</i>
       </button>
       <a class="waves-effect waves-light btn btn-cancel grey" href="{{url_for('get_categories')}}">Cancel

@@ -305,11 +305,11 @@ Back to [top](#TableOfContents)
 ## Credits <a name="Credits"></a>
 
 - My inspiration comes from
-	- [Pl@ntNet](https://plantnet.org), le "Shazam" of Botanic, allowing you to identify plants that you photograph during your country walks.  
+	- [Pl@ntNet](https://plantnet.org), the "Shazam" of Botanic, allowing you to identify plants that you photograph during your country walks.  
 	- [Aujardin](https://www.aujardin.info/), a site dedicated to gardening with advices on plant cultivation, maintenance and development of gardens, vegetable gardens, orchards,...
 	- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
-  - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), Inspiring ideas for home, gardening,...
-  - [Garden](https://www.garden.ie), a website which offers accurate horticultural advices.
+  - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), inspiring ideas for gardening,...
+  - [Garden.ie](https://www.garden.ie), a website which offers accurate horticultural advices.
 
 
 ### Content <a name="Content"></a>

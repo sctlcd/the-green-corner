@@ -19,7 +19,9 @@ mongo = PyMongo(app)
 def get_home():
     return render_template("home.html")
 
+
 # ------------------------------------------------ Plants --------------------------------------------------
+
 @app.route('/get_plants')
 def get_plants():
     return render_template("plants.html", plants=mongo.db.plants.find())
@@ -27,10 +29,13 @@ def get_plants():
 
 @app.route('/add_plant')
 def add_plant():
+    all_plant_types =  mongo.db.plant_types.find()
+    all_plants = mongo.db.plants.find()
+    all_shade_tolerance = mongo.db.shade_tolerance.find()
     return render_template('addplant.html',
-                           plant_types=mongo.db.plant_types.find(),
-                           plants=mongo.db.plants.find(),
-                           shade_tolerance=mongo.db.shade_tolerance.find())
+                           plant_types=all_plant_types,
+                           plants=all_plants,
+                           shade_tolerance=all_shade_tolerance)
 
 
 @app.route('/insert_plant', methods=['POST'])
@@ -45,8 +50,10 @@ def edit_plant(plant_id):
     the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
     all_plant_types =  mongo.db.plant_types.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
-    return render_template('editplant.html', plant=the_plant,
-                           plant_types=all_plant_types, shade_tolerance=all_shade_tolerance)
+    return render_template('editplant.html',
+                            plant=the_plant,
+                            plant_types=all_plant_types,
+                            shade_tolerance=all_shade_tolerance)
 
 
 @app.route('/update_plant/<plant_id>', methods=["POST"])
@@ -74,18 +81,45 @@ def delete_plant(plant_id):
 
 @app.route('/get_categories')
 def get_categories():
-    return render_template("categories.html", categories=mongo.db.categories.find(),
-            plant_types=mongo.db.plant_types.find(), shade_tolerance=mongo.db.shade_tolerance.find())
+    all_categories = mongo.db.categories.find()
+    all_plant_types = mongo.db.plant_types.find()
+    all_shade_tolerance = mongo.db.shade_tolerance.find()
+    return render_template("categories.html",
+                            categories=all_categories,
+                            plant_types=all_plant_types,
+                            shade_tolerance=all_shade_tolerance)
+
 
 @app.route('/add_category')
 def add_category():
+    all_plant_types = mongo.db.plant_types.find()
+    all_shade_tolerance = mongo.db.shade_tolerance.find()
     return render_template('addcategory.html',
-                           plant_types=mongo.db.plant_types.find(), shade_tolerance=mongo.db.shade_tolerance.find())
+                           plant_types=all_plant_types,
+                           shade_tolerance=all_shade_tolerance)
+
 
 @app.route('/insert_category', methods=['POST'])
 def insert_category():
     categories = mongo.db.categories
     categories.insert_one(request.form.to_dict())
+    return redirect(url_for('get_categories'))
+
+
+@app.route('/edit_category/<category_id>')
+def edit_category(category_id):
+    the_category =  mongo.db.categories.find_one({"_id": ObjectId(category_id)})
+    return render_template('editcategory.html',
+                            category=the_category)
+
+
+@app.route('/update_category/<category_id>', methods=["POST"])
+def update_category(category_id):
+    categories = mongo.db.categories
+    categories.update( {'_id': ObjectId(category_id)},
+    {
+        'category_name':request.form.get('category_name'),
+    })
     return redirect(url_for('get_categories'))
 
 
