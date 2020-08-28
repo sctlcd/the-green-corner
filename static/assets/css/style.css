@@ -173,19 +173,19 @@ a.btn.grey:hover, .btn.grey:hover  {
   box-shadow: 0 0 5px 0px black;
 }
 
-a.btn-small {
+a.btn.grey {
   height: 30px;
   line-height: 30px;
   padding: 0 2.2rem;
 }
 
-.btn {
+.btn, a.btn-cancel.grey {
   height: 36px;
   line-height: 36px;
   padding: 0 2rem;
 }
 
-a.btn, a.btn-flat {
+a.btn, a.btn-flat, .btn.grey {
   font-size: 14px;
 }
 
@@ -377,17 +377,12 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 }
 
 .category-frame > li {
-    /* -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     margin: 0 24px;
-    /* -webkit-transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94); */
     transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .category-frame-header {
-    /* display: -webkit-box; */
-    /* display: -webkit-flex; */
-    /* display: -ms-flexbox; */
     display: flex;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -456,22 +451,26 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin: 10px 10px 7px 10px;
   }
 
-  .btn {
+  a.btn.grey {
     height: 14px;
     line-height: 14px;
     padding: 0 0.3rem;
+  }
+
+  .btn, a.btn-cancel.grey {
+    height: 28px;
+    line-height: 28px;
+    padding: 0 1rem;
+  }
+
+  a.btn, a.btn-flat, .btn.grey {
+    font-size: 12px;
   }
 
   .btn-flat {
     height: 24px;
     line-height: 24px;
     padding: 0 1rem;
-  }
-
-  a.btn-small {
-    height: 14px;
-    line-height: 14px;
-    padding: 0 0.3rem;
   }
 }
 
@@ -530,10 +529,20 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin: 7px 15px 7px 15px;
   }
 
-  .btn {
+  a.btn.grey {
     height: 18px;
     line-height: 18px;
     padding: 0 0.8rem;
+  }
+
+  .btn, a.btn-cancel.grey {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 1.2rem;
+  }
+
+  a.btn, a.btn-flat, .btn.grey {
+    font-size: 12px;
   }
 
   .btn-flat {
@@ -566,10 +575,6 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     font-size: 18px;
   }
 
-  a.btn, a.btn-flat {
-    font-size: 12px;
-  }
-
   #index-banner .container {
     margin-top: 70px;
   }
@@ -598,10 +603,20 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin: 7px 15px 7px 15px;
   }
 
-  .btn {
+  a.btn.grey {
     height: 20px;
     line-height: 20px;
     padding: 0 1.4rem;
+  }
+
+  .btn, a.btn-cancel.grey {
+    height: 32px;
+    line-height: 32px;
+    padding: 0 1.4rem;
+  }
+
+  a.btn, a.btn-flat, .btn.grey {
+    font-size: 12px;
   }
 
   .btn-flat {
@@ -609,7 +624,6 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     line-height: 28px;
     padding: 0 1rem;
   }
-
 }
 
 /* Medium - tablets */
@@ -661,10 +675,26 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 30px;
   }
 
-  .btn {
+  a.btn.grey {
     height: 26px;
     line-height: 26px;
     padding: 0 1.8rem;
+  }
+
+  .btn, a.btn-cancel.grey {
+    height: 34px;
+    line-height: 34px;
+    padding: 0 1.8rem;
+  }
+
+  a.btn, a.btn-flat, .btn.grey {
+    font-size: 14px;
+  }
+
+  .btn-flat {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 1rem;
   }
 }
 
