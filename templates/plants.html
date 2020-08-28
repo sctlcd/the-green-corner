@@ -31,8 +31,9 @@
         </div>
       </div>
       <div class="collapsible-body">
-        <div>
+        <div id="identity-section">
           <div>
+            <i class="material-icons prefix">fingerprint</i>
             <label for="identity">Identity</label>
           </div>
           <div>
@@ -56,27 +57,45 @@
             <span id="family">{{ plant.family }}</span>
           </div>
         </div>
-        <div>
+        <div id="category-section">
           <div>
-            <label for="identity">Botanic</label>
+            <i class="material-icons prefix">category</i>
+            <label for="category">Category</label>
+          </div>
+          <div>
+            <label for="category">Category: </label>
+            <span id="category">{{ plant.category }}</span>
+          </div>
+        </div>
+        <div id="botanic-section">
+          <div>
+            <i class="material-icons prefix">eco</i>
+            <label for="botanic">Botanic</label>
           </div>
           <div>
             <label for="plant_type">Plant type: </label>
             <span id="plant_type">{{ plant.plant_type }}</span>
           </div>
         </div>
-        <div>
+        <div id="culture">
           <div>
-            <label for="identity">Culture</label>
+            <i class="material-icons prefix">wb_sunny</i>
+            <label for="culture">Culture</label>
           </div>
           <div>
             <label for="plant_type">Shade tolerance: </label>
             <span id="plant_type">{{ plant.shade_tolerance }}</span>
           </div>
         </div>
-        <div class="">
-          <label for="textarea1">Note</label>
-          <span id="note" class="materialize-textarea">{{ plant.note }}</span>
+        <div id="note-section">
+          <div>
+            <i class="material-icons prefix">sticky_note_2</i>
+            <label for="note">Note</label>
+          </div>
+          <div>
+            <label for="textarea1">Note</label>
+            <span id="note" class="materialize-textarea">{{ plant.note }}</span>
+          </div>
         </div>
       </div>
     </li>

@@ -13,4 +13,7 @@ $(document).ready(function() {
     padding: 0,
     width: 0
   });
+  $('#textarea1').val('New Text');
+  $('#textarea1').trigger('autoresize');
+
 });

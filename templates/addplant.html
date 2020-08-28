@@ -5,39 +5,55 @@
 
   <form action="{{ url_for('insert_plant') }}" method="POST" class="col s12">
     <div class="row col s12">
-      <div>
-        <label for="identity">Identity</label>
-      </div>
       <div class="row">
-        <div class="input-field col s12">
-          <i class="material-icons prefix">assignment</i>
-          <input id="scientific_name" name="scientific_name" type="text" class="validate" required="" aria-required="true">
-          <label for="icon_prefix" data-error="wrong" data-success="right">Scientific name</label>
+        <div>
+          <i class="material-icons prefix">fingerprint</i>
+          <label for="identity">Identity</label>
         </div>
-        <div class="input-field col s12">
-          <i class="material-icons prefix">assignment</i>
-          <input id="common_name" name="common_name" type="text" class="validate" required="" aria-required="true">
-          <label for="icon_prefix" data-error="wrong" data-success="right">Common name</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="material-icons prefix">subject</i>
-          <input id="genus" name="genus" type="text" class="validate" required="" aria-required="true">
-          <label for="icon_prefix" data-error="wrong" data-success="right">Genus</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="material-icons prefix">subject</i>
-          <input id="species" name="species" type="text" class="validate" required="" aria-required="true">
-          <label for="icon_prefix" data-error="wrong" data-success="right">Species</label>
-        </div>
-        <div class="input-field col s12">
-          <i class="material-icons prefix">subject</i>
-          <input id="family" name="family" type="text" class="validate" required="" aria-required="true">
-          <label for="icon_prefix" data-error="wrong" data-success="right">Family</label>
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">assignment</i>
+            <input id="scientific_name" name="scientific_name" type="text" class="validate" required="" aria-required="true">
+            <label for="icon_prefix" data-error="wrong" data-success="right">Scientific name</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">assignment</i>
+            <input id="common_name" name="common_name" type="text" class="validate" required="" aria-required="true">
+            <label for="icon_prefix" data-error="wrong" data-success="right">Common name</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">subject</i>
+            <input id="genus" name="genus" type="text" class="validate" required="" aria-required="true">
+            <label for="icon_prefix" data-error="wrong" data-success="right">Genus</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">subject</i>
+            <input id="species" name="species" type="text" class="validate" required="" aria-required="true">
+            <label for="icon_prefix" data-error="wrong" data-success="right">Species</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">subject</i>
+            <input id="family" name="family" type="text" class="validate" required="" aria-required="true">
+            <label for="icon_prefix" data-error="wrong" data-success="right">Family</label>
+          </div>
         </div>
       </div>
       <div class="row">
         <div>
-          <label for="identity">Botanic</label>
+          <i class="material-icons prefix">category</i>
+          <label for="category">Category</label>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="category" name="category" type="text" class="validate" required="" aria-required="true">
+            <label for="icon_prefix" data-error="wrong" data-success="right">Category</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <i class="material-icons prefix">eco</i>
+          <label for="botanic">Botanic</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-plant-type">
@@ -53,7 +69,8 @@
       </div>
       <div class="row">
         <div>
-          <label for="identity">Culture</label>
+          <i class="material-icons prefix">wb_sunny</i>
+          <label for="culture">Culture</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-shade-tolerance">
@@ -69,12 +86,13 @@
       </div>
       <div class="row">
         <div>
-          <label for="identity">Note</label>
+          <i class="material-icons prefix">sticky_note_2</i>
+          <label for="note_label">Note</label>
         </div>
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="note" class="materialize-textarea"></textarea>
-            <label for="note">Note</label>
+            <textarea id="note" name="note" class="materialize-textarea"></textarea>
+            <label for="icon_prefix">Note</label>
           </div>
         </div>
       </div>
