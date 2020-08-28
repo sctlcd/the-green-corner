@@ -31,33 +31,71 @@
         </div>
       </div>
       <div class="collapsible-body">
-        <div>
-          <label for="scientific_name">Scientific_name: </label>
-          <span id="scientific_name">{{ plant.scientific_name }}</span>
+        <div id="identity-section">
+          <div>
+            <i class="material-icons prefix">fingerprint</i>
+            <label for="identity">Identity</label>
+          </div>
+          <div>
+            <label for="scientific_name">Scientific_name: </label>
+            <span id="scientific_name">{{ plant.scientific_name }}</span>
+          </div>
+          <div>
+            <label for="common_name">Common_name: </label>
+            <span id="common_name">{{ plant.common_name }}</span>
+          </div>
+          <div>
+            <label for="genus">Genus: </label>
+            <span id="genus">{{ plant.genus }}</span>
+          </div>
+          <div>
+            <label for="species">Species: </label>
+            <span id="species">{{ plant.species }}</span>
+          </div>
+          <div>
+            <label for="family">Family: </label>
+            <span id="family">{{ plant.family }}</span>
+          </div>
         </div>
-        <div>
-          <label for="common_name">Common_name: </label>
-          <span id="common_name">{{ plant.common_name }}</span>
+        <div id="category-section">
+          <div>
+            <i class="material-icons prefix">category</i>
+            <label for="category">Category</label>
+          </div>
+          <div>
+            <label for="category">Category: </label>
+            <span id="category">{{ plant.category }}</span>
+          </div>
         </div>
-        <div>
-          <label for="genus">Genus: </label>
-          <span id="genus">{{ plant.genus }}</span>
+        <div id="botanic-section">
+          <div>
+            <i class="material-icons prefix">eco</i>
+            <label for="botanic">Botanic</label>
+          </div>
+          <div>
+            <label for="plant_type">Plant type: </label>
+            <span id="plant_type">{{ plant.plant_type }}</span>
+          </div>
         </div>
-        <div>
-          <label for="species">Species: </label>
-          <span id="species">{{ plant.species }}</span>
+        <div id="culture">
+          <div>
+            <i class="material-icons prefix">wb_sunny</i>
+            <label for="culture">Culture</label>
+          </div>
+          <div>
+            <label for="plant_type">Shade tolerance: </label>
+            <span id="plant_type">{{ plant.shade_tolerance }}</span>
+          </div>
         </div>
-        <div>
-          <label for="family">Family: </label>
-          <span id="family">{{ plant.family }}</span>
-        </div>
-        <div>
-          <label for="plant_type">Plant type: </label>
-          <span id="plant_type">{{ plant.plant_type }}</span>
-        </div>
-        <div>
-          <label for="plant_type">Shade tolerance: </label>
-          <span id="plant_type">{{ plant.shade_tolerance }}</span>
+        <div id="note-section">
+          <div>
+            <i class="material-icons prefix">sticky_note_2</i>
+            <label for="note">Note</label>
+          </div>
+          <div>
+            <label for="textarea1">Note</label>
+            <span id="note" class="materialize-textarea">{{ plant.note }}</span>
+          </div>
         </div>
       </div>
     </li>

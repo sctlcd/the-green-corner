@@ -66,7 +66,9 @@ def update_plant(plant_id):
         'genus': request.form.get('genus'),
         'species': request.form.get('species'),
         'family':request.form.get('family'),
-        'plant_type':request.form.get('plant_type')
+        'plant_type':request.form.get('plant_type'),
+        'shade_tolerance':request.form.get('shade_tolerance'),
+        'note':request.form.get('note')
     })
     return redirect(url_for('get_plants'))
 
