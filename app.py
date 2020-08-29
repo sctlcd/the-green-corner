@@ -6,13 +6,18 @@ from os import path
 if path.exists('env.py'):
     import env
 
-
+# app initialization + configuration
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'the_green_corner'
 app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 
+# reusable extension for PyMongo
 mongo = PyMongo(app)
 
+
+# ---------------------- #
+#    APP ROUTES - HOME   #
+# ---------------------- #
 
 @app.route('/')
 @app.route('/home')
@@ -20,13 +25,21 @@ def get_home():
     return render_template("home.html")
 
 
-# ------------------------------------------------ Plants --------------------------------------------------
+# ------------------------ #
+#    APP ROUTES - PLANTS   #
+# ------------------------ #
 
+# ------------------------------------------- #
+#    CRUD: Create | Read | Update | Delete    #
+# ------------------------------------------- #
+
+# ------------------------------------ READ ----- #
 @app.route('/get_plants')
 def get_plants():
     return render_template("plants.html", plants=mongo.db.plants.find())
 
 
+# ------------------------------------ CREATE ----- #
 @app.route('/add_plant')
 def add_plant():
     all_plant_types =  mongo.db.plant_types.find()
@@ -45,6 +58,7 @@ def insert_plant():
     return redirect(url_for('get_plants'))
 
 
+# ------------------------------------ UPDATE ----- #
 @app.route('/edit_plant/<plant_id>')
 def edit_plant(plant_id):
     the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
@@ -73,14 +87,34 @@ def update_plant(plant_id):
     return redirect(url_for('get_plants'))
 
 
+# ------------------------------------ DELETE ----- #
 @app.route('/delete_plant/<plant_id>')
 def delete_plant(plant_id):
     mongo.db.plants.remove({'_id': ObjectId(plant_id)})
     return redirect(url_for('get_plants'))
 
 
-# ------------------------------------------------ Categories --------------------------------------------------
+# ------------------------------------ SEARCH ----- #
+@app.route('/get_search')
+def get_search():
+    return render_template("plantssearch.html")
 
+
+@app.route('/search_plants/<plant_name>')
+def search_plants(plant_name):
+    plants_search = mongo.db.plants.find({'common_name': ObjectId(plant_name)})
+    return redirect(url_for('plantsearch.html'), plants_search=plants_search)
+
+
+# ---------------------------- #
+#    APP ROUTES - CATEGORIES   #
+# ---------------------------- #
+
+# ------------------------------------------- #
+#    CRUD: Create | Read | Update | Delete    #
+# ------------------------------------------- #
+
+# ------------------------------------ READ ----- #
 @app.route('/get_categories')
 def get_categories():
     all_categories = mongo.db.categories.find()
@@ -92,6 +126,7 @@ def get_categories():
                             shade_tolerance=all_shade_tolerance)
 
 
+# ------------------------------------ CREATE ----- #
 @app.route('/add_category')
 def add_category():
     all_plant_types = mongo.db.plant_types.find()
@@ -108,6 +143,7 @@ def insert_category():
     return redirect(url_for('get_categories'))
 
 
+# ------------------------------------ UPDATE ----- #
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
     the_category =  mongo.db.categories.find_one({"_id": ObjectId(category_id)})
@@ -125,6 +161,7 @@ def update_category(category_id):
     return redirect(url_for('get_categories'))
 
 
+# ------------------------------------ DELETE ----- #
 @app.route('/delete_category/<category_id>')
 def delete_category(category_id):
     mongo.db.categories.remove({'_id': ObjectId(category_id)})
