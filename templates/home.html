@@ -19,67 +19,74 @@
 <body>
   <!-- header -->
   <header>
-  <!-- navbar -->
-  <div>
-    <!-- Plants Dropdown Structure -->
-    <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
-      <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
-      <li class="divider"></li>
-      <li><a href="{{url_for('add_plant')}}"><span class="fas fa-leaf"></span>Add Plants</a></li>
-    </ul>
-    <ul id="dropdown-plants-mobile-sidenav" class="dropdown-content">
-      <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
-      <li><a href="{{url_for('add_plant')}}"><span class="fas fa-leaf"></span>Add Plants</a></li>
-    </ul>
-    <!-- Categories Dropdown Structure -->
-    <ul id="dropdown-categories-nav-mobile" class="dropdown-content">
-      <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>View Categories</a></li>
-      <li class="divider"></li>
-      <li><a href="{{url_for('add_category')}}"><span class="fas fa-cog"></span>Add Category</a></li>
-    </ul>
-    <ul id="dropdown-categories-mobile-sidenav" class="dropdown-content">
-      <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>View Categories</a></li>
-      <li><a href="{{url_for('add_category')}}"><span class="fas fa-cog"></span>Add Category</a></li>
-    </ul>
-    <nav class="white">
-      <div class="nav-wrapper">
-        <div>
-          <a href="{{url_for('get_home')}}" class="brand-logo left">
-            <img src="../static/assets/images/the_green_corner_logo.png" alt="the green corner logo">
-          </a>
-        </div>
-        <div>
-          <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down center">
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-nav-mobile"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-nav-mobile"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
-          </ul>
-        </div>
-        <div>
-          <ul class="side-nav" id="mobile-sidenav">
-            <li>
-              <div class="user-view overlay-sidenav">
-                <div class="background">
-                  <img src="../static/assets/images/leaves-291024_640.jpg" alt="leaf background">
+    <!-- navbar -->
+    <div>
+      <!-- Plants Dropdown Structure -->
+      <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
+        <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
+        <li class="divider"></li>
+        <li><a href="{{url_for('add_plant')}}"><span class="fas fa-leaf"></span>Add Plants</a></li>
+      </ul>
+      <ul id="dropdown-plants-mobile-sidenav" class="dropdown-content">
+        <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
+        <li><a href="{{url_for('add_plant')}}"><span class="fas fa-leaf"></span>Add Plants</a></li>
+      </ul>
+      <!-- Categories Dropdown Structure -->
+      <ul id="dropdown-categories-nav-mobile" class="dropdown-content">
+        <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>View Categories</a></li>
+        <li class="divider"></li>
+        <li><a href="{{url_for('add_category')}}"><span class="fas fa-cog"></span>Add Category</a></li>
+      </ul>
+      <ul id="dropdown-categories-mobile-sidenav" class="dropdown-content">
+        <li><a href="{{url_for('get_categories')}}"><span class="fas fa-cog"></span>View Categories</a></li>
+        <li><a href="{{url_for('add_category')}}"><span class="fas fa-cog"></span>Add Category</a></li>
+      </ul>
+      <nav class="white">
+        <div class="nav-wrapper">
+          <div>
+            <a href="{{url_for('get_home')}}" class="brand-logo left">
+              <img src="../static/assets/images/the_green_corner_logo.png" alt="the green corner logo">
+            </a>
+          </div>
+          <div>
+            <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
+            <!-- Navbar -->
+            <ul id="nav-mobile" class="right hide-on-med-and-down center">
+              <li><a href="{{ url_for('get_search') }}"><span class="fas fa-search"></span>Search </a></li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-nav-mobile"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-nav-mobile"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
+            </ul>
+          </div>
+          <div>
+            <!-- Sidenav -->
+            <ul class="side-nav" id="mobile-sidenav">
+              <li>
+                <div class="user-view overlay-sidenav">
+                  <div class="background">
+                    <img src="../static/assets/images/leaves-291024_640.jpg" alt="leaf background">
+                  </div>
+                  <div class="center">
+                    <a href="#!"><img class="square" src="../static/assets/images/the_green_corner_logo.png"></a>
+                    <a href="#!"><span class="white-text title">The Green Corner</span></a>
+                  </div>
                 </div>
-                <div class="center">
-                  <a href="#!"><img class="square" src="../static/assets/images/the_green_corner_logo.png"></a>
-                  <a href="#!"><span class="white-text title">The Green Corner</span></a>
-                </div>
-              </div>
-            </li>
-            <!-- Dropdown Trigger -->
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-mobile-sidenav"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
-            <li>
-              <div class="divider"></div>
-            </li>
-            <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-mobile-sidenav"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
-          </ul>
-        </div>
-    </nav>
-  </div>
-</header>
+              </li>
+              <li><a class ="button" href="{{ url_for('get_search') }}"><span class="fas fa-search"></span>Search </a></li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <!-- Dropdown Trigger -->
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-mobile-sidenav"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
+              <li>
+                <div class="divider"></div>
+              </li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-mobile-sidenav"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
+            </ul>
+          </div>
+      </nav>
+    </div>
+  </header>
 
   <!-- main -->
   <main>

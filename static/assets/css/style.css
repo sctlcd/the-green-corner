@@ -47,11 +47,11 @@ h4 {
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
-#mobile-sidenav .dropdown-button {
+#mobile-sidenav .button, #mobile-sidenav .dropdown-button {
   font-size: 16px;
 }
 
-#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog {
+#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search {
   font-size: 20px;
 }
 
@@ -113,7 +113,7 @@ nav ul a:hover {
   font-size: 16px;
 }
 
-#nav-mobile li .dropdown-button .fa-leaf, #nav-mobile li .dropdown-button .fa-cog {
+#nav-mobile li .dropdown-button .fa-leaf, #nav-mobile li .dropdown-button .fa-cog, #nav-mobile li .fa-search {
   font-size: 20px;
 }
 
@@ -122,7 +122,7 @@ nav ul a:hover {
   font-size: 14px;
 }
 
-#dropdown-categories-nav-mobile li>a .fa-cog, #dropdown-plants-nav-mobile li>a .fa-leaf {
+#dropdown-categories-nav-mobile li>a .fa-cog, #dropdown-plants-nav-mobile li>a .fa-leaf, #dropdown-categories-nav-mobile li>a .fa-search {
   font-size: 18px;
 }
 
@@ -136,7 +136,7 @@ nav ul a:hover {
   padding-left: 5px;
 }
 
-#nav-mobile .fa-leaf, #nav-mobile .fa-cog, #mobile-sidenav .fa-leaf, #mobile-sidenav .fa-cog {
+#nav-mobile .fa-leaf, #nav-mobile .fa-cog, #nav-mobile .fa-search, #mobile-sidenav .fa-leaf, #mobile-sidenav .fa-cog, #mobile-sidenav .fa-search {
   padding-right: 10px;
 }
 
