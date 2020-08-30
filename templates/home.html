@@ -20,7 +20,8 @@
   <!-- header -->
   <header>
     <!-- navbar -->
-    <div>
+    <div class="navbar-fixed">
+
       <!-- Plants Dropdown Structure -->
       <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
         <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
@@ -49,10 +50,25 @@
             </a>
           </div>
           <div>
-            <a href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
+            <!-- <ul>
+              <li> -->
+            <a id="menu-collapse-button" href="#" data-activates="mobile-sidenav" class="button-collapse right"><i class="material-icons menu">menu</i></a>
+            <!-- </li>
+            </ul> -->
             <!-- Navbar -->
             <ul id="nav-mobile" class="right hide-on-med-and-down center">
-              <li><a href="{{ url_for('get_search') }}"><span class="fas fa-search"></span>Search </a></li>
+              <li>
+                <!-- Search bar -->
+                <form action="{{ url_for('search_plants') }}" method="POST">
+                  <div class="input-field">
+                    <input id="search_text" type="search" name="search_text">
+                    <label class="label-icon" for="search_text">
+                      <i class="material-icons left">search</i>
+                    </label>
+                    <i id="close" class="material-icons">close</i>
+                  </div>
+                </form>
+              </li>
               <!-- Dropdown Trigger -->
               <li><a class="dropdown-button" href="#!" data-activates="dropdown-plants-nav-mobile"><span class="fas fa-leaf"></span>Plants <span class="fas fa-caret-down"></span></a></li>
               <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-nav-mobile"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
@@ -72,7 +88,7 @@
                   </div>
                 </div>
               </li>
-              <li><a class ="button" href="{{ url_for('get_search') }}"><span class="fas fa-search"></span>Search </a></li>
+              <li><a class="button" href="{{ url_for('search_plants') }}"><span class="fas fa-search"></span>Search </a></li>
               <li>
                 <div class="divider"></div>
               </li>
@@ -173,6 +189,7 @@
       </div>
       <div class="parallax"><img src="static/assets/images/gooseberry-176450_1920.jpg" alt="gooseberry-176450_1920"></div>
     </div>
+
 
     <!-- footer -->
     <footer class="page-footer">

@@ -140,6 +140,36 @@ nav ul a:hover {
   padding-right: 10px;
 }
 
+.nav-wrapper ul form{
+    margin: auto;
+    width: 100%;
+    /* display: inline-block; */
+}
+
+.nav-wrapper ul .input-field{
+    padding-top: 7px;
+}
+
+.nav-wrapper ul form #search_text{
+    height: 50px;
+}
+
+.nav-wrapper ul form .label-icon i {
+  color: #444;
+  font-size: 30px;
+  line-height: 44px;
+}
+
+.nav-wrapper ul form label {
+  font-size: 16px;
+  line-height: 44px;
+}
+
+.nav-wrapper ul form i#close {
+  font-size: 16px;
+}
+
+
 /* -------------------------------------------------------- Common ---------------------------------*/
 p {
   line-height: 2rem;

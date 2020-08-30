@@ -69,6 +69,8 @@ def edit_plant(plant_id):
                             plant_types=all_plant_types,
                             shade_tolerance=all_shade_tolerance)
 
+# <form action="{{ url_for('update_plant', plant_id=plant._id) }}" method="POST" class="col s12">
+
 
 @app.route('/update_plant/<plant_id>', methods=["POST"])
 def update_plant(plant_id):
@@ -95,15 +97,11 @@ def delete_plant(plant_id):
 
 
 # ------------------------------------ SEARCH ----- #
-@app.route('/get_search')
-def get_search():
-    return render_template("plantssearch.html")
-
-
-@app.route('/search_plants/<plant_name>')
-def search_plants(plant_name):
-    plants_search = mongo.db.plants.find({'common_name': ObjectId(plant_name)})
-    return redirect(url_for('plantsearch.html'), plants_search=plants_search)
+@app.route('/search_plants', methods=['POST'])
+def search_plants():
+    search_text = request.form.get('search_text')
+    plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}}))
+    return render_template("plantresults.html", plants_search=plants_search)
 
 
 # ---------------------------- #
