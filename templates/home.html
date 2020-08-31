@@ -20,8 +20,7 @@
   <!-- header -->
   <header>
     <!-- navbar -->
-    <div class="navbar-fixed">
-
+    <div class="navbar">
       <!-- Plants Dropdown Structure -->
       <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
         <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
@@ -57,6 +56,7 @@
             </ul> -->
             <!-- Navbar -->
             <ul id="nav-mobile" class="right hide-on-med-and-down center">
+              <!-- <li><a class ="button" href="{{ url_for('search_plants') }}"><span class="fas fa-search"></span>Search </a></li> -->
               <li>
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
@@ -88,7 +88,19 @@
                   </div>
                 </div>
               </li>
-              <li><a class="button" href="{{ url_for('search_plants') }}"><span class="fas fa-search"></span>Search </a></li>
+              <!-- <li><a class="button" href="{{ url_for('search_plants') }}"><span class="fas fa-search"></span>Search </a></li> -->
+              <li>
+                <!-- Search bar -->
+                <form action="{{ url_for('search_plants') }}" method="POST">
+                  <div class="input-field">
+                    <input id="search_text" type="search" name="search_text">
+                    <label class="label-icon" for="search_text">
+                      <i class="material-icons left">search</i>
+                    </label>
+                    <i id="close" class="material-icons">close</i>
+                  </div>
+                </form>
+              </li>
               <li>
                 <div class="divider"></div>
               </li>

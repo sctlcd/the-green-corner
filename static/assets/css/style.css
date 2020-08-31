@@ -140,6 +140,10 @@ nav ul a:hover {
   padding-right: 10px;
 }
 
+.nav-wrapper ul form #search_text {
+    height: 35px;
+}
+
 .nav-wrapper ul form{
     margin: auto;
     width: 100%;
@@ -148,10 +152,6 @@ nav ul a:hover {
 
 .nav-wrapper ul .input-field{
     padding-top: 7px;
-}
-
-.nav-wrapper ul form #search_text{
-    height: 50px;
 }
 
 .nav-wrapper ul form .label-icon i {
