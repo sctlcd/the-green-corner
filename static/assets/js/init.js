@@ -1,9 +1,9 @@
 $(document).ready(function() {
+
   $(".button-collapse").sideNav();
   $('.parallax').parallax();
   $('.collapsible').collapsible();
   $('select').material_select();
-
   $('.modal').modal();
 
   // for select "required" attribute
@@ -14,4 +14,13 @@ $(document).ready(function() {
     width: 0
   });
 
+  // reset search text when focus out of the input field in navbar
+  $('#nav-mobile #search_text').focusout(function() {
+    $(this).val("");
+  });
+
+  // reset search text when focus out of the input field in sidenav
+  $('#mobile-sidenav #search_text').focusout(function() {
+    $(this).val("");
+  });
 });

@@ -13,6 +13,7 @@
   <!-- Import Materialize -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="{{url_for('static', filename='assets/css/style.css')}}" type="text/css" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='assets/images/favicon.ico') }}">
 </head>
 
 <body>
@@ -55,7 +56,7 @@
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
                   <div class="input-field">
-                    <input id="search_text" type="search" name="search_text">
+                    <input id="search_text" type="search" name="search_text" placeholder="Search plants...">
                     <label class="label-icon" for="search_text">
                       <i class="material-icons left">search</i>
                     </label>
@@ -86,7 +87,7 @@
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
                   <div class="input-field">
-                    <input id="search_text" type="search" name="search_text">
+                    <input id="search_text" type="search" name="search_text" placeholder="Search plants...">
                     <label class="label-icon" for="search_text">
                       <i class="material-icons left">search</i>
                     </label>

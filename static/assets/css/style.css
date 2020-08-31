@@ -108,13 +108,14 @@ nav ul a:hover {
 }
 
 #mobile-sidenav form #search_text {
-    height: 35px;
+    height: 38px;
 }
 
 #mobile-sidenav form{
     margin: auto;
     width: 100%;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 #mobile-sidenav .input-field{
@@ -124,7 +125,7 @@ nav ul a:hover {
 #mobile-sidenav form .label-icon i {
   color: #444;
   font-size: 24px;
-  line-height: 44px;
+  line-height: 30px;
 }
 
 #mobile-sidenav form label {
@@ -133,6 +134,12 @@ nav ul a:hover {
 }
 
 #mobile-sidenav form i#close {
+  font-size: 16px;
+  line-height: 52px;
+}
+
+#mobile-sidenav input#search_text {
+  margin: 0px;
   font-size: 16px;
 }
 
@@ -168,7 +175,7 @@ nav ul a:hover {
 }
 
 #nav-mobile form #search_text {
-    height: 35px;
+    height: 50px;
 }
 
 #nav-mobile form{
@@ -183,7 +190,7 @@ nav ul a:hover {
 #nav-mobile form .label-icon i {
   color: #444;
   font-size: 30px;
-  line-height: 44px;
+  line-height: 40px;
 }
 
 #nav-mobile form label {
@@ -193,6 +200,12 @@ nav ul a:hover {
 
 #nav-mobile form i#close {
   font-size: 16px;
+  line-height: 64px;
+}
+
+#nav-mobile input#search_text {
+  margin: 0px;
+  font-size: 16px
 }
 
 /* -------------------------------------------------------- Common ---------------------------------*/
