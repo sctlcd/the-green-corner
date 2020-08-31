@@ -69,8 +69,6 @@ def edit_plant(plant_id):
                             plant_types=all_plant_types,
                             shade_tolerance=all_shade_tolerance)
 
-# <form action="{{ url_for('update_plant', plant_id=plant._id) }}" method="POST" class="col s12">
-
 
 @app.route('/update_plant/<plant_id>', methods=["POST"])
 def update_plant(plant_id):
