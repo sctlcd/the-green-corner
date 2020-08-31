@@ -3,7 +3,6 @@
 <h3><i class="fas fa-search"></i> Search results</h3>
 
 {% for plant in plants_search %}
-<!-- <form action="{{ url_for('search_plants', plant_name=plant.common_name) }}" method="GET"> -->
   <ul class="collapsible popout" data-collapsible="expandable">
     <li>
       <div class="collapsible-header">
@@ -100,6 +99,5 @@
       </div>
     </li>
   </ul>
-<!-- </form> -->
 {% endfor %}
 {% endblock %}
