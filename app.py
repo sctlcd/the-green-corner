@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from flask import send_from_directory
 from os import path
 if path.exists('env.py'):
     import env
@@ -15,6 +16,16 @@ app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 mongo = PyMongo(app)
 
 
+
+@app.route('/favicon.ico')
+def favicon():
+    """
+        Get the browsers to find my favicon.
+    """
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+
 # ---------------------- #
 #    APP ROUTES - HOME   #
 # ---------------------- #
@@ -22,6 +33,11 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/home')
 def get_home():
+    """
+        Home page to introduce the application.
+
+        Display the application purposes, contact and support the project, with option to Search.
+    """
     return render_template("home.html")
 
 
@@ -36,12 +52,22 @@ def get_home():
 # ------------------------------------ READ ----- #
 @app.route('/get_plants')
 def get_plants():
+    """
+        Read all plants from database.
+
+        Display all plants initially, with option to Search.
+    """
     return render_template("plants.html", plants=mongo.db.plants.find())
 
 
 # ------------------------------------ CREATE ----- #
 @app.route('/add_plant')
 def add_plant():
+    """
+        Create plant for database.
+
+        Inject all form data to new plant document on submit.
+    """
     all_plant_types =  mongo.db.plant_types.find()
     all_plants = mongo.db.plants.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
@@ -53,6 +79,9 @@ def add_plant():
 
 @app.route('/insert_plant', methods=['POST'])
 def insert_plant():
+    """
+        Insert new plant document into the database.
+    """
     plants = mongo.db.plants
     plants.insert_one(request.form.to_dict())
     return redirect(url_for('get_plants'))
@@ -61,6 +90,11 @@ def insert_plant():
 # ------------------------------------ UPDATE ----- #
 @app.route('/edit_plant/<plant_id>')
 def edit_plant(plant_id):
+    """
+        Edit plant for database.
+
+        Inject all existing data from the plant document into the form.
+    """
     the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
     all_plant_types =  mongo.db.plant_types.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
@@ -72,6 +106,9 @@ def edit_plant(plant_id):
 
 @app.route('/update_plant/<plant_id>', methods=["POST"])
 def update_plant(plant_id):
+    """
+        Push the edits of the plant form to the Plants collection on submit.
+    """
     plants = mongo.db.plants
     plants.update( {'_id': ObjectId(plant_id)},
     {
@@ -90,6 +127,11 @@ def update_plant(plant_id):
 # ------------------------------------ DELETE ----- #
 @app.route('/delete_plant/<plant_id>')
 def delete_plant(plant_id):
+    """
+        Delete plant from database.
+
+        Remove the plant document from the Plants collection.
+    """
     mongo.db.plants.remove({'_id': ObjectId(plant_id)})
     return redirect(url_for('get_plants'))
 
@@ -97,6 +139,11 @@ def delete_plant(plant_id):
 # ------------------------------------ SEARCH ----- #
 @app.route('/search_plants', methods=['POST'])
 def search_plants():
+    """
+        Search plant by common name from database.
+
+        Display all the database records matching with the search text entered.
+    """
     search_text = request.form.get('search_text')
     plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}}))
     return render_template("plantresults.html", plants_search=plants_search)
@@ -113,6 +160,11 @@ def search_plants():
 # ------------------------------------ READ ----- #
 @app.route('/get_categories')
 def get_categories():
+    """
+        Read all categories from database.
+
+        Display all categories initially.
+    """
     all_categories = mongo.db.categories.find()
     all_plant_types = mongo.db.plant_types.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
@@ -125,6 +177,11 @@ def get_categories():
 # ------------------------------------ CREATE ----- #
 @app.route('/add_category')
 def add_category():
+    """
+        Create category for database.
+
+        Inject all form data to new category document on submit.
+    """
     all_plant_types = mongo.db.plant_types.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
     return render_template('addcategory.html',
@@ -134,6 +191,9 @@ def add_category():
 
 @app.route('/insert_category', methods=['POST'])
 def insert_category():
+    """
+        Insert new category document into the database.
+    """
     categories = mongo.db.categories
     categories.insert_one(request.form.to_dict())
     return redirect(url_for('get_categories'))
@@ -142,6 +202,11 @@ def insert_category():
 # ------------------------------------ UPDATE ----- #
 @app.route('/edit_category/<category_id>')
 def edit_category(category_id):
+    """
+        Edit category for database.
+
+        Inject all existing data from the category document into the form.
+    """
     the_category =  mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template('editcategory.html',
                             category=the_category)
@@ -149,6 +214,9 @@ def edit_category(category_id):
 
 @app.route('/update_category/<category_id>', methods=["POST"])
 def update_category(category_id):
+    """
+        Push the edits of the category form to the Categories collection on submit.
+    """
     categories = mongo.db.categories
     categories.update( {'_id': ObjectId(category_id)},
     {
@@ -160,6 +228,11 @@ def update_category(category_id):
 # ------------------------------------ DELETE ----- #
 @app.route('/delete_category/<category_id>')
 def delete_category(category_id):
+    """
+        Delete category from database.
+
+        Remove the category document from the Categories collection.
+    """
     mongo.db.categories.remove({'_id': ObjectId(category_id)})
     return redirect(url_for('get_categories'))
 

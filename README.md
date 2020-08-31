@@ -263,7 +263,11 @@ For testing this website on the latest version of Safari, I will have to install
 
 **Chrome DevTools**
 - [Chrome DevTools] (https://developers.google.com/web/tools/chrome-devtools/)
-Console Navigating through the Website rendered no critical fails/errors in the console that were necessary to fix.
+	- Console Navigating through the Website rendered no critical fails/errors in the console that were necessary to fix.
+
+**Lighthouse in Chrome DevTools**
+- [Lighthouse] (https://developers.google.com/web/tools/lighthouse)
+	-
 
 ### Known Issues <a name="KnownIssues"></a>
 
