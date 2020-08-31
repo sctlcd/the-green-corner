@@ -47,11 +47,11 @@ h4 {
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
-#mobile-sidenav .button, #mobile-sidenav .dropdown-button {
+#mobile-sidenav .button, #mobile-sidenav .dropdown-button, #mobile-sidenav li form {
   font-size: 16px;
 }
 
-#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search {
+#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search,  {
   font-size: 20px;
 }
 
@@ -90,7 +90,6 @@ h4 {
 
 .side-nav .user-view, .side-nav .userView {
     position: relative;
-    /* padding: 32px 32px 0; */
     padding: 32px 32px 32px 64px;
     margin-bottom: 8px;
 }
@@ -106,6 +105,35 @@ nav ul a:hover {
 
 .overlay-sidenav {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+#mobile-sidenav form #search_text {
+    height: 35px;
+}
+
+#mobile-sidenav form{
+    margin: auto;
+    width: 100%;
+    padding-left: 16px;
+}
+
+#mobile-sidenav .input-field{
+    padding-top: 7px;
+}
+
+#mobile-sidenav form .label-icon i {
+  color: #444;
+  font-size: 24px;
+  line-height: 44px;
+}
+
+#mobile-sidenav form label {
+  font-size: 16px;
+  line-height: 44px;
+}
+
+#mobile-sidenav form i#close {
+  font-size: 16px;
 }
 
 /* -------------------------------------------------------- Navbar ---------------------------------*/
@@ -132,7 +160,6 @@ nav ul a:hover {
 }
 
 #nav-mobile .fa-caret-down,  #mobile-sidenav .fa-caret-down {
-  /* margin-left: 10px; */
   padding-left: 5px;
 }
 
@@ -140,35 +167,33 @@ nav ul a:hover {
   padding-right: 10px;
 }
 
-.nav-wrapper ul form #search_text {
+#nav-mobile form #search_text {
     height: 35px;
 }
 
-.nav-wrapper ul form{
+#nav-mobile form{
     margin: auto;
     width: 100%;
-    /* display: inline-block; */
 }
 
-.nav-wrapper ul .input-field{
+#nav-mobile .input-field{
     padding-top: 7px;
 }
 
-.nav-wrapper ul form .label-icon i {
+#nav-mobile form .label-icon i {
   color: #444;
   font-size: 30px;
   line-height: 44px;
 }
 
-.nav-wrapper ul form label {
+#nav-mobile form label {
   font-size: 16px;
   line-height: 44px;
 }
 
-.nav-wrapper ul form i#close {
+#nav-mobile form i#close {
   font-size: 16px;
 }
-
 
 /* -------------------------------------------------------- Common ---------------------------------*/
 p {
