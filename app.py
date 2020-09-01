@@ -161,7 +161,7 @@ def search_plants():
         Display all the database records matching with the search text entered.
     """
     search_text = request.form.get('search_text')
-    plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}}))
+    plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'category': {"$regex": f'.*{search_text}.*'}}))
     return render_template("plantresults.html", plants_search=plants_search)
 
 

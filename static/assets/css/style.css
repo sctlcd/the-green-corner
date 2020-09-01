@@ -115,7 +115,6 @@ nav ul a:hover {
     margin: auto;
     width: 100%;
     padding-left: 16px;
-    padding-right: 16px;
 }
 
 #mobile-sidenav .input-field{
@@ -142,6 +141,12 @@ nav ul a:hover {
   margin: 0px;
   font-size: 16px;
 }
+
+#mobile-sidenav .input-field input[type=search] {
+  height: inherit;
+  padding-left: 3.1rem;
+}
+
 
 /* -------------------------------------------------------- Navbar ---------------------------------*/
 #nav-mobile a {
@@ -201,12 +206,19 @@ nav ul a:hover {
 #nav-mobile form i#close {
   font-size: 16px;
   line-height: 64px;
+  margin-left: 50px;
 }
 
 #nav-mobile input#search_text {
   margin: 0px;
   font-size: 16px
 }
+
+#nav-mobile .input-field input[type=search] {
+    width: 300px;
+    padding-left: 4rem;
+  }
+
 
 /* -------------------------------------------------------- Common ---------------------------------*/
 p {
