@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from flask import send_from_directory
+from werkzeug.exceptions import HTTPException
 from os import path
 if path.exists('env.py'):
     import env
@@ -24,6 +25,14 @@ def favicon():
     """
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+# ------------------------ #
+#    APP ROUTES - ERROR    #
+# ------------------------ #
+
+@app.errorhandler(HTTPException)
+def handle_exception(e):
+    return render_template("errors/errorpage.html")
 
 
 # ---------------------- #
