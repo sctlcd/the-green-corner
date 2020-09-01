@@ -17,6 +17,9 @@ app.config['MONGO_URI'] = os.getenv('MONGO_URI')
 mongo = PyMongo(app)
 
 
+# -------------------------- #
+#    APP ROUTES - FAVICON    #
+# -------------------------- #
 
 @app.route('/favicon.ico')
 def favicon():
@@ -26,12 +29,16 @@ def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
                                'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
+
 # ------------------------ #
 #    APP ROUTES - ERROR    #
 # ------------------------ #
 
 @app.errorhandler(HTTPException)
 def handle_exception(e):
+    """
+        Generic Error Handler
+    """
     return render_template("errors/errorpage.html")
 
 
