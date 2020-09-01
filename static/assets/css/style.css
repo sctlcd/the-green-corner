@@ -486,6 +486,12 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     border-bottom: 1px solid #ddd;
 }
 
+
+/* ---------------------------------------------------------- Error page ------------------------------------*/
+#back-homepage:hover {
+  color: #3caf4e;
+}
+
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
 @media only screen and (max-width : 600px) {
   #index-banner .section {

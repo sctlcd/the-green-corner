@@ -2,28 +2,24 @@
 {% block content %}
 <!-- Error 404 -->
 <div class="container-error">
-  <div class="center-align">
     <div class="row">
       <div class="col s12">
         <h3><i class="fas fa-exclamation"></i>  404 Error</h3>
-        <img src="{{ url_for('static', filename='assets/images/error404-min.jpg') }}" alt="Page Not Found" class="error-img responsive-img">
+        <img src="{{ url_for('static', filename='assets/images/error404-min.jpg') }}" alt="Page Not Found" class="responsive-img">
       </div>
     </div>
     <div class="row">
       <div class="col s12">
-        <h4 class="text-shadow-1">
-          <span class="green-text">Oops!</span>
-          Something went wrong.
+        <h4>
+          <span>Looks like something went wrong.</span>
           <br>
           Sorry, the page is not found.
           <br><br>
-          <span class="blue-text">Let's take you</span>
-          <a href="{{ url_for('get_home') }}" class="blue-light-text">back home
-            <i class="fas fa-arrow-alt-circle-left" aria-hidden="true"></i>
+          <a id="back-homepage" href="{{ url_for('get_home') }}" class="blue-light-text">Back to homepage
+            <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
           </a>
         </h2>
       </div>
     </div>
-  </div>
 </div>
 {% endblock %}
