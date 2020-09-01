@@ -87,10 +87,12 @@ def add_plant():
     all_plant_types =  mongo.db.plant_types.find()
     all_plants = mongo.db.plants.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
+    all_categories = mongo.db.categories.find()
     return render_template('addplant.html',
                            plant_types=all_plant_types,
                            plants=all_plants,
-                           shade_tolerance=all_shade_tolerance)
+                           shade_tolerance=all_shade_tolerance,
+                           categories=all_categories)
 
 
 @app.route('/insert_plant', methods=['POST'])
@@ -114,10 +116,12 @@ def edit_plant(plant_id):
     the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
     all_plant_types =  mongo.db.plant_types.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
+    all_categories = mongo.db.categories.find()
     return render_template('editplant.html',
                             plant=the_plant,
                             plant_types=all_plant_types,
-                            shade_tolerance=all_shade_tolerance)
+                            shade_tolerance=all_shade_tolerance,
+                            categories=all_categories)
 
 
 @app.route('/update_plant/<plant_id>', methods=["POST"])
