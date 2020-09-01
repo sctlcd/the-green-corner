@@ -2,8 +2,7 @@
 
 <img src="TO_ADD" alt="The Green Corner" width="700">
 <dl>
-<dt>TO_ADD</dt><br>
-<dd>TO_ADD</dd>
+<dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt><br>
 
 ---
 
@@ -61,12 +60,12 @@
 
 The general purpose of **The Green Corner** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
 
-I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Since I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written on a notebook, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to contain all my botanic experiences and knowledge centralized in one source. A few friends and family members are plant lovers and we like sharing information. With this app I can easily provide a single source for all my plant information and <em>My Green Corner</em> can easily be shared.<br />
+I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Because I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written in books/magazines, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to gather all my botanic experiences and knowledge centralized in one site. A few friends and family members like plants as well and we like sharing information. With this app I can easily provide all my plant information from only one location and <em>My Green Corner</em> can easily be shared.<br />
 In a future version of this app the users will have the possibility to authenticate so it will allow others to store their own plant information, <em>their own Green Corner</em> while having access to all plants information shared.
 
 ### Why this project? <a name="WhyThisProject"></a>
 
-This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Data Centric Development** module. The objective of this milestone project is building a full-stack site that allows your users to manage a common dataset about a particular domain.
+This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Data Centric Development** module. The objective of this milestone project is building a full-stack site that allows your users to manage a common dataset about a particular domain using CRUD operations: **C**reate, **R**ead, **U**pdate, **D**elete the selected dataset.
 
 For this project we could choose from one of the following ideas:
 - Bring your own idea(s) to life, based on providing value to users to address a specific real or imagined need.
@@ -181,7 +180,7 @@ Back to [top](#TableOfContents)
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base for markup text.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
-- [Materialize CS 0.100.2](https://materializecss.com/) - used as responsive front-end framework, based on Material Design.
+- [Materialize CS 0.100.2](https://materializecss.com/) - Used as responsive front-end framework, based on Material Design.
 - [JavaScript](https://www.javascript.com/) - Used for user interactions.
 - [jQuery](https://jquery.com/) - JavaScript library, used to simplify some of the DOM manipulations.
 
@@ -332,6 +331,7 @@ Sources of the images used on this site:
 ### Code <a name="Code"></a>
 
 - Parallax Template - [Materialize CSS](https://materializecss.com/)
+- Parallax Materialize CSS - [Materialize CSS](http://archives.materializecss.com/0.100.2/parallax.html)
 
 ### Acknowledgements <a name="Acknowledgements"></a>
 

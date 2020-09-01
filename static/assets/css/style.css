@@ -28,8 +28,8 @@ nav .brand-logo {
 }
 
 h1.teal-text.text-lighten-2 {
-  color: #3caf4e !important;
-  text-shadow: 0 0 10px black;
+  color: #fafafa !important;
+  text-shadow: 0 0 50px black;
   font-size: 70px;
 }
 
@@ -44,6 +44,58 @@ h3 {
 
 h4 {
   font-weight: 700;
+}
+
+.contact-section {
+  margin-bottom: 30px;
+}
+
+/* -------------------------------------------------------- Plant page ---------------------------------*/
+.plant-section-title {
+  text-align: left;
+  margin-left: 250px;
+}
+
+.prefix ~ label {
+    margin-left: 0.5rem;
+}
+
+.plant-section-title {
+  text-align: left;
+  margin-left: 250px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.plant-section-content {
+  text-align: left;
+  margin-left: 300px;
+}
+
+.plant-section-title label {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.plant-section-content label {
+    font-style: italic;
+}
+
+.section div #identity-section div, .section div #identity-section div label, .section div #plant-section div, .section div #plant-section div label, .section div #botanic-section div, .section div #botanic-section div label, .section div #culture div, .section div #culture div label,
+.section div #note-section div, .section div #note-section div label {
+    font-size: 1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.collapsible-body {
+    padding-bottom: 50px;
+}
+
+.plant-header {
+    font-size: 1rem;
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
@@ -70,6 +122,7 @@ h4 {
 
 #mobile-sidenav {
   background-color: #fafafa;
+  z-index: 999;
 }
 
 .side-nav li>a {
@@ -145,6 +198,10 @@ nav ul a:hover {
 #mobile-sidenav .input-field input[type=search] {
   height: inherit;
   padding-left: 3.1rem;
+}
+
+#sidenav-overlay {
+z-index: 1;
 }
 
 
@@ -694,7 +751,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   }
 
   .connect {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   .brand-logo img {
