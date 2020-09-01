@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <div class="row">
-  <h3><i class="fas fa-plus"></i>  Add Plant</h3>
+  <h3><i class="fas fa-plus"></i> Add Plant</h3>
 
   <form action="{{ url_for('insert_plant') }}" method="POST" class="col s12">
     <div class="row col s12">
@@ -44,9 +44,14 @@
           <label for="category">Category</label>
         </div>
         <div class="row">
-          <div class="input-field col s12">
-            <input id="category" name="category" type="text" class="validate" required="" aria-required="true">
-            <label for="icon_prefix" data-error="wrong" data-success="right">Category</label>
+          <div class="input-field col s12 dropdown-category">
+            <select id="category_name" name="category_name" required="" aria-required="true">
+              <option value="" disabled selected>Choose Category</option>
+              {% for category in categories %}
+              <option value="{{category.category_name}}">{{category.category_name}}</option>
+              {% endfor %}
+            </select>
+            <label for="category_name" data-error="wrong" data-success="right">Category</label>
           </div>
         </div>
       </div>
