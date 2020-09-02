@@ -250,7 +250,7 @@ For testing this website on the latest version of Safari, I will have to install
 
 **HTML**
 - [W3C HTML Validator](https://validator.w3.org/)
-    - No errors
+    - Bad value [...].Illegal character in path segment: { is not allowed.
 
 **CSS**
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -258,7 +258,7 @@ For testing this website on the latest version of Safari, I will have to install
 
 **Javascript**
 - [Javascript Validator](http://beautifytools.com/javascript-validator.php)
-	- No errors
+	-
 
 **Chrome DevTools**
 - [Chrome DevTools] (https://developers.google.com/web/tools/chrome-devtools/)

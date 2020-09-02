@@ -20,7 +20,7 @@
   <!-- header -->
   <header>
     <!-- navbar -->
-    <div>
+    <div class="navbar-fixed">
       <!-- Plants Dropdown Structure -->
       <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
         <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
@@ -55,11 +55,11 @@
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
                   <div class="input-field">
-                    <input id="search_text" type="search" name="search_text" placeholder="Search plants, categories...">
-                    <label class="label-icon" for="search_text">
+                    <input id="search_text_navbar" type="search" name="search_text_navbar" placeholder="Search plants, categories...">
+                    <label class="label-icon" for="search_text_navbar">
                       <i class="material-icons left">search</i>
                     </label>
-                    <i id="close" class="material-icons">close</i>
+                    <i id="close_navbar" class="material-icons">close</i>
                   </div>
                 </form>
               </li>
@@ -76,7 +76,7 @@
                     <img src="../static/assets/images/leaves-min.jpg" alt="leaf background">
                   </div>
                   <div class="center">
-                    <a href="#!"><img class="square" src="../static/assets/images/the_green_corner_logo-min.png"></a>
+                    <a href="#!"><img class="square" src="../static/assets/images/the_green_corner_logo-min.png" alt="The green corner logo"></a>
                     <a href="#!"><span class="white-text title">The Green Corner</span></a>
                   </div>
                 </div>
@@ -85,11 +85,11 @@
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
                   <div class="input-field">
-                    <input id="search_text" type="search" name="search_text" placeholder="Search plants, categories...">
-                    <label class="label-icon" for="search_text">
+                    <input id="search_text_sidenav" type="search" name="search_text_sidenav" placeholder="Search plants, categories...">
+                    <label class="label-icon" for="search_text_sidenav">
                       <i class="material-icons left">search</i>
                     </label>
-                    <i id="close" class="material-icons">close</i>
+                    <i id="close_sidenav" class="material-icons">close</i>
                   </div>
                 </form>
               </li>
@@ -104,6 +104,7 @@
               <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-mobile-sidenav"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
             </ul>
           </div>
+        </div>
       </nav>
     </div>
   </header>
