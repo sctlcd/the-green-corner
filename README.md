@@ -313,7 +313,7 @@ Back to [top](#TableOfContents)
 	- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
   - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), inspiring ideas for gardening,...
   - [Garden.ie](https://www.garden.ie), a website which offers accurate horticultural advices.
-
+	- [Bored panda - creative 404 error pages](https://www.boredpanda.com/50-cool-and-creative-404-error-pages/?utm_source=google&utm_medium=organic&utm_campaign=organic) for the [404 error page](TO_ADD)
 
 ### Content <a name="Content"></a>
 
@@ -324,14 +324,24 @@ TO_ADD
 Sources of the images used on this site:
 
 - From images sub-directory - [Github](https://github.com/sctlcd/match-the-memory/tree/master/app/assets/images)
-	- pexels-mike-145685.jpg - [Pexel | copyright Mike]()
-	- gooseberry-176450_1920.jpg - [Pixabay | copyright GLady]()
-	- pexels-skitterphoto-3795.jpg - [Pixabay] | copyright Greg Montani]()
+	- [garden-min](https://www.pexels.com/photo/bloom-blooming-country-countryside-145685/) - [Pexel](https://www.pexels.com/) | copyright [Mike](https://www.pexels.com/@mikebirdy)
+	- [gooseberry-176450_1920.jpg](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=176450) - [Pixabay](https://pixabay.com/) | copyright [GLady](https://pixabay.com/users/glady-768/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=176450)
+	- [leaves-min](https://pixabay.com/fr/photos/feuilles-%C3%A9t%C3%A9-vert-%C3%A9rable-saison-291024/) - [Pixabay](https://pixabay.com/) | copyright [Gregovish](https://pixabay.com/fr/users/gregovish-195074/)
+	- [lemon-min](https://pixabay.com/fr/photos/citron-citronnier-arbre-fruit-852244/) - [Pixabay](https://pixabay.com/) | copyright [GregMontani](https://pixabay.com/fr/users/gregmontani-1014946/)
+	- [meadow-min](https://www.pexels.com/photo/flowers-summer-meadow-wild-flowers-51548/) - [Pexel](https://www.pexels.com/) | copyright [Freddie Ramm](https://www.pexels.com/@freddie-ramm-6839)
+	- [wild-flowers-min](https://pixabay.com/fr/photos/fleurs-sauvages-fleurs-plante-macro-571940/) - [Pixabay](https://pixabay.com/) | copyright [DreamyArt](https://pixabay.com/fr/users/dreamyart-512893/)
+	- [the_green_corner_logo-min](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)  
+	- [search-min](https://www.flaticon.com/free-icon/loupe_882988?term=magnifying%20glass&page=1&position=12) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+	- [humour404error](https://www.pinterest.ie/pin/226587424989226051/ ) - [Pinterest](https://www.pinterest.com/) | copyright [Joe Dunaway](http://www.modelzone.com/mangrasshopper/)
+	- [favicon](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
 
 ### Code <a name="Code"></a>
 
 - Parallax Template - [Materialize CSS](https://materializecss.com/)
 - Parallax Materialize CSS - [Materialize CSS](http://archives.materializecss.com/0.100.2/parallax.html)
+- Flask 1.1 documentation - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- Jinja 2.11 documentation - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- MongoDB Atlas 3.10 documentation - [MongoDB Atlas](https://docs.atlas.mongodb.com/)
 
 ### Acknowledgements <a name="Acknowledgements"></a>
 

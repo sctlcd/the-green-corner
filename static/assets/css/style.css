@@ -47,17 +47,32 @@ h4 {
 }
 
 .contact-section {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
-/* -------------------------------------------------------- Plant page ---------------------------------*/
+.main-container h3 {
+  margin-bottom: 90px;
+}
+
+.icons-section {
+  margin-bottom: 90px;
+  margin-top: 60px;
+}
+
+.footer-section {
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+/* -------------------------------------------------------- Plants page ---------------------------------*/
 .plant-section-title {
   text-align: left;
   margin-left: 250px;
 }
 
-.prefix ~ label {
-    margin-left: 0.5rem;
+.prefix~label {
+  margin-left: 0.5rem;
 }
 
 .plant-section-title {
@@ -73,29 +88,29 @@ h4 {
 }
 
 .plant-section-title label {
-    font-size: 1rem;
-    color: #000000;
+  font-size: 1rem;
+  color: #000000;
 }
 
 .plant-section-content label {
-    font-style: italic;
+  font-style: italic;
 }
 
 .section div #identity-section div, .section div #identity-section div label, .section div #plant-section div, .section div #plant-section div label, .section div #botanic-section div, .section div #botanic-section div label, .section div #culture div, .section div #culture div label,
 .section div #note-section div, .section div #note-section div label {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .collapsible-body {
-    padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 .plant-header {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* -------------------------------------------------------- Sidenav ---------------------------------*/
@@ -103,7 +118,7 @@ strong {
   font-size: 16px;
 }
 
-#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search,  {
+#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search, {
   font-size: 20px;
 }
 
@@ -126,7 +141,7 @@ strong {
 }
 
 .side-nav li>a {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 #mobile-sidenav .square {
@@ -142,9 +157,9 @@ strong {
 }
 
 .side-nav .user-view, .side-nav .userView {
-    position: relative;
-    padding: 32px 32px 32px 64px;
-    margin-bottom: 8px;
+  position: relative;
+  padding: 32px 32px 32px 64px;
+  margin-bottom: 8px;
 }
 
 nav ul a:hover {
@@ -153,25 +168,25 @@ nav ul a:hover {
 }
 
 .side-nav li div a {
-    background-color: rgba(0, 0, 0, 0.0);
-  }
+  background-color: rgba(0, 0, 0, 0.0);
+}
 
 .overlay-sidenav {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 #mobile-sidenav form #search_text {
-    height: 38px;
+  height: 38px;
 }
 
 #mobile-sidenav form {
-    margin: auto;
-    width: 100%;
-    padding-left: 16px;
+  margin: auto;
+  width: 100%;
+  padding-left: 16px;
 }
 
 #mobile-sidenav .input-field {
-    padding-top: 7px;
+  padding-top: 7px;
 }
 
 #mobile-sidenav form .label-icon i {
@@ -201,9 +216,8 @@ nav ul a:hover {
 }
 
 #sidenav-overlay {
-z-index: 1;
+  z-index: 1;
 }
-
 
 /* -------------------------------------------------------- Navbar ---------------------------------*/
 #nav-mobile a {
@@ -228,7 +242,7 @@ z-index: 1;
   color: #31628b;
 }
 
-#nav-mobile .fa-caret-down,  #mobile-sidenav .fa-caret-down {
+#nav-mobile .fa-caret-down, #mobile-sidenav .fa-caret-down {
   padding-left: 5px;
 }
 
@@ -237,16 +251,16 @@ z-index: 1;
 }
 
 #nav-mobile form #search_text {
-    height: 50px;
+  height: 50px;
 }
 
-#nav-mobile form{
-    margin: auto;
-    width: 100%;
+#nav-mobile form {
+  margin: auto;
+  width: 100%;
 }
 
-#nav-mobile .input-field{
-    padding-top: 7px;
+#nav-mobile .input-field {
+  padding-top: 7px;
 }
 
 #nav-mobile form .label-icon i {
@@ -272,10 +286,9 @@ z-index: 1;
 }
 
 #nav-mobile .input-field input[type=search] {
-    width: 300px;
-    padding-left: 4rem;
-  }
-
+  width: 300px;
+  padding-left: 4rem;
+}
 
 /* -------------------------------------------------------- Common ---------------------------------*/
 p {
@@ -292,10 +305,10 @@ p {
 }
 
 .divider-custom {
-    margin: 0 0 0 0;
-    height: 1px;
-    overflow: hidden;
-    background-color: #e0e0e0;
+  margin: 0 0 0 0;
+  height: 1px;
+  overflow: hidden;
+  background-color: #e0e0e0;
 }
 
 .green-text {
@@ -303,12 +316,13 @@ p {
 }
 
 .blue-text {
-  color: #31628b!important;
+  color: #31628b !important;
 }
 
 .blue-light-text {
   color: #98CAE9;
 }
+
 /* -------------------------------------------------------- buttons ---------------------------------*/
 .btn, .lighten-3, .lighten-1 {
   background-color: #31628b;
@@ -323,7 +337,7 @@ p {
   margin-bottom: 14px;
 }
 
-a.btn.grey:hover, .btn.grey:hover  {
+a.btn.grey:hover, .btn.grey:hover {
   background-color: #444 !important;
   box-shadow: 0 0 5px 0px black;
 }
@@ -497,8 +511,22 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   -webkit-box-shadow: 0 0px 0 0 #9e9e9e;
 }
 
-/* ---------------------------------------------------------- Delete modal ------------------------------------*/
+.main-container .left {
+  margin-bottom: 20px;
+}
 
+.main-container .left label {
+  font-size: 20px;
+  ;
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-container .input-field label, .dropdown-category label, .dropdown-plant-type label, .dropdown-shade-tolerance label {
+  font-size: 16px;
+}
+
+/* ---------------------------------------------------------- Delete modal ------------------------------------*/
 #modal-delete {
   background-color: #fafafa;
 }
@@ -522,31 +550,77 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 }
 
 .category-frame {
-    border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-.category-frame > li {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    margin: 0 24px;
-    transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.category-frame>li {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin: 0 24px;
+  transition: margin 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .category-frame-header {
-    display: flex;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    line-height: 1.5;
-    padding: 1rem;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
 }
-
 
 /* ---------------------------------------------------------- Error page ------------------------------------*/
 #back-homepage:hover {
   color: #3caf4e;
+}
+
+img.responsive-img, video.responsive-video {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.87);
+}
+
+.container-error {
+  font-family: 'Amatic SC', cursive;
+}
+
+.container-error h4 {
+  font-weight: bold;
+}
+
+.container-error h3 {
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 90px;
+}
+
+.container-error .text h4 {
+  font-size: 40px;
+  margin: 230px 0 150px 40px;
+  font-weight: bold;
+}
+
+.container-error .back-link h4 {
+  font-size: 40px;
+  margin-top: 80px;
+}
+
+/* ---------------------------------------------------------- No result found page ------------------------------------*/
+.container-noresultfound h4 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-top: 60px;
+}
+
+.container-noresultfound h3 {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.container-noresultfound h3 {
+  margin-top: 60px;
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
@@ -560,6 +634,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   body {
     font-size: 10px;
   }
+
   h1.teal-text.text-lighten-2 {
     font-size: 30px;
   }
@@ -608,6 +683,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin: 10px 10px 7px 10px;
   }
 
+  /* buttons */
   a.btn.grey {
     height: 14px;
     line-height: 14px;
@@ -629,11 +705,48 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     line-height: 24px;
     padding: 0 1rem;
   }
+
+  /* errors */
+  .container-error h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .container-error .text h4 {
+    font-size: 15px;
+    margin: 50px 0 0 0;
+    font-weight: bold;
+  }
+
+  .container-error .back-link h4 {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  /* add/edit plants page */
+  .main-container .left {
+    margin-bottom: 15px;
+  }
+
+  .main-container .left label {
+    font-size: 12px;
+  }
+
+  .main-container .input-field label, .dropdown-category label, .dropdown-plant-type label, .dropdown-shade-tolerance label {
+    font-size: 10px;
+  }
+
+  .main-container h3 {
+    margin-bottom: 50px;
+  }
+
+  .footer-section {
+    margin-top: 20px;
+  }
 }
 
 /* extra small - small phones */
-@media only screen and (min-width: 320px) and (max-width: 575px){
-
+@media only screen and (min-width: 320px) and (max-width: 575px) {
   body {
     font-size: 12px;
   }
@@ -686,6 +799,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin: 7px 15px 7px 15px;
   }
 
+  /* buttons */
   a.btn.grey {
     height: 18px;
     line-height: 18px;
@@ -707,11 +821,48 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     line-height: 28px;
     padding: 0 1rem;
   }
+
+  /* errors */
+  .container-error h3 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .container-error .text h4 {
+    font-size: 20px;
+    margin: 90px 0 0 0;
+    font-weight: bold;
+  }
+
+  .container-error .back-link h4 {
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+  /* add/edit plants page */
+  .main-container .left {
+    margin-bottom: 15px;
+  }
+
+  .main-container .left label {
+    font-size: 14px;
+  }
+
+  .main-container .input-field label, .dropdown-category label, .dropdown-plant-type label, .dropdown-shade-tolerance label {
+    font-size: 12px;
+  }
+
+  .main-container h3 {
+    margin-bottom: 60px;
+  }
+
+  .footer-section {
+    margin-top: 30px;
+  }
 }
 
 /* Small - phones */
-@media only screen and (min-width: 576px) and (max-width: 767px){
-
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   body {
     font-size: 12px;
   }
@@ -760,6 +911,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin: 7px 15px 7px 15px;
   }
 
+  /* buttons */
   a.btn.grey {
     height: 20px;
     line-height: 20px;
@@ -781,10 +933,48 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     line-height: 28px;
     padding: 0 1rem;
   }
+
+  /* Error 404 page*/
+  .container-error h3 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .container-error .text h4 {
+    font-size: 30px;
+    margin: 140px 0 0 20px;
+    font-weight: bold;
+  }
+
+  .container-error .back-link h4 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  /* add/edit plants page */
+  .main-container .left {
+    margin-bottom: 20px;
+  }
+
+  .main-container .left label {
+    font-size: 16px;
+  }
+
+  .main-container .input-field label, .dropdown-category label, .dropdown-plant-type label, .dropdown-shade-tolerance label {
+    font-size: 12px;
+  }
+
+  .main-container h3 {
+    margin-bottom: 70px;
+  }
+
+  .footer-section {
+    margin-top: 40px;
+  }
 }
 
 /* Medium - tablets */
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -819,6 +1009,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-bottom: 60px;
   }
 
+  /* footer */
   .footer-container {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -832,6 +1023,11 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 30px;
   }
 
+  .footer-section {
+    margin-top: 50px;
+  }
+
+  /* buttons */
   a.btn.grey {
     height: 26px;
     line-height: 26px;
@@ -853,8 +1049,39 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     line-height: 30px;
     padding: 0 1rem;
   }
-}
 
-/* Large - laptop & desktop */
-@media only screen and (min-width: 992px){
- }
+  /* error 404 page */
+  .container-error h3 {
+    font-weight: bold;
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+
+  .container-error .text h4 {
+    font-size: 40px;
+    margin: 150px 0 0 40px;
+    font-weight: bold;
+  }
+
+  .container-error .back-link h4 {
+    font-size: 30px;
+    margin-top: 80px;
+  }
+
+  /* add/edit plants page */
+  .main-container .left {
+    margin-bottom: 20px;
+  }
+
+  .main-container .left label {
+    font-size: 18px;
+  }
+
+  .main-container .input-field label, .dropdown-category label, .dropdown-plant-type label, .dropdown-shade-tolerance label {
+    font-size: 14px;
+  }
+
+  .main-container h3 {
+    margin-bottom: 80px;
+  }
+}

@@ -1,12 +1,13 @@
 {% extends 'base.html' %}
+{% block title %}Add Plant{% endblock %}
 {% block content %}
 <div class="row">
   <h3><i class="fas fa-plus"></i> Add Plant</h3>
 
   <form action="{{ url_for('insert_plant') }}" method="POST" class="col s12">
     <div class="row col s12">
-      <div class="row">
-        <div>
+      <div class="row identity-section">
+        <div class="left">
           <i class="material-icons prefix">fingerprint</i>
           <label for="identity">Identity</label>
         </div>
@@ -39,13 +40,13 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">category</i>
           <label for="category">Category</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-category">
-            <select id="category_name" name="category_name" required="" aria-required="true">
+            <select id="category_name" name="category_name">
               <option value="" disabled selected>Choose Category</option>
               {% for category in categories %}
               <option value="{{category.category_name}}">{{category.category_name}}</option>
@@ -56,13 +57,13 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">eco</i>
           <label for="botanic">Botanic</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-plant-type">
-            <select id="plant_type" name="plant_type" required="" aria-required="true">
+            <select id="plant_type" name="plant_type">
               <option value="" disabled selected>Choose Plant type</option>
               {% for type in plant_types %}
               <option value="{{type.plant_type}}">{{type.plant_type}}</option>
@@ -73,13 +74,13 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">wb_sunny</i>
           <label for="culture">Culture</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-shade-tolerance">
-            <select id="shade_tolerance" name="shade_tolerance" required="" aria-required="true">
+            <select id="shade_tolerance" name="shade_tolerance">
               <option value="" disabled selected>Choose Shade tolerance</option>
               {% for tolerance in shade_tolerance %}
               <option value="{{tolerance.shade_tolerance_name}}">{{tolerance.shade_tolerance_name}}</option>
@@ -90,7 +91,7 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">sticky_note_2</i>
           <label for="note_label">Note</label>
         </div>

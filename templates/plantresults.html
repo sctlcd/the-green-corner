@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
+{% block title %}Plant search results{% endblock %}
 {% block content %}
-<h3><i class="fas fa-search"></i>  Plant search results</h3>
+<h3><i class="fas fa-search"></i> Plant search results</h3>
 
-{% for plant in plants_search %}
+{% if plants_search.length == 0 %}
+  <h4> No result for this search</h4>
+{% else %}
+  {% for plant in plants_search %}
   <ul class="collapsible popout" data-collapsible="expandable">
     <li>
       <div class="collapsible-header">
@@ -99,5 +103,6 @@
       </div>
     </li>
   </ul>
-{% endfor %}
+  {% endfor %}
+{% endif %}
 {% endblock %}
