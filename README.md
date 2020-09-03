@@ -2,7 +2,9 @@
 
 <img src="TO_ADD" alt="The Green Corner" width="700">
 <dl>
-<dd>Hey! Are you a plant lover? Here you go! [The Green Corner](TO_ADD) </dd>
+<dd>Hey! Are you a plant lover?</dd>
+<dd>and/or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
+<dd>Here you go! [The Green Corner](TO_ADD) </dd>
 <dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt><br>
 
 ---
@@ -201,8 +203,8 @@ Back to [top](#TableOfContents)
 
 ### Data integration <a name="Dataintegration"></a>
 
-I chose to use MongoDB for my project in case the website gets a huge amount of data in the future. I also wanted the user to be able to choose what data they gather in the plant form. I thought MongoDB would offer more flexibility concerning my website.
-Moreover before this project I've never used MongoDB so it was the opportunity to get new knowledge and new learning.
+I chose to use MongoDB for my project in case the website gets a big amount of data in the future. I also wanted the user to be able to choose what data they gather in the plant form. I believe MongoDB offers more flexibility concerning my website in the long run.
+Moreover before this project I've never used MongoDB so it was the opportunity to get new knowledge and learning a new technology.
 
 Back to [top](#TableOfContents)
 
@@ -379,7 +381,19 @@ My testing coverage for this project can be found [here](TO_ADD) in the testing 
 
 |  | Galaxy S5 | Pixel | Pixel 2 XL |iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | iPad | iPad Pro | Desktop 1024px | Desktop >1200px |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-|  |  |  |  |  |  |  |  |  |  |  |
+View the site from any devices (mobile, tablet, desktop)|  |  |  |  |  |  |  |  |  |  |  |
+View the presentation home page|  |  |  |  |  |  |  |  |  |  |  |
+View all the plants|  |  |  |  |  |  |  |  |  |  |  |
+Add a plant|  |  |  |  |  |  |  |  |  |  |  |
+Edit a plant|  |  |  |  |  |  |  |  |  |  |  |
+Delete a plant|  |  |  |  |  |  |  |  |  |  |  |
+View all the categories|  |  |  |  |  |  |  |  |  |  |  |
+Add a category|  |  |  |  |  |  |  |  |  |  |  |
+Edit a category|  |  |  |  |  |  |  |  |  |  |  |
+Delete a category|  |  |  |  |  |  |  |  |  |  |  |
+Search by scientific name, common name, category|  |  |  |  |  |  |  |  |  |  |  |
+View a specific message if no search result found|  |  |  |  |  |  |  |  |  |  |  |
+View a error page if the page doesn't exist|  |  |  |  |  |  |  |  |  |  |  |
 
 Back to [top](#TableOfContents)
 
@@ -392,7 +406,11 @@ Back to [top](#TableOfContents)
 | website is responsive < 767 px |  |  |  |  |  |  |  |  |  |  |
 | website is responsive > 768 px |  |  |  |  |  |  |  |  |  |  |
 |**home.html** |
-|  |  |  |  |  |  |  |  |  |  |  |
+| Navigation bar |  |  |  |  |  |  |  |  |  |  |
+| logo / link |  |  |  |  |  |  |  |  |  |  |
+| menu / links / buttons |  |  |  |  |  |  |  |  |  |  |
+| Content page: Images / text / links / buttons |  |  |  |  |  |  |  |  |  |  |
+| Footer: text / links / buttons|  |  |  |  |  |  |  |  |  |  |
 
 Back to [top](#TableOfContents)
 
@@ -411,8 +429,8 @@ I tested the website across the 6 main browsers in both desktop and mobile confi
 
 |All pages | Chrome | Edge | Firefox | Safari | Opera | IE |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- |
-| Expected appearance |  |  |  |  |  |  |
-| Expected responsiveness |  |  |  |  |  |  |
+| Expected appearance | Good | Fair | Good | Poor | Good | Poor |
+| Expected responsiveness | Good | Good | Good | Poor | Good | Poor |
 
 - IE: Some CSS3 properties and HTML5 elements are not fully supported
 
@@ -436,23 +454,23 @@ Back to [top](#TableOfContents)
 **HTML**
 - [W3C HTML Validator](https://validator.w3.org/)
     - Jinja template syntax not understood. Relative errors shows : `{{ variables }}`, `{% for %} {% endfor %}`, etc.
-		- No errors for the remaining code
+		- No errors No errors for the remaining code
 
 **CSS**
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-	-
+	- No errors
 
 **Javascript**
-- [Javascript Validator](http://beautifytools.com/javascript-validator.php)
-	-
+- [Javascript Validator](https://jshint.com/)
+	- No errors
 
 **Chrome DevTools**
-- [Chrome DevTools] (https://developers.google.com/web/tools/chrome-devtools/)
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
 	- Console Navigating through the Website rendered no critical fails/errors in the console that were necessary to fix.
 
 **Python**
-- [PEP8 Online](http://pep8online.com/)
-    -
+- [Python validator](https://pythonbuddy.com/)
+    - TO_ADD !!to_fix!!
 
 Back to [top](#TableOfContents)
 

@@ -27,7 +27,8 @@ def favicon():
         Get the browsers to find my favicon.
     """
     return send_from_directory(os.path.join(app.root_path, 'static'),
-                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+                                'favicon.ico',
+                                mimetype='image/vnd.microsoft.icon')
 
 
 # ------------------------ #
@@ -52,7 +53,8 @@ def get_home():
     """
         Home page to introduce the application.
 
-        Display the application purposes, contact and support the project, with option to Search.
+        Display the application purposes, contact and support the
+        project, with option to Search.
     """
     return render_template("home.html")
 
@@ -127,7 +129,8 @@ def edit_plant(plant_id):
 @app.route('/update_plant/<plant_id>', methods=["POST"])
 def update_plant(plant_id):
     """
-        Push the edits of the plant form to the Plants collection on submit.
+        Push the edits of the plant form to the Plants collection on
+        submit.
     """
     plants = mongo.db.plants
     plants.update( {'_id': ObjectId(plant_id)},
@@ -162,14 +165,17 @@ def search_plants():
     """
         Search plant by common name from database.
 
-        Display all the database records matching with the search text entered.
+        Display all the database records matching with the search text
+        entered.
     """
     search_text = request.form.get('search_text')
     plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'category': {"$regex": f'.*{search_text}.*'}}))
     if search_text == "" or len(plants_search) == 0 :
-        return render_template("nosearchresults.html", plants_search=plants_search)
+        return render_template("nosearchresults.html",
+        plants_search=plants_search)
     else:
-        return render_template("plantresults.html", plants_search=plants_search)
+        return render_template("plantresults.html",
+        plants_search=plants_search)
 
 
 # ---------------------------- #
@@ -238,7 +244,8 @@ def edit_category(category_id):
 @app.route('/update_category/<category_id>', methods=["POST"])
 def update_category(category_id):
     """
-        Push the edits of the category form to the Categories collection on submit.
+        Push the edits of the category form to the Categories collection
+        on submit.
     """
     categories = mongo.db.categories
     categories.update( {'_id': ObjectId(category_id)},

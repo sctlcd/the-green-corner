@@ -36,27 +36,27 @@
           <div id="identity-section">
             <div class="plant-section-title">
               <i class="material-icons prefix">fingerprint</i>
-              <label for="identity">Identity</label>
+              <label id="identity">Identity</label>
             </div>
             <div class="plant-section-content">
               <div>
-                <label for="scientific_name">Scientific name: </label>
+                <label id="scientific-name-label">Scientific name: </label>
                 <span id="scientific_name">{{ plant.scientific_name }}</span>
               </div>
               <div>
-                <label for="common_name">Common name: </label>
+                <label id="common-name-label-label">Common name: </label>
                 <span id="common_name">{{ plant.common_name }}</span>
               </div>
               <div>
-                <label for="genus">Genus: </label>
+                <label id="genus-label">Genus: </label>
                 <span id="genus">{{ plant.genus }}</span>
               </div>
               <div>
-                <label for="species">Species: </label>
+                <label id="species-label">Species: </label>
                 <span id="species">{{ plant.species }}</span>
               </div>
               <div>
-                <label for="family">Family: </label>
+                <label id="family-label">Family: </label>
                 <span id="family">{{ plant.family }}</span>
               </div>
             </div>
@@ -64,40 +64,40 @@
           <div id="plant-section">
             <div class="plant-section-title">
               <i class="material-icons prefix">category</i>
-              <label for="category">Category</label>
+              <label id="category-label-section">Category</label>
             </div>
             <div class="plant-section-content">
-              <label for="category">Category: </label>
+              <label id="category-label">Category: </label>
               <span id="category">{{ plant.category }}</span>
             </div>
           </div>
           <div id="botanic-section">
             <div class="plant-section-title">
               <i class="material-icons prefix">eco</i>
-              <label for="botanic">Botanic</label>
+              <label id="botanic-label-section">Botanic</label>
             </div>
             <div class="plant-section-content">
-              <label for="plant_type">Plant type: </label>
+              <label id="plant-type-label">Plant type: </label>
               <span id="plant_type">{{ plant.plant_type }}</span>
             </div>
           </div>
           <div id="culture">
             <div class="plant-section-title">
               <i class="material-icons prefix">wb_sunny</i>
-              <label for="culture">Culture</label>
+              <label id="culture-label-section">Culture</label>
             </div>
             <div class="plant-section-content">
-              <label for="plant_type">Shade tolerance: </label>
-              <span id="plant_type">{{ plant.shade_tolerance }}</span>
+              <label id="shade-tolerance-label">Shade tolerance: </label>
+              <span id="shade_tolerance">{{ plant.shade_tolerance }}</span>
             </div>
           </div>
           <div id="note-section">
             <div class="plant-section-title">
               <i class="material-icons prefix">sticky_note_2</i>
-              <label for="note_label">Note</label>
+              <label id="note-label-section">Note</label>
             </div>
             <div class="plant-section-content">
-              <label for="note">Note</label>
+              <label id="note-label">Note</label>
               <span id="note" class="materialize-textarea">{{ plant.note }}</span>
             </div>
           </div>

@@ -118,7 +118,7 @@ strong {
   font-size: 16px;
 }
 
-#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search, {
+#mobile-sidenav a .fa-leaf, #mobile-sidenav a .fa-cog, #mobile-sidenav a .fa-search {
   font-size: 20px;
 }
 
@@ -200,7 +200,7 @@ nav ul a:hover {
   line-height: 44px;
 }
 
-#mobile-sidenav form i#close {
+#mobile-sidenav form i#close_sidenav {
   font-size: 16px;
   line-height: 52px;
 }
@@ -274,7 +274,7 @@ nav ul a:hover {
   line-height: 44px;
 }
 
-#nav-mobile form i#close {
+#nav-mobile form i#close_navbar {
   font-size: 16px;
   line-height: 64px;
   margin-left: 50px;
