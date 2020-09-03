@@ -166,9 +166,7 @@ def search_plants():
     """
     search_text = request.form.get('search_text')
     plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'category': {"$regex": f'.*{search_text}.*'}}))
-    print (len(plants_search))
-    if search_text == "":
-        print (search_text)
+    if search_text == "" or len(plants_search) == 0 :
         return render_template("nosearchresults.html", plants_search=plants_search)
     else:
         return render_template("plantresults.html", plants_search=plants_search)

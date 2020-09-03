@@ -175,7 +175,7 @@ nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-#mobile-sidenav form #search_text {
+#mobile-sidenav form #search_text_sidenav {
   height: 38px;
 }
 
@@ -205,7 +205,7 @@ nav ul a:hover {
   line-height: 52px;
 }
 
-#mobile-sidenav input#search_text {
+#mobile-sidenav input#search_text_sidenav {
   margin: 0px;
   font-size: 16px;
 }
@@ -250,7 +250,7 @@ nav ul a:hover {
   padding-right: 10px;
 }
 
-#nav-mobile form #search_text {
+#nav-mobile form #search_text_navbar {
   height: 50px;
 }
 
@@ -280,7 +280,7 @@ nav ul a:hover {
   margin-left: 50px;
 }
 
-#nav-mobile input#search_text {
+#nav-mobile input#search_text_navbar {
   margin: 0px;
   font-size: 16px
 }
