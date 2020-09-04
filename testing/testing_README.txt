@@ -19,20 +19,20 @@ View a specific message if no search result found| Pass | - | - | - | - | - | - 
 View a error page if the page doesn't exist| - | Pass | - | - | - | - | - | - | - | - | - |
 
 
-| User Stories - As a user, I want to... | Expected outcome | Actual outcome |
-| :--- | :--- | :---|
-| View the site from any devices (mobile, tablet, desktop) | The website should be responsible and displayed correctly | as expected |
-| View all the plants | Click on Plants menu then View plant or on "Get started" button from the home page, the list of plants should be displayed. Each plants should have a collapsible menu containing fields organized by section (Identity, Category, Botanic, Culture, Note) and modify and delete buttons | as expected |
-| Add a plant | Click on Plants menu then Add Plant sub-menu, fill all the fields and submit. The plant should be added in the Plants page and in the database | as expected |
-| Edit a plant | Click on Edit button for the chosen plant in the Plants page, update fields and submit. The plant should be updated in the Plants page and in the database | as expected |
-| Delete a plant | Click on Delete button for the chosen plant in the Plants page. A confirmation modal should pop up with yes and no buttons. Agree. The plant should be updated in the Plants page and in the database | as expected |
-| View all the categories | Click on Categories menu then View category, the list of categories should be displayed and modify and delete buttons | as expected |
-| Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit. The category should be added in the Categories page and in the database | as expected |
-| Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit. The category should be updated in the Categories page and in the database | as expected |
-| Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree. The category should be updated in the Categories page and in the database | as expected |
-| Search by scientific name, common name, category | Enter a scientific plant name (or part of it) and submit.  The result of the search should be displayed in the Plants page. Redo this test case with a common plant name and a plant category (or part of it) | as expected |
-| View a specific message if no search result found | Enter a search which does not exist. The No results found page should be displayed (example: *aaaaa* ) | not as expected |
-| View a error page if the page doesn't exist | Enter an URL which does not exist. The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
+| User Stories - As a user, I want to... | Steps | Expected outcome | Actual outcome |
+| :--- | :--- | :---| :---|
+| View the site from any devices (mobile, tablet, desktop) | - | The website should be responsible and displayed correctly | as expected |
+| View all the plants | Click on Plants menu then View plant or on "Get started" button from the home page, the list of plants should be displayed | Each plant should have a collapsible menu containing fields organized by section (Identity, Category, Botanic, Culture, Note) and modify and delete buttons | as expected |
+| Add a plant | Click on Plants menu then Add Plant sub-menu, fill all the fields and submit | The plant should be added in the Plants page and in the database | as expected |
+| Edit a plant | Click on Edit button for the chosen plant in the Plants page, update fields and submit | The plant should be updated in the Plants page and in the database | as expected |
+| Delete a plant | Click on Delete button for the chosen plant in the Plants page. A confirmation modal should pop up with yes and no buttons. Agree | The plant should be updated in the Plants page and in the database | as expected |
+| View all the categories | Click on Categories menu then View category | The list of categories should be displayed and modify and delete buttons in the Categories page | as expected |
+| Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit | The category should be added in the Categories page and in the database | as expected |
+| Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit | The category should be updated in the Categories page and in the database | as expected |
+| Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree | The category should be updated in the Categories page and in the database | as expected |
+| Search by scientific name, common name, category | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name and a plant category (or part of it) | The result of the search should be displayed in the Plants page | as expected |
+| View a specific message if no search result found | Enter a search which does not exist | The No results found page should be displayed (example: *aaaaa* ) | not as expected |
+| View a error page if the page doesn't exist | Enter an URL which does not exist | The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
 
 
 ## Layout responsiveness

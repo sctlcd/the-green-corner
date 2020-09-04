@@ -42,7 +42,7 @@ h4 {
 }
 
 .contact-section a {
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 .contact-section {
@@ -785,7 +785,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   }
 
   .contact-section a {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
@@ -930,7 +930,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   }
 
   .contact-section a {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
@@ -1070,7 +1070,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   }
 
   .contact-section a {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 }
 
@@ -1200,7 +1200,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   }
 
   .contact-section a {
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   /* No results found page */
