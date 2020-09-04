@@ -7,26 +7,6 @@ html, body {
   font-size: 14px;
 }
 
-.brand-logo img {
-  height: 50px;
-  width: 50px;
-  margin: 7px 15px 7px 15px;
-}
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
-  width: 12rem;
-}
-
-.menu {
-  color: #444;
-}
-
-.sidenav-trigger {
-  color: #1C5925;
-}
-
 h1.teal-text.text-lighten-2 {
   color: #fafafa !important;
   text-shadow: 0 0 50px black;
@@ -46,15 +26,6 @@ h4 {
   font-weight: 700;
 }
 
-.contact-section {
-  margin-bottom: 60px;
-  margin-top: 30px;
-}
-
-.main-container h3 {
-  margin-bottom: 90px;
-}
-
 /* -------------------------------------------------------- Homepage ---------------------------------*/
 .icons-section {
   margin-bottom: 90px;
@@ -64,6 +35,23 @@ h4 {
 .footer-section {
   margin-bottom: 60px;
   margin-top: 60px;
+}
+
+.main-container h4 {
+  margin-bottom: 5%;
+}
+
+.contact-section a {
+  margin-top: 10%;
+}
+
+.contact-section {
+  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.main-container h3 {
+  margin-bottom: 90px;
 }
 
 /* -------------------------------------------------------- Plants page ---------------------------------*/
@@ -125,6 +113,22 @@ strong {
 }
 
 /* -------------------------------------------------------- Mobile-sidenav ---------------------------------*/
+.brand-logo img {
+  height: 50px;
+  width: 50px;
+  margin: 7px 15px 7px 15px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+  width: 12rem;
+}
+
+.menu {
+  color: #444;
+}
+
 #mobile-sidenav .button, #mobile-sidenav .dropdown-button, #mobile-sidenav li form {
   font-size: 16px;
 }
@@ -667,6 +671,12 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     font-size: 10px;
   }
 
+  .brand-logo img {
+    height: 35px;
+    width: 35px;
+    margin: 10px 10px 7px 10px;
+  }
+
   #index-banner .container {
     margin-top: 60px;
   }
@@ -676,6 +686,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-bottom: 30px;
   }
 
+  /* Footer */
   .footer-container {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -689,10 +700,8 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 25px;
   }
 
-  .brand-logo img {
-    height: 35px;
-    width: 35px;
-    margin: 10px 10px 7px 10px;
+  .footer-section {
+    margin-top: 20px;
   }
 
   /* buttons */
@@ -749,10 +758,6 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-bottom: 50px;
   }
 
-  .footer-section {
-    margin-top: 20px;
-  }
-
   /* homepage */
   .icons-section p, .contact-section p {
     font-size: 10px;
@@ -773,6 +778,14 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 
   .container-noresultsfound p {
     font-size: 14px;
+  }
+
+  .main-container h4 {
+    margin-bottom: 5%;
+  }
+
+  .contact-section a {
+    margin-top: 10%;
   }
 }
 
@@ -802,6 +815,12 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     font-size: 12px;
   }
 
+  .brand-logo img {
+    height: 40px;
+    width: 40px;
+    margin: 7px 15px 7px 15px;
+  }
+
   #index-banner .container {
     margin-top: 75px;
   }
@@ -812,6 +831,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     text-align: center;
   }
 
+  /* footer */
   .footer-container {
     margin-top: 15px;
     margin-bottom: 20px;
@@ -825,10 +845,8 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 30px;
   }
 
-  .brand-logo img {
-    height: 40px;
-    width: 40px;
-    margin: 7px 15px 7px 15px;
+  .footer-section {
+    margin-top: 30px;
   }
 
   /* buttons */
@@ -885,10 +903,6 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-bottom: 60px;
   }
 
-  .footer-section {
-    margin-top: 30px;
-  }
-
   /* homepage */
   .icons-section p, .contact-section p {
     font-size: 12px;
@@ -909,6 +923,14 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 
   .container-noresultsfound p {
     font-size: 16px;
+  }
+
+  .main-container h4 {
+    margin-bottom: 5%;
+  }
+
+  .contact-section a {
+    margin-top: 10%;
   }
 }
 
@@ -934,6 +956,12 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     font-size: 18px;
   }
 
+  .brand-logo img {
+    height: 45px;
+    width: 45px;
+    margin: 7px 15px 7px 15px;
+  }
+
   #index-banner .container {
     margin-top: 70px;
   }
@@ -943,6 +971,7 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-bottom: 50px;
   }
 
+  /* footer */
   .footer-container {
     margin-top: 20px;
     margin-bottom: 30px;
@@ -956,10 +985,8 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 20px;
   }
 
-  .brand-logo img {
-    height: 45px;
-    width: 45px;
-    margin: 7px 15px 7px 15px;
+  .footer-section {
+    margin-top: 40px;
   }
 
   /* buttons */
@@ -1016,10 +1043,6 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-bottom: 70px;
   }
 
-  .footer-section {
-    margin-top: 40px;
-  }
-
   /* homepage */
   .icons-section p, .contact-section p {
     font-size: 12px;
@@ -1041,10 +1064,19 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   .container-noresultsfound p {
     font-size: 18px;
   }
+
+  .main-container h4 {
+    margin-bottom: 5%;
+  }
+
+  .contact-section a {
+    margin-top: 10%;
+  }
 }
 
 /* Medium - tablets */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   .parallax-container .section {
     position: absolute;
     top: 40%;
@@ -1161,6 +1193,14 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   .contact-section p {
     margin-top: 40px;
     margin-bottom: 30px;
+  }
+
+  .main-container h4 {
+    margin-bottom: 5%;
+  }
+
+  .contact-section a {
+    margin-top: 10%;
   }
 
   /* No results found page */
