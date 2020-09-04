@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   let app = {
 
-    // Initialize the game
+    // Initialize the application
     init: function() {
       $(".button-collapse").sideNav();
       $('.parallax').parallax();

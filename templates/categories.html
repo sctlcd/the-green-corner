@@ -26,8 +26,9 @@
                 <a href="{{url_for('get_categories')}}" class="modal-action modal-close waves-effect waves-grey btn-flat">Cancel</a>
               </div>
             </div>
-            <!-- Modal Trigger -->
+            <!-- buttons -->
             <div>
+              <!-- Modal Trigger -->
               <a id="btn-delete" href="#{{ category._id }}" class="waves-effect waves-light btn grey modal-trigger"><span class="far fa-trash-alt"></span></a>
               <a id="btn-edit" href="{{ url_for('edit_category', category_id=category._id) }}" class="waves-effect waves-light btn grey"><span class="fas fa-edit"></span></a>
             </div>
