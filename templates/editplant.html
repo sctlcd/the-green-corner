@@ -67,9 +67,9 @@
               <option value="" disabled selected>Choose Plant type</option>
               {% for type in plant_types %}
               {% if type.plant_type == plant.plant_type %}
-              <option value="{{type.plant_type}}" selected>{{type.plant_type}}</option>
+              <option value="{{type.plant_type_name}}" selected>{{type.plant_type_name}}</option>
               {% else %}
-              <option value="{{type.plant_type}}">{{type.plant_type}}</option>
+              <option value="{{type.plant_type_name}}">{{type.plant_type_name}}</option>
               {% endif %}
               {% endfor %}
             </select>

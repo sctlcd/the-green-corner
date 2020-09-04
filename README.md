@@ -1,10 +1,10 @@
-# [The Green Corner](TO_ADD)
+# [The Green Corner](https://the-green-corner.herokuapp.com/)
 
 <img src="TO_ADD" alt="The Green Corner" width="700">
 <dl>
 <dd>Hey! Are you a plant lover?</dd>
 <dd>and/or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
-<dd>Here you go! [The Green Corner](TO_ADD) </dd>
+<dd>Here you go! [The Green Corner](https://the-green-corner.herokuapp.com/)</dd>
 <dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt><br>
 
 ---
@@ -73,9 +73,10 @@
 
 ## About <a name="About"></a>
 
-The general purpose of **The Green Corner** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
+The general purpose of **[The Green Corner](https://the-green-corner.herokuapp.com/)** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
 
-I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Because I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written in books/magazines, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to gather all my botanic experiences and knowledge centralized in one site. A few friends and family members like plants as well and we like sharing information. With this app I can easily provide all my plant information from only one location and <em>My Green Corner</em> can easily be shared.<br />
+I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Because I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written in books/magazines, saved in a folder on my computer, etc.).<br />
+This was the good opportunity to finally have a single application to gather all my botanic experiences and knowledge centralized in one site. A few friends and family members like plants as well and we like sharing information. With this app I can easily provide all my plant information from only one location and <em>My Green Corner</em> can easily be shared.<br />
 In a future version of this app the users will have the possibility to authenticate so it will allow others to store their own plant information, <em>their own Green Corner</em> while having access to all plants information shared.
 
 Back to [top](#TableOfContents)
@@ -132,8 +133,8 @@ Ideas which pop up in my mind when people talk about **botanic** and
 **gardening** are a calm and relaxing atmosphere, a sober and simple design, Green color obviously but not only, natural colors as well.    
 This is why I have designed my entire project around **natural and sober colors** representing the **elements of Nature**.  
 
-I choose first the website logo representing the idea of **identifying flora worldwide**. Then I selected the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).
-From my opinion (I might be wrong :) ) the logo, colors, pictures, the visual design of the website globally, are what people memorize first and it's what people will remember over time. It gives them a first impression and feeling. If the global visual design of the website looks and feels good - if the user like it - he/she will give the application a try. If not they are lot of chances he/she will probably look for another application among the numerous applications available on the market. So visual design and feel is a significant aspect I believe.    
+I choose first the website logo representing the idea of **identifying flora worldwide**. Then I selected the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).<br />
+From my opinion ( I might be wrong :) ) the logo, the colors, the pictures - the visual design of the website in general - are what people memorize first and it's what people will remember over time. It gives them a first impression and a first feeling. If the global visual design of the website looks and feels good - if the user like it - he/she will give the application a try. If not they are lot of chances he/she will probably look for another application among the numerous applications available on the market. So visual design and feeling is a significant aspect I believe.    
 
 I used the [Parallax Template](https://materializecss.com/getting-started.html) from Materialize CSS which I customized in my vision of the **elements of Nature** concept. This template was a good base to the sober and simple design I wanted to create.  
 
@@ -152,7 +153,7 @@ Back to [top](#TableOfContents)
 
 #### Color Scheme <a name="ColorScheme"></a>
 
-In keeping with the **the elements of Nature** idea, I have chosen a natural and sober color scheme referring to the elements of Nature. I first choose my [logo](https://www.flaticon.com/free-icon/planet-earth_1598196?term=plant&page=1&position=41) from Flaticon(https://www.flaticon.com). From there, I used the color scheme generator [Coolors.co](https://coolors.co/image-picker) which generated the following [palette](https://coolors.co/98cae9-1c5925-31628b-3caf4e-000000) from my logo picture. And Finally I selected pictures which fit well in my color scheme and in the space allocated.
+In keeping with the **the elements of Nature** idea, I have chosen a natural and sober color scheme referring to the elements of Nature. I first choose my [logo](https://www.flaticon.com/free-icon/planet-earth_1598196?term=plant&page=1&position=41) from Flaticon(https://www.flaticon.com). From there, I used the color scheme generator [Coolors.co](https://coolors.co/image-picker) which generated the following [palette](https://coolors.co/98cae9-1c5925-31628b-3caf4e-000000) from my logo picture. And finally I selected pictures which fit well in my color scheme and in the space allocated.
 
 - ![#98CAE9](https://placehold.it/15/98CAE9/98CAE9) `#98CAE9`- Light Cornflower Blue
 - ![#1c5925](https://placehold.it/15/98CAE9/98CAE9) `#1c5925`- Lincoln Green
@@ -183,7 +184,7 @@ Back to [top](#TableOfContents)
 
 #### Typography <a name="Typography"></a>
 
-- I have decided to use the Google Font [B612](https://fonts.google.com/specimen/B612?query=B612) throughout the website. And I have imported the Google Font [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?query=Amatic) as a secondary font for the 404 error page.
+- I have decided to use the Google Font [B612](https://fonts.google.com/specimen/B612?query=B612) throughout the website. And I have imported the Google Font [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?query=Amatic) as a secondary font for the 404 error page. Both are easy to read fonts.
 
 Back to [top](#TableOfContents)
 
@@ -191,7 +192,7 @@ Back to [top](#TableOfContents)
 
 ### Wireframes <a name="Wireframes"></a>
 
-I have used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) for my wireframes because:
+I have used [Balsamiq Wireframes](TO_ADD) for my wireframes because:
 - Code Institute have provided all students a free licence until end of 2020. I got to use this software a few year ago and I am pretty happy to get the chance to use it again.
 - The simplicity, rapidity and ease of use by focusing on structure and content.
 
@@ -326,7 +327,6 @@ Back to [top](#TableOfContents)
  - A "profile photo" of the plants to be displayed in the Plants list page.
  - User can upload photos of plants for making the identification easier.
  - User authentication
- - Review and validation of a new added plant.
 
 Back to [top](#TableOfContents)
 
@@ -526,36 +526,36 @@ Next, there's a series of steps to take in order to proceed with local deploymen
 	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](TO_ADD) in the database sub-directory
 
 
-**Plants**
+**plants**
 ```
-PlantID PK int
-ScientificName string
-CommonName string
-Genus string
-Species string
-Family string
-Category string FK >- Categories.CategoryName
-PlantType string FK >- PlantTypes.PlantTypeName
-ShadeTolerance string FK >- ShadeTolerance.ShadeToleranceName
-Note NULL string
-```
-
-**Categories**
-```
-CategoryID PK int
-CategoryName string
+_id PK int
+scientific_name string
+common_name string
+genus string
+species string
+family string
+category string FK >- categories.category_name
+plant_type string FK >- plant_types.plant_type_name
+shade_tolerance string FK >- shade_tolerance.shade_tolerance_name
+note NULL string
 ```
 
-**PlantTypes** as pt
+**categories**
 ```
-PlantTypeID PK int
-PlantTypeName string
+_id PK int
+category_name string
 ```
 
-**ShadeTolerance** as st
+**plant_types** as pt
 ```
-ShadeToleranceID PK int
-ShadeToleranceName string
+_id PK int
+plant_type_name string
+```
+
+**shade_tolerance** as st
+```
+_id PK int
+shade_tolerance_name string
 ```
 
 - You should now be able to launch your app using the following command in your terminal:

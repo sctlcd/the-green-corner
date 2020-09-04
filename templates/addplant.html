@@ -66,7 +66,7 @@
             <select id="plant_type" name="plant_type">
               <option value="" disabled selected>Choose Plant type</option>
               {% for type in plant_types %}
-              <option value="{{type.plant_type}}">{{type.plant_type}}</option>
+              <option value="{{type.plant_type_name}}">{{type.plant_type_name}}</option>
               {% endfor %}
             </select>
             <label for="plant_type" data-error="wrong" data-success="right">Plant type</label>
