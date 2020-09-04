@@ -40,7 +40,7 @@ def handle_exception(e):
     """
         Generic Error Handler
     """
-    return render_template("errors/errorpage.html")
+    return render_template("errors/404errorpage.html")
 
 
 # ---------------------- #
@@ -56,7 +56,7 @@ def get_home():
         Display the application purposes, contact and support the
         project, with option to Search.
     """
-    return render_template("home.html")
+    return render_template("/home.html")
 
 
 # ------------------------ #
@@ -86,7 +86,7 @@ def add_plant():
 
         Inject all form data to new plant document on submit.
     """
-    all_plant_types =  mongo.db.plant_types.find()
+    all_plant_types = mongo.db.plant_types.find()
     all_plants = mongo.db.plants.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
     all_categories = mongo.db.categories.find()
@@ -115,8 +115,8 @@ def edit_plant(plant_id):
 
         Inject all existing data from the plant document into the form.
     """
-    the_plant =  mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
-    all_plant_types =  mongo.db.plant_types.find()
+    the_plant = mongo.db.plants.find_one({"_id": ObjectId(plant_id)})
+    all_plant_types = mongo.db.plant_types.find()
     all_shade_tolerance = mongo.db.shade_tolerance.find()
     all_categories = mongo.db.categories.find()
     return render_template('editplant.html',
@@ -133,16 +133,16 @@ def update_plant(plant_id):
         submit.
     """
     plants = mongo.db.plants
-    plants.update( {'_id': ObjectId(plant_id)},
+    plants.update({'_id': ObjectId(plant_id)},
     {
-        'scientific_name':request.form.get('scientific_name'),
-        'common_name':request.form.get('common_name'),
+        'scientific_name': request.form.get('scientific_name'),
+        'common_name': request.form.get('common_name'),
         'genus': request.form.get('genus'),
         'species': request.form.get('species'),
-        'family':request.form.get('family'),
-        'plant_type':request.form.get('plant_type'),
-        'shade_tolerance':request.form.get('shade_tolerance'),
-        'note':request.form.get('note')
+        'family': request.form.get('family'),
+        'plant_type': request.form.get('plant_type'),
+        'shade_tolerance': request.form.get('shade_tolerance'),
+        'note': request.form.get('note')
     })
     return redirect(url_for('get_plants'))
 
@@ -169,12 +169,16 @@ def search_plants():
         entered.
     """
     search_text = request.form.get('search_text')
-    plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'category': {"$regex": f'.*{search_text}.*'}}))
-    if search_text == "" or len(plants_search) == 0 :
-        return render_template("nosearchresults.html",
+    plants_search_cn = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}}))
+    plants_search_sn = list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}}))
+    plants_search_c = list(mongo.db.categories.find({'category_name': {"$regex": f'.*{search_text}.*'}}))
+    plants_search = plants_search_cn + plants_search_sn + plants_search_c
+
+    if search_text == "" or len(plants_search) == 0:
+        return render_template("noresultsfound.html",
         plants_search=plants_search)
     else:
-        return render_template("plantresults.html",
+        return render_template("plantsearchresults.html",
         plants_search=plants_search)
 
 
@@ -236,7 +240,7 @@ def edit_category(category_id):
 
         Inject all existing data from the category document into the form.
     """
-    the_category =  mongo.db.categories.find_one({"_id": ObjectId(category_id)})
+    the_category = mongo.db.categories.find_one({"_id": ObjectId(category_id)})
     return render_template('editcategory.html',
                             category=the_category)
 
@@ -248,9 +252,9 @@ def update_category(category_id):
         on submit.
     """
     categories = mongo.db.categories
-    categories.update( {'_id': ObjectId(category_id)},
+    categories.update({'_id': ObjectId(category_id)},
     {
-        'category_name':request.form.get('category_name'),
+        'category_name': request.form.get('category_name'),
     })
     return redirect(url_for('get_categories'))
 

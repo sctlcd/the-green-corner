@@ -55,6 +55,7 @@ h4 {
   margin-bottom: 90px;
 }
 
+/* -------------------------------------------------------- Homepage ---------------------------------*/
 .icons-section {
   margin-bottom: 90px;
   margin-top: 60px;
@@ -113,7 +114,17 @@ strong {
   font-size: 1rem;
 }
 
-/* -------------------------------------------------------- Sidenav ---------------------------------*/
+.icons-section p, .contact-section p {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.contact-section p {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+/* -------------------------------------------------------- Mobile-sidenav ---------------------------------*/
 #mobile-sidenav .button, #mobile-sidenav .dropdown-button, #mobile-sidenav li form {
   font-size: 16px;
 }
@@ -219,7 +230,7 @@ nav ul a:hover {
   z-index: 1;
 }
 
-/* -------------------------------------------------------- Navbar ---------------------------------*/
+/* -------------------------------------------------------- Nav-mobile ---------------------------------*/
 #nav-mobile a {
   font-size: 16px;
 }
@@ -323,7 +334,7 @@ p {
   color: #98CAE9;
 }
 
-/* -------------------------------------------------------- buttons ---------------------------------*/
+/* -------------------------------------------------------- Buttons ---------------------------------*/
 .btn, .lighten-3, .lighten-1 {
   background-color: #31628b;
 }
@@ -364,7 +375,7 @@ a.btn, a.btn-flat, .btn.grey {
   padding: 0 1rem;
 }
 
-/* -------------------------------------------------------- parallax-container ---------------------------------*/
+/* -------------------------------------------------------- Parallax container ---------------------------------*/
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -430,7 +441,7 @@ footer.page-footer {
   margin-top: 50px;
 }
 
-/* ----------------------------------------------------------- addplant.html ------------------------------------------*/
+/* ----------------------------------------------------------- Add plant page ------------------------------------------*/
 input:not([type]):focus:not([readonly]),
 input[type=text]:not(.browser-default):focus:not([readonly]),
 input[type=password]:not(.browser-default):focus:not([readonly]),
@@ -480,7 +491,7 @@ textarea.materialize-textarea:focus:not([readonly])+label {
   margin-top: 2rem;
 }
 
-/* ----------------------------------------------------------- editplant.html ------------------------------------------*/
+/* ----------------------------------------------------------- Edit plant page ------------------------------------------*/
 /* Validation Sass Placeholders */
 input.valid:not([type]), input.valid:not([type]):focus,
 input[type=text].valid:not(.browser-default),
@@ -571,14 +582,14 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   border-bottom: 1px solid #ddd;
 }
 
-/* ---------------------------------------------------------- Error page ------------------------------------*/
+/* ---------------------------------------------------------- 404 Error page ------------------------------------*/
 #back-homepage:hover {
   color: #3caf4e;
 }
 
-img.responsive-img, video.responsive-video {
-  max-width: 100%;
-  height: auto;
+.error404-img {
+  width: 50%;
+  height: 50%;
   box-shadow: 0 0 13px 0px rgba(0, 0, 0, 0.87);
 }
 
@@ -586,41 +597,42 @@ img.responsive-img, video.responsive-video {
   font-family: 'Amatic SC', cursive;
 }
 
-.container-error h4 {
+.container-error p {
   font-weight: bold;
 }
 
 .container-error h3 {
   font-weight: bold;
   font-size: 60px;
-  margin-bottom: 90px;
+  margin-bottom: 5%;
 }
 
-.container-error .text h4 {
-  font-size: 40px;
-  margin: 230px 0 150px 40px;
-  font-weight: bold;
+.container-error .text p {
+  font-size: 30px;
 }
 
-.container-error .back-link h4 {
-  font-size: 40px;
-  margin-top: 80px;
+.container-error .back-link p {
+  font-size: 30px;
 }
 
-/* ---------------------------------------------------------- No result found page ------------------------------------*/
-.container-noresultfound h4 {
+/* ---------------------------------------------------------- No results found page ------------------------------------*/
+.container-noresultsfound h4 {
   font-size: 42px;
   font-weight: 700;
   margin-top: 60px;
 }
 
-.container-noresultfound h3 {
-  font-size: 30px;
+.container-noresultsfound p {
+  font-size: 20px;
   font-weight: normal;
+  margin-top: 5%;
 }
 
-.container-noresultfound h3 {
-  margin-top: 60px;
+.noresultsfound-img {
+  margin-top: 5%;
+  width: 40%;
+  height: 40%;
+  box-shadow: 0 0 0 0 rgb(0 0 0 / 0.0);
 }
 
 /* ---------------------------------------------------------- Media queries ------------------------------------*/
@@ -706,21 +718,18 @@ img.responsive-img, video.responsive-video {
     padding: 0 1rem;
   }
 
-  /* errors */
+  /* 404 error page */
   .container-error h3 {
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 5%!important;
   }
 
-  .container-error .text h4 {
-    font-size: 15px;
-    margin: 50px 0 0 0;
-    font-weight: bold;
-  }
-
-  .container-error .back-link h4 {
+  .container-error .text p {
     font-size: 10px;
-    margin-top: 20px;
+  }
+
+  .container-error .back-link p {
+    font-size: 10px;
   }
 
   /* add/edit plants page */
@@ -742,6 +751,28 @@ img.responsive-img, video.responsive-video {
 
   .footer-section {
     margin-top: 20px;
+  }
+
+  /* homepage */
+  .icons-section p, .contact-section p {
+    font-size: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .contact-section p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 14px;
   }
 }
 
@@ -778,6 +809,7 @@ img.responsive-img, video.responsive-video {
   .main-container {
     margin-top: 40px;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .footer-container {
@@ -822,21 +854,18 @@ img.responsive-img, video.responsive-video {
     padding: 0 1rem;
   }
 
-  /* errors */
+  /* 404 error page */
   .container-error h3 {
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 5%!important;
   }
 
-  .container-error .text h4 {
-    font-size: 20px;
-    margin: 90px 0 0 0;
-    font-weight: bold;
-  }
-
-  .container-error .back-link h4 {
+  .container-error .text p {
     font-size: 15px;
-    margin-top: 30px;
+  }
+
+  .container-error .back-link p {
+    font-size: 15px;
   }
 
   /* add/edit plants page */
@@ -858,6 +887,28 @@ img.responsive-img, video.responsive-video {
 
   .footer-section {
     margin-top: 30px;
+  }
+
+  /* homepage */
+  .icons-section p, .contact-section p {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-section p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 16px;
   }
 }
 
@@ -937,18 +988,15 @@ img.responsive-img, video.responsive-video {
   /* Error 404 page*/
   .container-error h3 {
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 5%!important;
   }
 
-  .container-error .text h4 {
-    font-size: 30px;
-    margin: 140px 0 0 20px;
-    font-weight: bold;
-  }
-
-  .container-error .back-link h4 {
+  .container-error .text p {
     font-size: 25px;
-    margin-top: 50px;
+  }
+
+  .container-error .back-link p {
+    font-size: 25px;
   }
 
   /* add/edit plants page */
@@ -970,6 +1018,28 @@ img.responsive-img, video.responsive-video {
 
   .footer-section {
     margin-top: 40px;
+  }
+
+  /* homepage */
+  .icons-section p, .contact-section p {
+    font-size: 12px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-section p {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 34px;
+    margin-top: 40px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 18px;
   }
 }
 
@@ -1052,20 +1122,16 @@ img.responsive-img, video.responsive-video {
 
   /* error 404 page */
   .container-error h3 {
-    font-weight: bold;
     font-size: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 5%!important;
   }
 
-  .container-error .text h4 {
-    font-size: 40px;
-    margin: 150px 0 0 40px;
-    font-weight: bold;
-  }
-
-  .container-error .back-link h4 {
+  .container-error .text p {
     font-size: 30px;
-    margin-top: 80px;
+  }
+
+  .container-error .back-link p {
+    font-size: 30px;
   }
 
   /* add/edit plants page */
@@ -1083,5 +1149,27 @@ img.responsive-img, video.responsive-video {
 
   .main-container h3 {
     margin-bottom: 80px;
+  }
+
+  /* homepage */
+  .icons-section p, .contact-section p {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: justify;
+  }
+
+  .contact-section p {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 38px;
+    margin-top: 50px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 20px;
   }
 }

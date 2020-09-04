@@ -1,10 +1,10 @@
-# [The Green Corner](TO_ADD)
+# [The Green Corner](https://the-green-corner.herokuapp.com/)
 
-<img src="TO_ADD" alt="The Green Corner" width="700">
+<img src="https://github.com/sctlcd/the-green-corner/blob/master/wireframes/multi_device_website_mockups-min.png" alt="The Green Corner" width="700">
 <dl>
 <dd>Hey! Are you a plant lover?</dd>
 <dd>and/or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
-<dd>Here you go! [The Green Corner](TO_ADD) </dd>
+<dd>Here you go! [The Green Corner](https://the-green-corner.herokuapp.com/)</dd>
 <dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt><br>
 
 ---
@@ -19,7 +19,7 @@
 	- [User Stories](#UserStories)
 	- [Design](#Design)
 		- [Framework](#Framework)
-		- [color Scheme](#ColorScheme)
+		- [Color Scheme](#ColorScheme)
 		- [Icons](#Icons)
 		- [Typography](#Typography)
 	- [Wireframes](#Wireframes)
@@ -28,9 +28,10 @@
 2. [Features](#Features)
 
 	- [Existing Features](#ExistingFeatures)
+		- [Navigation bar](#Navigationbar)
 		- [Footer](#Footer)
-		- [Main page](#Mainpage)
 		- [Homepage](#Homepage)
+		- [Base template](#Basetemplate)
 		- [Plants page](#Plantspage)
 		- [Add plant page](#Addplantpage)
 		- [Edit plant page](#Editplantpage)
@@ -73,10 +74,11 @@
 
 ## About <a name="About"></a>
 
-The general purpose of **The Green Corner** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
+The general purpose of **[The Green Corner](https://the-green-corner.herokuapp.com/)** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
 
-I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Because I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written in books/magazines, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to gather all my botanic experiences and knowledge centralized in one site. A few friends and family members like plants as well and we like sharing information. With this app I can easily provide all my plant information from only one location and <em>My Green Corner</em> can easily be shared.<br />
-In a future version of this app the users will have the possibility to authenticate so it will allow others to store their own plant information, <em>their own Green Corner</em> while having access to all plants information shared.
+I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Because I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written in books/magazines, saved in a folder on my computer, etc.).<br />
+This was the good opportunity to finally have a single application to gather all my botanic experiences and knowledge centralized in one site. A few friends and family members like plants as well and we like sharing information. With this app I can easily provide all my plant information from only one location and <em>My Green Corner</em> can easily be shared.<br />
+In a future version of this app the users will have the possibility to authenticate so it will allow others to store their own plant information, <em>their own Green Corner</em> while having access to all plant data shared.
 
 Back to [top](#TableOfContents)
 
@@ -132,10 +134,10 @@ Ideas which pop up in my mind when people talk about **botanic** and
 **gardening** are a calm and relaxing atmosphere, a sober and simple design, Green color obviously but not only, natural colors as well.    
 This is why I have designed my entire project around **natural and sober colors** representing the **elements of Nature**.  
 
-I choose first the website logo representing the idea of **identifying flora worldwide**. Then I selected the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).
-From my opinion (I might be wrong :) ) the logo, colors, pictures, the visual design of the website globally, are what people memorize first and it's what people will remember over time. It gives them a first impression and feeling. If the global visual design of the website looks and feels good - if the user like it - he/she will give the application a try. If not they are lot of chances he/she will probably look for another application among the numerous applications available on the market. So visual design and feel is a significant aspect I believe.    
+I choose first the website logo representing the idea of **identifying flora worldwide**. Then I selected the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).<br />
+From my opinion ( I might be wrong :) ) the logo, the colors, the pictures - the visual design of the website in general - are what people memorize first and it's what people will remember over time. It gives them a first impression and a first feeling. If the global visual design of the website looks and feels good - if the user like it - he/she will give the application a try. If not they are lot of chances he/she will probably look for another application among the numerous applications available on the market. So visual design and feeling is a significant aspect I believe.    
 
-I used the [Parallax Template](https://materializecss.com/getting-started.html) from Materialize CSS which I customized in my vision of the **elements of Nature** concept. This template was a good base to the sober and simple design I wanted to create.  
+I used the [Parallax Template](https://materializecss.com/getting-started.html) from Materialize CSS which I customized in my vision of the concept of the **elements of Nature**. This template was a good base to the sober and simple design I wanted to create.  
 
 Back to [top](#TableOfContents)
 
@@ -152,7 +154,7 @@ Back to [top](#TableOfContents)
 
 #### Color Scheme <a name="ColorScheme"></a>
 
-In keeping with the **the elements of Nature** idea, I have chosen a natural and sober color scheme referring to the elements of Nature. I first choose my [logo](https://www.flaticon.com/free-icon/planet-earth_1598196?term=plant&page=1&position=41) from Flaticon(https://www.flaticon.com). From there, I used the color scheme generator [Coolors.co](https://coolors.co/image-picker) which generated the following [palette](https://coolors.co/98cae9-1c5925-31628b-3caf4e-000000) from my logo picture. And Finally I selected pictures which fit well in my color scheme and in the space allocated.
+In keeping with the **the elements of Nature** idea, I have chosen a natural and sober color scheme referring to the elements of Nature. I first choose my [logo](https://www.flaticon.com/free-icon/planet-earth_1598196?term=plant&page=1&position=41) from Flaticon(https://www.flaticon.com). From there, I used the color scheme generator [Coolors.co](https://coolors.co/image-picker) which generated the following [palette](https://coolors.co/98cae9-1c5925-31628b-3caf4e-000000) from my logo picture. And finally I selected pictures which fit well in my color scheme and in the space allocated.
 
 - ![#98CAE9](https://placehold.it/15/98CAE9/98CAE9) `#98CAE9`- Light Cornflower Blue
 - ![#1c5925](https://placehold.it/15/98CAE9/98CAE9) `#1c5925`- Lincoln Green
@@ -183,7 +185,7 @@ Back to [top](#TableOfContents)
 
 #### Typography <a name="Typography"></a>
 
-- I have decided to use the Google Font [B612](https://fonts.google.com/specimen/B612?query=B612) throughout the website. And I have imported the Google Font [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?query=Amatic) as a secondary font for the 404 error page.
+- I have decided to use the Google Font [B612](https://fonts.google.com/specimen/B612?query=B612) throughout the website. And I have imported the Google Font [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?query=Amatic) as a secondary font for the 404 error page. Both fonts are easy to read.
 
 Back to [top](#TableOfContents)
 
@@ -195,7 +197,7 @@ I have used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) for my wiref
 - Code Institute have provided all students a free licence until end of 2020. I got to use this software a few year ago and I am pretty happy to get the chance to use it again.
 - The simplicity, rapidity and ease of use by focusing on structure and content.
 
-My wireframes for this project can be found [here](TO_ADD) in the wireframes sub-directory.
+My wireframes for this project can be found [here](https://github.com/sctlcd/the-green-corner/tree/master/wireframes) in the wireframes sub-directory.
 
 Back to [top](#TableOfContents)
 
@@ -203,7 +205,7 @@ Back to [top](#TableOfContents)
 
 ### Data integration <a name="Dataintegration"></a>
 
-I chose to use MongoDB for my project in case the website gets a big amount of data in the future. I also wanted the user to be able to choose what data they gather in the plant form. I believe MongoDB offers more flexibility concerning my website in the long run.
+I decided to use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for my project in case the website gets a big amount of data in the future. I also wanted the user to be able to choose what data they gather in the plant form. I believe MongoDB offers more flexibility concerning my website in the long run.
 Moreover before this project I've never used MongoDB so it was the opportunity to get new knowledge and learning a new technology.
 
 Back to [top](#TableOfContents)
@@ -225,23 +227,29 @@ Back to [top](#TableOfContents)
 
 ##### Footer <a name="Footer"></a>
 
-- The footer contains a Company bio description, a Contact section with Github and Twitter icon links opening in a browser new tab, a Support description with a button redirecting to the Patreon website (as no Patreon account has been created yet for this projet) in a browser new tab, a Contact description and a button redirecting to the Gitter website (as no Gitter room has been created yet for this projet) in a browser new tab.
+- The footer contains a Company bio description, a Contact section with Github and Twitter icon links opening in a browser new tab, a Support description with a button redirecting to the [Patreon](https://www.patreon.com/europe) website (as no Patreon account has been created yet for this projet) in a browser new tab, a Contact description and a button redirecting to the [Gitter](https://gitter.im/) website (as no Gitter room has been created yet for this projet) in a browser new tab.
 - A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd) home page in a new browser tab.
 
 Back to [top](#TableOfContents)
 
 ---
 
-##### [Home page](TO_ADD) <a name="Homepage"></a>
+##### [Homepage](https://github.com/sctlcd/the-green-corner/blob/master/templates/home.html) <a name="Homepage"></a>
 
 - This is an introduction page presenting the project and the application.
 - A title section with the short description of the Website and a button "Get started", redirecting to the Plants page.  
-- A section displaying the main motivations and benefits
-- A section displaying a Contact description and a button redirecting to the Patreon website (as no Patreon account has been created yet for this project) in a browser new tab.
+- A section displaying the main motivations and benefits of the website
+- A section displaying a Contact description and a button redirecting to the [Gitter](https://gitter.im/) website (as no Gitter account has been yet created for this project) in a browser new tab.
 
-##### [Plants page](TO_ADD) <a name="Plantspage"></a>
+##### Base template <a name="Basetemplate"></a>
 
-- A title section with the short description of the Website on the top of the page and a section with the short description of the Website at the bottom of the page are common elements of all pages.
+- A title section with the short description of the Website on the top of the page
+- A content section which loads all the various pages I am going to detail below.
+- A section with the short description of the Website at the bottom of the page are common elements of all pages.
+
+
+##### [Plants page](https://github.com/sctlcd/the-green-corner/blob/master/templates/plants.html) <a name="Plantspage"></a>
+
 - View all plant records. Scientific names and common names are displayed.
 - Collapsible menu with all the plant fields organized in sections: Identity, Category, Botanic, Culture, Note.
 - Delete and Edit buttons  
@@ -250,13 +258,13 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [Add plant page](TO_ADD) <a name="Addplantpage"></a>
+##### [Add plant page](https://github.com/sctlcd/the-green-corner/blob/master/templates/addplant.html) <a name="Addplantpage"></a>
 
 - Access to this page by clicking on the Plants dropdown and then on the sub-menu item "Add Plant"
 - A form for adding a plant is displayed organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
 - Add plant and cancel buttons. Add plant button triggers the creation of the plant record in the database.
 
-##### [Edit plant page](TO_ADD) <a name="Editplantpage"></a>
+##### [Edit plant page](https://github.com/sctlcd/the-green-corner/blob/master/templates/editplant.html) <a name="Editplantpage"></a>
 
 - Access to this page by clicking on the Edit button of the selected plant in the Plants page.
 - A form for editing a plant is displayed organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
@@ -266,17 +274,17 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [Delete plant modal](TO_ADD) <a name="Deleteplantmodal"></a>
+##### [Delete plant modal](https://github.com/sctlcd/the-green-corner/blob/master/templates/plants.html) <a name="Deleteplantmodal"></a>
 
 - Access to this modal by clicking on the Delete button of the selected plant in the Plants page.
 - The modal displays a delete confirmation message and two buttons. Yes triggers the suppression of the plant record in the database. No redirects the user to the Plants page.
 
-##### [Categories page](TO_ADD) <a name="Categoriespage"></a>
+##### [Categories page](https://github.com/sctlcd/the-green-corner/blob/master/templates/categories.html) <a name="Categoriespage"></a>
 
 - View all category records. Category name is shown.
 - Delete and Edit buttons  
 
-##### [Add category page](TO_ADD) <a name="Addcategorypage"></a>
+##### [Add category page](https://github.com/sctlcd/the-green-corner/blob/master/templates/addcategory.html) <a name="Addcategorypage"></a>
 
 - Access to this page by clicking on the Categories dropdown and then on the sub-menu item "Add Category"
 - A form for adding a category is displayed
@@ -286,18 +294,18 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [Edit category page](TO_ADD) <a name="Editcategorypage"></a>
+##### [Edit category page](https://github.com/sctlcd/the-green-corner/blob/master/templates/editcategory.html) <a name="Editcategorypage"></a>
 
 - Access to this page by clicking on the Edit button of the selected category in the Categories page.
 - A form for editing a category is displayed
 - Edit category and cancel buttons. Edit plant button triggers the update of the plant record in the database
 
-##### [Delete category modal](TO_ADD) <a name="Deletecategorymodal"></a>
+##### [Delete category modal](https://github.com/sctlcd/the-green-corner/blob/master/templates/categories.html) <a name="Deletecategorymodal"></a>
 
 - Access to this modal by clicking on the Delete button of the selected category in the Categories page.
 - The modal displays a delete confirmation message and two buttons. Yes triggers the suppression of the category record in the database. No redirects the user to the Categories page.
 
-##### [No result found page](TO_ADD) <a name="Noresultfoundpage"></a>
+##### [No result found page](https://github.com/sctlcd/the-green-corner/blob/master/templates/noresultsfound.html) <a name="Noresultfoundpage"></a>
 
 - Message letting know the user No result have been found matching with his/her search.
 - Link redirecting to Homepage.
@@ -306,12 +314,12 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [404 error page](TO_ADD) <a name="404errorpage"></a>
+##### [404 error page](https://github.com/sctlcd/the-green-corner/blob/master/templates/404errorpage.html) <a name="404errorpage"></a>
 
 - Humoristic picture and message letting know the user the page does not exist.
 - Link redirecting to Homepage.
 
-##### [Defensive features](TO_ADD) <a name="Defensivefeatures"></a>
+##### Defensive features <a name="Defensivefeatures"></a>
 
 - All plants and categories fields throughout the various pages (View/Add/Edit/Delete pages) are mandatory except the *note* field. If the field is empty when submitting a message is display letting know the user the field has to be filled.
 - If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
@@ -326,7 +334,6 @@ Back to [top](#TableOfContents)
  - A "profile photo" of the plants to be displayed in the Plants list page.
  - User can upload photos of plants for making the identification easier.
  - User authentication
- - Review and validation of a new added plant.
 
 Back to [top](#TableOfContents)
 
@@ -375,25 +382,44 @@ Back to [top](#TableOfContents)
 
 ## Testing <a name="Testing"></a>
 
-My testing coverage for this project can be found [here](TO_ADD) in the testing sub-directory or below.
+My testing coverage for this project can be found [here](https://github.com/sctlcd/the-green-corner/tree/master/testing) in the testing sub-directory or below.
 
 ### User story validation <a name="UserStoryValidation"></a>
 
 |  | Galaxy S5 | Pixel | Pixel 2 XL |iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | iPad | iPad Pro | Desktop 1024px | Desktop >1200px |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-View the site from any devices (mobile, tablet, desktop)|  |  |  |  |  |  |  |  |  |  |  |
-View the presentation home page|  |  |  |  |  |  |  |  |  |  |  |
-View all the plants|  |  |  |  |  |  |  |  |  |  |  |
-Add a plant|  |  |  |  |  |  |  |  |  |  |  |
-Edit a plant|  |  |  |  |  |  |  |  |  |  |  |
-Delete a plant|  |  |  |  |  |  |  |  |  |  |  |
-View all the categories|  |  |  |  |  |  |  |  |  |  |  |
-Add a category|  |  |  |  |  |  |  |  |  |  |  |
-Edit a category|  |  |  |  |  |  |  |  |  |  |  |
-Delete a category|  |  |  |  |  |  |  |  |  |  |  |
-Search by scientific name, common name, category|  |  |  |  |  |  |  |  |  |  |  |
-View a specific message if no search result found|  |  |  |  |  |  |  |  |  |  |  |
-View a error page if the page doesn't exist|  |  |  |  |  |  |  |  |  |  |  |
+View the site from any devices (mobile, tablet, desktop)| Pass | - | Pass | - | Pass | - | Pass | - | Pass | - | Pass |
+View the presentation home page| Pass | - | - | - | - | - | - | - | - | - | |
+View all the plants|  | Pass | - | - | - | - | - | - | - | - | - |
+Add a plant| - | - | Pass | - | - | - | - | - | - | - | - |
+Edit a plant| - | - | - | Pass | - | - | - | - | - | - | - |
+Delete a plant| - | - | - | - | Pass | - | - | - | - | - | - |
+View all the categories| - | - | - | - | - | Pass | - | - | - | - | - |
+Add a category| - | - | - | - | - | - | Pass | - | - | - | - |
+Edit a category| - | - | - | - | - | - | - | Pass | - | - | - |
+Delete a category| - | - | - | - | - | - | - | - | Pass | - | - |
+Search by scientific name, common name, category| - | - | - | - | - | - | - | - | - | Fail | - |
+View a specific message if no search result found| Pass | - | - | - | - | - | - | - | - | - | Pass |
+View a error page if the page doesn't exist| - | Pass | - | - | - | - | - | - | - | - | - |
+
+Back to [top](#TableOfContents)
+
+---
+
+| User Stories - As a user, I want to... | Expected outcome | Actual outcome |
+| :--- | :--- | :---|
+| View the site from any devices (mobile, tablet, desktop) | The website should be responsible and displayed correctly | as expected |
+| View all the plants | Click on Plants menu then View plant or on "Get started" button from the home page, the list of plants should be displayed. Each plants should have a collapsible menu containing fields organized by section (Identity, Category, Botanic, Culture, Note) and modify and delete buttons | as expected |
+| Add a plant | Click on Plants menu then Add Plant sub-menu, fill all the fields and submit. The plant should be added in the Plants page and in the database | as expected |
+| Edit a plant | Click on Edit button for the chosen plant in the Plants page, update fields and submit. The plant should be updated in the Plants page and in the database | as expected |
+| Delete a plant | Click on Delete button for the chosen plant in the Plants page. A confirmation modal should pop up with yes and no buttons. Agree. The plant should be updated in the Plants page and in the database | as expected |
+| View all the categories | Click on Categories menu then View category, the list of categories should be displayed and modify and delete buttons | as expected |
+| Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit. The category should be added in the Categories page and in the database | as expected |
+| Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit. The category should be updated in the Categories page and in the database | as expected |
+| Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree. The category should be updated in the Categories page and in the database | as expected |
+| Search by scientific name, common name, category | Enter a scientific plant name (or part of it) and submit.  The result of the search should be displayed in the Plants page. Redo this test case with a common plant name and a plant category (or part of it) | as expected |
+| View a specific message if no search result found | Enter a search which does not exist. The No results found page should be displayed (example: *aaaaa* ) | not as expected |
+| View a error page if the page doesn't exist | Enter an URL which does not exist. The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
 
 Back to [top](#TableOfContents)
 
@@ -403,14 +429,48 @@ Back to [top](#TableOfContents)
 
 |  | Galaxy S5 | Pixel | Pixel 2 XL |iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | iPad | iPad Pro | Desktop 1024px | Desktop >1200px |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| website is responsive < 767 px |  |  |  |  |  |  |  |  |  |  |
-| website is responsive > 768 px |  |  |  |  |  |  |  |  |  |  |
+| website is responsive < 767 px | Good | Good | Good | Good | Good | Good | n/a | n/a | n/a | n/a |
+| website is responsive > 768 px | n/a | n/a | n/a | n/a | n/a | n/a | Good | Good | Good | Good |
 |**home.html** |
-| Navigation bar |  |  |  |  |  |  |  |  |  |  |
-| logo / link |  |  |  |  |  |  |  |  |  |  |
-| menu / links / buttons |  |  |  |  |  |  |  |  |  |  |
-| Content page: Images / text / links / buttons |  |  |  |  |  |  |  |  |  |  |
-| Footer: text / links / buttons|  |  |  |  |  |  |  |  |  |  |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| plants.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| addplant.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| editplant.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| categories.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| addcategory.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| editcategory.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| noresultsfound.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| plantsearchresults.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| 404errorpage.html |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
 
 Back to [top](#TableOfContents)
 
@@ -454,7 +514,7 @@ Back to [top](#TableOfContents)
 **HTML**
 - [W3C HTML Validator](https://validator.w3.org/)
     - Jinja template syntax not understood. Relative errors shows : `{{ variables }}`, `{% for %} {% endfor %}`, etc.
-		- No errors No errors for the remaining code
+		- No errors for the remaining code
 
 **CSS**
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
@@ -478,7 +538,7 @@ Back to [top](#TableOfContents)
 
 ### Known Issues <a name="KnownIssues"></a>
 
-TO_ADD
+- Search results doesn't displayed as expected
 
 Back to [top](#TableOfContents)
 
@@ -492,10 +552,10 @@ This site is currently deployed on [Heroku](https://www.heroku.com/) using the *
 
 1. Create a **requirements.txt** file so Heroku can install the required dependencies to run the app.
     - `sudo pip3 freeze --local > requirements.txt`
-    - My file can be found [here](TO_ADD).
+    - My file can be found [here](https://github.com/sctlcd/the-green-corner/blob/master/requirements.txt).
 2. Create a **Procfile** to tell Heroku what type of application is being deployed, and how to run it.
     - `echo web: python run.py > Procfile`
-    - My file can be found [here](TO_ADD).
+    - My file can be found [here](https://github.com/sctlcd/the-green-corner/blob/master/Procfile).
 3. Sign up for a free Heroku account, create your project app, and click the **Deploy** tab, at which point you can *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
 4. In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables as follows:
     - **IP** : `0.0.0.0`
@@ -515,47 +575,47 @@ Please note - in order to run this project locally on your own system, you will 
 Next, there's a series of steps to take in order to proceed with local deployment:
 
 - Clone this GitHub repository by either clicking the green *Clone or download* button and downloading the project as a zip-file (remember to unzip it first), or by entering the following into the Git CLI terminal:
-    - `git clone TO_ADD`.
+    - `git clone https://github.com/sctlcd/the-green-corner.git`.
 - Navigate to the correct file location after unpacking the files.
     - `cd <path to folder>`
 - Create a `.env` file with your credentials. An example can be found [here](https://github.com/bravoalpha79/environment-variables#how-to-set-up-python-environment-variables-in-gitpod). Be sure to include your *MONGO_URI*
-- Install all requirements from the [requirements.txt](TO_ADD) file using this command:
+- Install all requirements from the [requirements.txt](https://github.com/sctlcd/the-green-corner/blob/master/requirements.txt) file using this command:
     - `sudo -H pip3 -r requirements.txt`
 - Sign up for a free account on [MongoDB](https://www.mongodb.com) and create a new Database called **the_green_corner**. The *Collections* in that database should be as follows:  
-	- [database documentation](TO_ADD) in the database sub-directory
-	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](TO_ADD) in the database sub-directory
+	- [database documentation](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram_documentation.png) in the database sub-directory
+	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram.png) in the database sub-directory
 
 
-**Plants**
+**plants**
 ```
-PlantID PK int
-ScientificName string
-CommonName string
-Genus string
-Species string
-Family string
-Category string FK >- Categories.CategoryName
-PlantType string FK >- PlantTypes.PlantTypeName
-ShadeTolerance string FK >- ShadeTolerance.ShadeToleranceName
-Note NULL string
-```
-
-**Categories**
-```
-CategoryID PK int
-CategoryName string
+_id PK int
+scientific_name string
+common_name string
+genus string
+species string
+family string
+category string FK >- categories.category_name
+plant_type string FK >- plant_types.plant_type_name
+shade_tolerance string FK >- shade_tolerance.shade_tolerance_name
+note NULL string
 ```
 
-**PlantTypes** as pt
+**categories**
 ```
-PlantTypeID PK int
-PlantTypeName string
+_id PK int
+category_name string
 ```
 
-**ShadeTolerance** as st
+**plant_types** as pt
 ```
-ShadeToleranceID PK int
-ShadeToleranceName string
+_id PK int
+plant_type_name string
+```
+
+**shade_tolerance** as st
+```
+_id PK int
+shade_tolerance_name string
 ```
 
 - You should now be able to launch your app using the following command in your terminal:
@@ -574,7 +634,7 @@ Back to [top](#TableOfContents)
 	- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
   - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), inspiring ideas for gardening,...
   - [Garden.ie](https://www.garden.ie), a website which offers accurate horticultural advices.
-	- [Bored panda - creative 404 error pages](https://www.boredpanda.com/50-cool-and-creative-404-error-pages/?utm_source=google&utm_medium=organic&utm_campaign=organic) for the [404 error page](TO_ADD)
+	- [Bored panda - creative 404 error pages](https://www.boredpanda.com/50-cool-and-creative-404-error-pages/?utm_source=google&utm_medium=organic&utm_campaign=organic) for the [404 error page](https://github.com/sctlcd/the-green-corner/blob/master/templates/errors/404errorpage.html)
 
 Back to [top](#TableOfContents)
 
@@ -593,7 +653,7 @@ Back to [top](#TableOfContents)
 
 Sources of the images used on this site:
 
-- From images sub-directory - [Github](TO_ADD)
+- From images sub-directory - [Github](https://github.com/sctlcd/the-green-corner/tree/master/static/assets/images)
 	- [garden-min](https://www.pexels.com/photo/bloom-blooming-country-countryside-145685/) - [Pexel](https://www.pexels.com/) | copyright [Mike](https://www.pexels.com/@mikebirdy)
 	- [gooseberry-min](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=176450) - [Pixabay](https://pixabay.com/) | copyright [GLady](https://pixabay.com/users/glady-768/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=176450)
 	- [leaves-min](https://pixabay.com/fr/photos/feuilles-%C3%A9t%C3%A9-vert-%C3%A9rable-saison-291024/) - [Pixabay](https://pixabay.com/) | copyright [Gregovish](https://pixabay.com/fr/users/gregovish-195074/)
@@ -604,6 +664,7 @@ Sources of the images used on this site:
 	- [search-min](https://www.flaticon.com/free-icon/loupe_882988?term=magnifying%20glass&page=1&position=12) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
 	- [humour404error](https://www.pinterest.ie/pin/226587424989226051/ ) - [Pinterest](https://www.pinterest.com/) | copyright [Joe Dunaway](http://www.modelzone.com/mangrasshopper/)
 	- [favicon](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+	- [noresultsfound](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
 
 Back to [top](#TableOfContents)
 
