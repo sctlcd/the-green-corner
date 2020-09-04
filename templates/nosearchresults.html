@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %} Sorry! No result found{% endblock %}
+{% block content %}
+<!-- 404 page not found -->
+<div class="container-noresultfound">
+  <div class="row">
+    <div class="col s12">
+      <h4><i class="fas fa-search"></i> Sorry! No result found</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 text">
+      <h3>
+        <span>We're sorry what you were looking for. Please give it another try</span>
+      </h3>
+      <h3>
+        <a id="back-homepage" href="{{ url_for('get_home') }}" class="blue-light-text">Back to homepage
+          <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i></a>
+      </h3>
+    </div>
+  </div>
+</div>
+{% endblock %}

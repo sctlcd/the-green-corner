@@ -20,7 +20,7 @@
   <!-- header -->
   <header>
     <!-- navbar -->
-    <div class="navbar">
+    <div class="navbar-fixed">
       <!-- Plants Dropdown Structure -->
       <ul id="dropdown-plants-nav-mobile" class="dropdown-content">
         <li><a href="{{url_for('get_plants')}}"><span class="fas fa-leaf"></span>View Plants</a></li>
@@ -56,11 +56,11 @@
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
                   <div class="input-field">
-                    <input id="search_text" type="search" name="search_text" placeholder="Search plants, categories...">
-                    <label class="label-icon" for="search_text">
+                    <input id="search_text_navbar" type="search" name="search_text" placeholder="Search plants, categories...">
+                    <label class="label-icon" for="search_text_navbar">
                       <i class="material-icons left">search</i>
                     </label>
-                    <i id="close" class="material-icons">close</i>
+                    <i id="close_navbar" class="material-icons">close</i>
                   </div>
                 </form>
               </li>
@@ -78,7 +78,7 @@
                     <img src="../static/assets/images/leaves-min.jpg" alt="leaves background">
                   </div>
                   <div class="center">
-                    <a href="#!"><img class="square" src="../static/assets/images/the_green_corner_logo-min.png"></a>
+                    <a href="#!"><img class="square" src="../static/assets/images/the_green_corner_logo-min.png" alt="The green corner logo"></a>
                     <a href="#!"><span class="white-text title">The Green Corner</span></a>
                   </div>
                 </div>
@@ -87,11 +87,11 @@
                 <!-- Search bar -->
                 <form action="{{ url_for('search_plants') }}" method="POST">
                   <div class="input-field">
-                    <input id="search_text" type="search" name="search_text" placeholder="Search plants, categories...">
-                    <label class="label-icon" for="search_text">
+                    <input id="search_text_sidenav" type="search" name="search_text" placeholder="Search plants, categories...">
+                    <label class="label-icon" for="search_text_sidenav">
                       <i class="material-icons left">search</i>
                     </label>
-                    <i id="close" class="material-icons">close</i>
+                    <i id="close_sidenav" class="material-icons">close</i>
                   </div>
                 </form>
               </li>
@@ -106,6 +106,7 @@
               <li><a class="dropdown-button" href="#!" data-activates="dropdown-categories-mobile-sidenav"><span class="fas fa-cog"></span>Categories <span class="fas fa-caret-down"></span></a></li>
             </ul>
           </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -132,29 +133,27 @@
     <div class="container">
       <div class="section">
         <!--   Icon Section   -->
-        <div class="row">
+        <div class="row icons-section">
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center blue-text"><i class="material-icons">collections</i></h2>
-              <h4 class="center blue-text">Centralized & accessible information</h5>
-                <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
-                  Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
+              <h4 class="center blue-text">Centralized & accessible information</h4>
+              <p class="light">All your botanic knowledge and experiences in a <strong>single application</strong> accessible from <strong>anywhere</strong> at <strong>anytime</strong>.</p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center blue-text"><i class="material-icons">group</i></h2>
-              <h4 class="center blue-text">Collective knowledge sharing</h5>
-                <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
-                  Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
+              <h4 class="center blue-text">Collective knowledge sharing</h4>
+              <p class="light"><strong>Share</strong> <em>Your Green Corner</em> to your friends, familly. etc. and have access to a <strong>collective shared database</strong> of plants.</p>
             </div>
           </div>
           <div class="col s12 m4">
             <div class="icon-block">
               <h2 class="center blue-text"><i class="material-icons">biotech</i></h2>
-              <h4 class="center blue-text">Participating in Science advancement</h5>
-                <p class="light">Lorem ipsum dolor sit amet, euismod velit, tellus quisque. Faucibus facilisi donec, ac mauris porta. Erat lacus neque, sem ultrices nisl. Orci mi libero, felis sed, velit integer nulla. Amet arcu, ipsum orci sit.
-                  Consequat nunc. Lorem erat, ornare porttitor nulla, hendrerit id mauris. Donec taciti elit, vel mauris tellus, orci elit arcu. Nunc nunc sit, vestibulum blandit eleifend.</p>
+              <h4 class="center blue-text">Participating in Science advancement</h4>
+              <p class="light">The plant you are looking for in not in the shared database? What a great opportunity to register this plant in our collective database.
+                <br> A step closer to become the <strong>Christopher Columbus of plants</strong>!</p>
             </div>
           </div>
         </div>
@@ -175,7 +174,7 @@
     <div class="container">
       <div class="section">
         <div class="row">
-          <div class="col s12 center">
+          <div class="col s12 center contact-section">
             <h3><i class="mdi-content-send"></i></h3>
             <h4 class="blue-text">Contact</h4>
             <p class="left-align light">The Green Corner has a Gitter chat room set up where you can talk directly. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of.</p>
@@ -199,7 +198,7 @@
 
     <!-- footer -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container footer-section">
         <div class="row">
           <div class="col l3 s12">
             <div>

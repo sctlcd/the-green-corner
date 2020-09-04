@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
+{% block title %}Plants{% endblock %}
 {% block content %}
 <div class="row">
-  <h3><i class="fas fa-leaf"></i>  Plants</h3>
+  <h3><i class="fas fa-leaf"></i> Plants</h3>
 
   {% for plant in plants %}
   <ul class="collapsible popout" data-collapsible="expandable">
@@ -11,11 +12,11 @@
           <i class="material-icons">expand_more</i>
         </div>
         <div class="plant_header col s5">
-          <strong>{{ plant.scientific_name }}</strong> <br /> <em>{{ plant.common_name }}</em>
+          <strong>{{ plant.scientific_name }}</strong><br /> <em>{{ plant.common_name }}</em>
         </div>
         <div class="col s5">
           <!-- Modal Structure -->
-          <div id="modal-delete" class="modal">
+          <div id="{{ plant._id }}" class="modal">
             <div class="modal-content">
               <h4>Delete Plant</h4>
               <p>Are you sure you want to delete this plant?</p>
@@ -26,75 +27,79 @@
             </div>
           </div>
           <!-- Modal Trigger -->
-          <a id="btn-delete" href="#modal-delete" class="waves-effect waves-light btn grey modal-trigger"><span class="far fa-trash-alt"></span></a>
+          <a id="btn-delete" href="#{{ plant._id }}" class="waves-effect waves-light btn grey modal-trigger"><span class="far fa-trash-alt"></span></a>
           <a id="btn-edit" href="{{ url_for('edit_plant', plant_id=plant._id) }}" class="waves-effect waves-light btn grey "><span class="fas fa-edit"></span></a>
         </div>
       </div>
       <div class="collapsible-body">
-        <div id="identity-section">
-          <div>
-            <i class="material-icons prefix">fingerprint</i>
-            <label for="identity">Identity</label>
+        <div class="section">
+          <div id="identity-section">
+            <div class="plant-section-title">
+              <i class="material-icons prefix">fingerprint</i>
+              <label id="identity">Identity</label>
+            </div>
+            <div class="plant-section-content">
+              <div>
+                <label id="scientific-name-label">Scientific name: </label>
+                <span id="scientific_name">{{ plant.scientific_name }}</span>
+              </div>
+              <div>
+                <label id="common-name-label-label">Common name: </label>
+                <span id="common_name">{{ plant.common_name }}</span>
+              </div>
+              <div>
+                <label id="genus-label">Genus: </label>
+                <span id="genus">{{ plant.genus }}</span>
+              </div>
+              <div>
+                <label id="species-label">Species: </label>
+                <span id="species">{{ plant.species }}</span>
+              </div>
+              <div>
+                <label id="family-label">Family: </label>
+                <span id="family">{{ plant.family }}</span>
+              </div>
+            </div>
           </div>
-          <div>
-            <label for="scientific_name">Scientific_name: </label>
-            <span id="scientific_name">{{ plant.scientific_name }}</span>
+          <div id="plant-section">
+            <div class="plant-section-title">
+              <i class="material-icons prefix">category</i>
+              <label id="category-label-section">Category</label>
+            </div>
+            <div class="plant-section-content">
+              <label id="category-label">Category: </label>
+              <span id="category">{{ plant.category }}</span>
+            </div>
           </div>
-          <div>
-            <label for="common_name">Common_name: </label>
-            <span id="common_name">{{ plant.common_name }}</span>
+          <div id="botanic-section">
+            <div class="plant-section-title">
+              <i class="material-icons prefix">eco</i>
+              <label id="botanic-label-section">Botanic</label>
+            </div>
+            <div class="plant-section-content">
+              <label id="plant-type-label">Plant type: </label>
+              <span id="plant_type">{{ plant.plant_type }}</span>
+            </div>
           </div>
-          <div>
-            <label for="genus">Genus: </label>
-            <span id="genus">{{ plant.genus }}</span>
+          <div id="culture">
+            <div class="plant-section-title">
+              <i class="material-icons prefix">wb_sunny</i>
+              <label id="culture-label-section">Culture</label>
+            </div>
+            <div class="plant-section-content">
+              <label id="shade-tolerance-label">Shade tolerance: </label>
+              <span id="shade_tolerance">{{ plant.shade_tolerance }}</span>
+            </div>
           </div>
-          <div>
-            <label for="species">Species: </label>
-            <span id="species">{{ plant.species }}</span>
-          </div>
-          <div>
-            <label for="family">Family: </label>
-            <span id="family">{{ plant.family }}</span>
-          </div>
-        </div>
-        <div id="category-section">
-          <div>
-            <i class="material-icons prefix">category</i>
-            <label for="category">Category</label>
-          </div>
-          <div>
-            <label for="category">Category: </label>
-            <span id="category">{{ plant.category }}</span>
-          </div>
-        </div>
-        <div id="botanic-section">
-          <div>
-            <i class="material-icons prefix">eco</i>
-            <label for="botanic">Botanic</label>
-          </div>
-          <div>
-            <label for="plant_type">Plant type: </label>
-            <span id="plant_type">{{ plant.plant_type }}</span>
-          </div>
-        </div>
-        <div id="culture">
-          <div>
-            <i class="material-icons prefix">wb_sunny</i>
-            <label for="culture">Culture</label>
-          </div>
-          <div>
-            <label for="plant_type">Shade tolerance: </label>
-            <span id="plant_type">{{ plant.shade_tolerance }}</span>
-          </div>
-        </div>
-        <div id="note-section">
-          <div>
-            <i class="material-icons prefix">sticky_note_2</i>
-            <label for="note_label">Note</label>
-          </div>
-          <div>
-            <label for="note">Note</label>
-            <span id="note" class="materialize-textarea">{{ plant.note }}</span>
+          <div id="note-section">
+            <div class="plant-section-title">
+              <i class="material-icons prefix">sticky_note_2</i>
+              <label id="note-label-section">Note</label>
+            </div>
+            <div class="plant-section-content">
+              <label id="note-label">Note</label>
+              <span id="note" class="materialize-textarea">{{ plant.note }}</span>
+            </div>
           </div>
         </div>
       </div>

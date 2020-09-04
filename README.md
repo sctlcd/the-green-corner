@@ -2,8 +2,10 @@
 
 <img src="TO_ADD" alt="The Green Corner" width="700">
 <dl>
-<dt>TO_ADD</dt><br>
-<dd>TO_ADD</dd>
+<dd>Hey! Are you a plant lover?</dd>
+<dd>and/or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
+<dd>Here you go! [The Green Corner](TO_ADD) </dd>
+<dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt><br>
 
 ---
 
@@ -21,12 +23,24 @@
 		- [Icons](#Icons)
 		- [Typography](#Typography)
 	- [Wireframes](#Wireframes)
+	- [Data Integration](#Dataintegration)
 
 2. [Features](#Features)
 
 	- [Existing Features](#ExistingFeatures)
 		- [Footer](#Footer)
 		- [Main page](#Mainpage)
+		- [Homepage](#Homepage)
+		- [Plants page](#Plantspage)
+		- [Add plant page](#Addplantpage)
+		- [Edit plant page](#Editplantpage)
+		- [Delete plant modal](#Deleteplantmodal)
+		- [Add category page](#Addcategorypage)
+		- [Edit category page](#Editcategorypage)
+		- [Delete category modal](#Deletecategorymodal)
+		- [No result found page](#Noresultfoundpage)
+		- [404 error page](#404errorpage)
+		- [Defensive features](#Defensivefeatures)
 	- [Features Left to Implement](#FeaturesLeftToImplement)
 
 3. [Technologies Used](#TechnologiesUsed)
@@ -61,12 +75,16 @@
 
 The general purpose of **The Green Corner** is gathering plant specifications and identifying flora across the globe. And this anytime, anywhere as this application is available on various devices as desktops, tablets and mobile.
 
-I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Since I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written on a notebook, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to contain all my botanic experiences and knowledge centralized in one source. A few friends and family members are plant lovers and we like sharing information. With this app I can easily provide a single source for all my plant information and <em>My Green Corner</em> can easily be shared.<br />
+I've decided to create a modern responsive Web tool for gathering plant specifications and identifying flora worldwide. Because I enjoy gardening and I look for information about plants depending on the season (planting, growth, potting, care, trimming, cutting, etc. ) which are located in different places (saved online, written in books/magazines, saved in a folder on my computer, etc.). This was the good opportunity to finally have a single application to gather all my botanic experiences and knowledge centralized in one site. A few friends and family members like plants as well and we like sharing information. With this app I can easily provide all my plant information from only one location and <em>My Green Corner</em> can easily be shared.<br />
 In a future version of this app the users will have the possibility to authenticate so it will allow others to store their own plant information, <em>their own Green Corner</em> while having access to all plants information shared.
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Why this project? <a name="WhyThisProject"></a>
 
-This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Data Centric Development** module. The objective of this milestone project is building a full-stack site that allows your users to manage a common dataset about a particular domain.
+This project is part of my [Code Institute](https://codeinstitute.net/) Full Stack Software Development studies, the **Data Centric Development** module. The objective of this milestone project is building a full-stack site that allows your users to manage a common dataset about a particular domain using CRUD operations: **C**reate, **R**ead, **U**pdate, **D**elete the selected dataset.
 
 For this project we could choose from one of the following ideas:
 - Bring your own idea(s) to life, based on providing value to users to address a specific real or imagined need.
@@ -86,31 +104,55 @@ Back to [top](#TableOfContents)
 
 "***As a user, I want to _____***"
 
-- [x] View the site from **any devices** (mobile, tablet, desktop).
+- [x] *View* the site from any devices (mobile, tablet, desktop)
+- [x] *View* the presentation home page
+- [x] *View* all the plants
+- [x] *Add* a plant
+- [x] *Edit* a plant
+- [x] *Delete* a plant
+- [x] *View* all the categories
+- [x] *Add* a category
+- [x] *Edit* a category
+- [x] *Delete* a category
+- [x] *Search* by scientific name, common name, category
+- [x] *View* a specific message if no search result found
+- [x] *View* a error page if the page doesn't exist
 
 <br>
 - [x] *marked the item as implemented successfully*
+<br>
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Design <a name="Design"></a>
 
-When it comes about digital TO_ADD
-This is why I have designed my entire project around TO_ADD.
+Ideas which pop up in my mind when people talk about **botanic** and
+**gardening** are a calm and relaxing atmosphere, a sober and simple design, Green color obviously but not only, natural colors as well.    
+This is why I have designed my entire project around **natural and sober colors** representing the **elements of Nature**.  
 
-I choose logo/ pictures/ color palette/ not too many colors for making the page more readable, less saturated as the images bring already a lot of colors TO_ADD.    
+I choose first the website logo representing the idea of **identifying flora worldwide**. Then I selected the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).
+From my opinion (I might be wrong :) ) the logo, colors, pictures, the visual design of the website globally, are what people memorize first and it's what people will remember over time. It gives them a first impression and feeling. If the global visual design of the website looks and feels good - if the user like it - he/she will give the application a try. If not they are lot of chances he/she will probably look for another application among the numerous applications available on the market. So visual design and feel is a significant aspect I believe.    
 
-I picked the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).
+I used the [Parallax Template](https://materializecss.com/getting-started.html) from Materialize CSS which I customized in my vision of the **elements of Nature** concept. This template was a good base to the sober and simple design I wanted to create.  
 
-I choose a Google Font [](https://fonts.google.com/specimen/) which TO_ADD.
+Back to [top](#TableOfContents)
 
+---
 
 #### Framework <a name="Framework"></a>
 
-- [Materialize CS 0.100.2](https://materializecss.com/) - Responsive front-end framework based on Material Design
-- [Flask](https://palletsprojects.com/p/flask/) - Lightweight (micro) framework for building web applications
+- [Materialize CSS 0.100.2](https://materializecss.com/) - Responsive front-end framework based on Material Design
+- [Flask 1.1.2](https://palletsprojects.com/p/flask/) - Lightweight (micro) framework for building web applications
+
+Back to [top](#TableOfContents)
+
+---
 
 #### Color Scheme <a name="ColorScheme"></a>
 
-In keeping with the **TO_ADD**  idea, I have chosen a color scheme quite sober referring to the elements of nature. I first choose my [logo](https://www.flaticon.com/free-icon/planet-earth_1598196?term=plant&page=1&position=41) from Flaticon(https://www.flaticon.com). From there, I used the color scheme generator [Coolors.co](https://coolors.co/image-picker) which generated the following [palette](https://coolors.co/98cae9-1c5925-31628b-3caf4e-000000) from my logo picture. And Finally I selected picture which fit well in my color scheme and in the space allocated.
+In keeping with the **the elements of Nature** idea, I have chosen a natural and sober color scheme referring to the elements of Nature. I first choose my [logo](https://www.flaticon.com/free-icon/planet-earth_1598196?term=plant&page=1&position=41) from Flaticon(https://www.flaticon.com). From there, I used the color scheme generator [Coolors.co](https://coolors.co/image-picker) which generated the following [palette](https://coolors.co/98cae9-1c5925-31628b-3caf4e-000000) from my logo picture. And Finally I selected pictures which fit well in my color scheme and in the space allocated.
 
 - ![#98CAE9](https://placehold.it/15/98CAE9/98CAE9) `#98CAE9`- Light Cornflower Blue
 - ![#1c5925](https://placehold.it/15/98CAE9/98CAE9) `#1c5925`- Lincoln Green
@@ -124,16 +166,28 @@ In keeping with the **TO_ADD**  idea, I have chosen a color scheme quite sober r
 - ![rgba(0, 0, 0, 0.2)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.2)`
 - ![rgba(0, 0, 0, 0.87)](https://placehold.it/15/0000000/000000) `rgba(0, 0, 0, 0.87)`
 
+Back to [top](#TableOfContents)
+
+---
+
 #### Icons <a name="Icons"></a>
 
 - [Font Awesome 5.14.0](https://fontawesome.com/)
- - It fits my needs for this project.
-- [Material Design 0.100.2](https://material.io/resources/icons/?style=baseline)
-  - It fits my needs for this project.
+ - It fits my needs for this project in complementary with Material Design icons
+- [Material Design](https://material.io/resources/icons/?style=baseline)
+  - It fits my needs for this project in complementary with Font Awesome icons
+
+Back to [top](#TableOfContents)
+
+---
 
 #### Typography <a name="Typography"></a>
 
-- I have opted to use the Google Font TO_ADD
+- I have decided to use the Google Font [B612](https://fonts.google.com/specimen/B612?query=B612) throughout the website. And I have imported the Google Font [Amatic SC](https://fonts.google.com/specimen/Amatic+SC?query=Amatic) as a secondary font for the 404 error page.
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Wireframes <a name="Wireframes"></a>
 
@@ -147,24 +201,132 @@ Back to [top](#TableOfContents)
 
 ---
 
+### Data integration <a name="Dataintegration"></a>
+
+I chose to use MongoDB for my project in case the website gets a big amount of data in the future. I also wanted the user to be able to choose what data they gather in the plant form. I believe MongoDB offers more flexibility concerning my website in the long run.
+Moreover before this project I've never used MongoDB so it was the opportunity to get new knowledge and learning a new technology.
+
+Back to [top](#TableOfContents)
+
+---
+
 ## Features <a name="Features"></a>
 
 ### Existing Features <a name="ExistingFeatures"></a>
 
+#####  Navigation bar <a name="Navigationbar"></a>
+
+- The navigation menu is fixed on the top thus facilitating the access of the navigation from anywhere on the website without having to scroll.
+- Clicking on the logo link reloads the Home page.
+- Two dropdown menu items displaying 2 sub-menu items which are linked to the relevant page allowing the user to navigate smoothly between pages.
+- Search bar allowing the user to search a plant by scientific name, common name and category. If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
+- In mobile view the navigation bar is collapsed allowing the users more space on the screen. The users can click on the collapsed menu icon and still receive the full menu as a drop down function.
+- On mobile view the side bar menu displays a background image with the logo in foreground, a search bar and the two dropdown menu items I mentioned above.
+
 ##### Footer <a name="Footer"></a>
 
-- A copyright mention is displayed with my name beside a GitHub icon which opens my [Github](https://github.com/sctlcd) home page in a new browser tab.
+- The footer contains a Company bio description, a Contact section with Github and Twitter icon links opening in a browser new tab, a Support description with a button redirecting to the Patreon website (as no Patreon account has been created yet for this projet) in a browser new tab, a Contact description and a button redirecting to the Gitter website (as no Gitter room has been created yet for this projet) in a browser new tab.
+- A copyright mention is displayed with my name beside a GitHub icon link which opens my [Github](https://github.com/sctlcd) home page in a new browser tab.
 
-##### [Main page](TO_ADD) <a name="Mainpage"></a>
+Back to [top](#TableOfContents)
 
-TO_ADD
+---
+
+##### [Home page](TO_ADD) <a name="Homepage"></a>
+
+- This is an introduction page presenting the project and the application.
+- A title section with the short description of the Website and a button "Get started", redirecting to the Plants page.  
+- A section displaying the main motivations and benefits
+- A section displaying a Contact description and a button redirecting to the Patreon website (as no Patreon account has been created yet for this project) in a browser new tab.
+
+##### [Plants page](TO_ADD) <a name="Plantspage"></a>
+
+- A title section with the short description of the Website on the top of the page and a section with the short description of the Website at the bottom of the page are common elements of all pages.
+- View all plant records. Scientific names and common names are displayed.
+- Collapsible menu with all the plant fields organized in sections: Identity, Category, Botanic, Culture, Note.
+- Delete and Edit buttons  
+
+Back to [top](#TableOfContents)
+
+---
+
+##### [Add plant page](TO_ADD) <a name="Addplantpage"></a>
+
+- Access to this page by clicking on the Plants dropdown and then on the sub-menu item "Add Plant"
+- A form for adding a plant is displayed organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
+- Add plant and cancel buttons. Add plant button triggers the creation of the plant record in the database.
+
+##### [Edit plant page](TO_ADD) <a name="Editplantpage"></a>
+
+- Access to this page by clicking on the Edit button of the selected plant in the Plants page.
+- A form for editing a plant is displayed organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
+- Edit plant and cancel buttons. Edit plant button triggers the update of the plant record in the database
+
+Back to [top](#TableOfContents)
+
+---
+
+##### [Delete plant modal](TO_ADD) <a name="Deleteplantmodal"></a>
+
+- Access to this modal by clicking on the Delete button of the selected plant in the Plants page.
+- The modal displays a delete confirmation message and two buttons. Yes triggers the suppression of the plant record in the database. No redirects the user to the Plants page.
+
+##### [Categories page](TO_ADD) <a name="Categoriespage"></a>
+
+- View all category records. Category name is shown.
+- Delete and Edit buttons  
+
+##### [Add category page](TO_ADD) <a name="Addcategorypage"></a>
+
+- Access to this page by clicking on the Categories dropdown and then on the sub-menu item "Add Category"
+- A form for adding a category is displayed
+- Add plant and cancel buttons. Add plant button triggers the creation of the plant record in the database.
+
+Back to [top](#TableOfContents)
+
+---
+
+##### [Edit category page](TO_ADD) <a name="Editcategorypage"></a>
+
+- Access to this page by clicking on the Edit button of the selected category in the Categories page.
+- A form for editing a category is displayed
+- Edit category and cancel buttons. Edit plant button triggers the update of the plant record in the database
+
+##### [Delete category modal](TO_ADD) <a name="Deletecategorymodal"></a>
+
+- Access to this modal by clicking on the Delete button of the selected category in the Categories page.
+- The modal displays a delete confirmation message and two buttons. Yes triggers the suppression of the category record in the database. No redirects the user to the Categories page.
+
+##### [No result found page](TO_ADD) <a name="Noresultfoundpage"></a>
+
+- Message letting know the user No result have been found matching with his/her search.
+- Link redirecting to Homepage.
+
+Back to [top](#TableOfContents)
+
+---
+
+##### [404 error page](TO_ADD) <a name="404errorpage"></a>
+
+- Humoristic picture and message letting know the user the page does not exist.
+- Link redirecting to Homepage.
+
+##### [Defensive features](TO_ADD) <a name="Defensivefeatures"></a>
+
+- All plants and categories fields throughout the various pages (View/Add/Edit/Delete pages) are mandatory except the *note* field. If the field is empty when submitting a message is display letting know the user the field has to be filled.
+- If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
+- If the page doesn't exit the 404 error page is displayed informing the user.  
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Features Left to Implement <a name="FeaturesLeftToImplement"></a>
 
  - A "profile photo" of the plants to be displayed in the Plants list page.
  - User can upload photos of plants for making the identification easier.
  - User authentication
- - Review and validation feature of a new added plant by other users.
+ - Review and validation of a new added plant.
 
 Back to [top](#TableOfContents)
 
@@ -177,13 +339,21 @@ Back to [top](#TableOfContents)
 - [Compressjpeg](https://compressjpeg.com/) - Used to compress images for loading faster
 - [Techsini](https://techsini.com/multi-mockup/) - Used to generate multi-device website mockup
 
+Back to [top](#TableOfContents)
+
+---
+
 ##### Front-End Technologies <a name="Front-end-technologies"></a>
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5) - Used as the base for markup text.
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3) - Used as the base for cascading styles.
-- [Materialize CS 0.100.2](https://materializecss.com/) - used as responsive front-end framework, based on Material Design.
+- [Materialize CS 0.100.2](https://materializecss.com/) - Used as responsive front-end framework, based on Material Design.
 - [JavaScript](https://www.javascript.com/) - Used for user interactions.
-- [jQuery](https://jquery.com/) - JavaScript library, used to simplify some of the DOM manipulations.
+- [jQuery 3.5.1](https://jquery.com/) - JavaScript library, used to simplify some of the DOM manipulations.
+
+Back to [top](#TableOfContents)
+
+---
 
 ##### Back-End Technologies <a name="Back-end-technologies"></a>
 
@@ -211,7 +381,23 @@ My testing coverage for this project can be found [here](TO_ADD) in the testing 
 
 |  | Galaxy S5 | Pixel | Pixel 2 XL |iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | iPad | iPad Pro | Desktop 1024px | Desktop >1200px |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-|  |  |  |  |  |  |  |  |  |  |  |
+View the site from any devices (mobile, tablet, desktop)|  |  |  |  |  |  |  |  |  |  |  |
+View the presentation home page|  |  |  |  |  |  |  |  |  |  |  |
+View all the plants|  |  |  |  |  |  |  |  |  |  |  |
+Add a plant|  |  |  |  |  |  |  |  |  |  |  |
+Edit a plant|  |  |  |  |  |  |  |  |  |  |  |
+Delete a plant|  |  |  |  |  |  |  |  |  |  |  |
+View all the categories|  |  |  |  |  |  |  |  |  |  |  |
+Add a category|  |  |  |  |  |  |  |  |  |  |  |
+Edit a category|  |  |  |  |  |  |  |  |  |  |  |
+Delete a category|  |  |  |  |  |  |  |  |  |  |  |
+Search by scientific name, common name, category|  |  |  |  |  |  |  |  |  |  |  |
+View a specific message if no search result found|  |  |  |  |  |  |  |  |  |  |  |
+View a error page if the page doesn't exist|  |  |  |  |  |  |  |  |  |  |  |
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Layout responsiveness <a name="LayoutResponsiveness"></a>
 
@@ -220,54 +406,75 @@ My testing coverage for this project can be found [here](TO_ADD) in the testing 
 | website is responsive < 767 px |  |  |  |  |  |  |  |  |  |  |
 | website is responsive > 768 px |  |  |  |  |  |  |  |  |  |  |
 |**home.html** |
-|  |  |  |  |  |  |  |  |  |  |  |
+| Navigation bar |  |  |  |  |  |  |  |  |  |  |
+| logo / link |  |  |  |  |  |  |  |  |  |  |
+| menu / links / buttons |  |  |  |  |  |  |  |  |  |  |
+| Content page: Images / text / links / buttons |  |  |  |  |  |  |  |  |  |  |
+| Footer: text / links / buttons|  |  |  |  |  |  |  |  |  |  |
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Compatibility <a name="Compatibility"></a>
 
 I tested the website across the 6 main browsers in both desktop and mobile configuration to ensure a large number of users can use it successfully.
 
-- Chrome v.81.0
-- Edge v.44
-- Firefox v.75.0
+- Chrome v.84.0
+- Edge v.85.0
+- Firefox v.80.0
 - Safari v.5.1.7 for Windows 10
-- Opera v.68.0
+- Opera v.70.0
 - Internet Explorer v.11
 
 |All pages | Chrome | Edge | Firefox | Safari | Opera | IE |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- |
-| Expected appearance |  |  |  |  |  |  |
-| Expected responsiveness |  |  |  |  |  |  |
+| Expected appearance | Good | Fair | Good | Poor | Good | Poor |
+| Expected responsiveness | Good | Good | Good | Poor | Good | Poor |
 
 - IE: Some CSS3 properties and HTML5 elements are not fully supported
 
 - Safari v.5.1.7: It’s an outdated version and lacks many of the features present in the latest version of Safari. The last version of Safari for Windows was released on May 9, 2012.
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Testing left <a name="Testingleft"></a>
 
 - There is no way to install the latest version of the Safari browser on Windows 10 as Apple stopped developing Safari for Windows operating system long ago.
 For testing this website on the latest version of Safari, I will have to install the newest version of macOS on Windows 10 in a virtual machine.
 
+Back to [top](#TableOfContents)
+
+---
+
 ### Validators <a name="Validators"></a>
 
 **HTML**
 - [W3C HTML Validator](https://validator.w3.org/)
-    - No errors
+    - Jinja template syntax not understood. Relative errors shows : `{{ variables }}`, `{% for %} {% endfor %}`, etc.
+		- No errors No errors for the remaining code
 
 **CSS**
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 	- No errors
 
 **Javascript**
-- [Javascript Validator](http://beautifytools.com/javascript-validator.php)
+- [Javascript Validator](https://jshint.com/)
 	- No errors
 
 **Chrome DevTools**
-- [Chrome DevTools] (https://developers.google.com/web/tools/chrome-devtools/)
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/)
 	- Console Navigating through the Website rendered no critical fails/errors in the console that were necessary to fix.
 
-**Lighthouse in Chrome DevTools**
-- [Lighthouse] (https://developers.google.com/web/tools/lighthouse)
-	-
+**Python**
+- [Python validator](https://pythonbuddy.com/)
+    - TO_ADD !!to_fix!!
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Known Issues <a name="KnownIssues"></a>
 
@@ -281,26 +488,79 @@ Back to [top](#TableOfContents)
 
 ### Deployment – Live Website <a name="Deploymentlivewebsite"></a>
 
-TO_ADD
- 1.	Create repository in GitHub and give it a relevant name.
- 2.	Click on your repository to open it.
- 3.	Find the “settings” tab and click on it.
- 4.	Scroll down until the “GitHub Pages” sections.
- 5.	Under the “source” drop down menu, choose a branch. I chose “master branch” and select it.
- 6.	You will then see a URL to your live webpage. In my case the URL is https://sctlcd.github.io/match-the-memory/
+This site is currently deployed on [Heroku](https://www.heroku.com/) using the **master** branch on GitHub. To implement this project on Heroku, the following steps were taken:
+
+1. Create a **requirements.txt** file so Heroku can install the required dependencies to run the app.
+    - `sudo pip3 freeze --local > requirements.txt`
+    - My file can be found [here](TO_ADD).
+2. Create a **Procfile** to tell Heroku what type of application is being deployed, and how to run it.
+    - `echo web: python run.py > Procfile`
+    - My file can be found [here](TO_ADD).
+3. Sign up for a free Heroku account, create your project app, and click the **Deploy** tab, at which point you can *Connect GitHub* as the Deployment Method, and select *Enable Automatic Deployment*.
+4. In the Heroku **Settings** tab, click on the *Reveal Config Vars* button to configure environmental variables as follows:
+    - **IP** : `0.0.0.0`
+    - **PORT** : `5000`
+    - **MONGO_URI** : `<link to your Mongo DB>`
+5. Your app should be successfully deployed to Heroku at this point.
 
 ### Deployment – Run Locally <a name="Deploymentrunlocally"></a>
 
-TO_ADD
-1.	Again, click on the repository called [Match the memory](https://github.com/sctlcd/match-the-memory)
-2.	Along the top bar, find the “clone or download” button.
-3.	Here you have the option to clone by HTTPS or SSH.
-4.	Once you have chose your desired option, then click the copy icon next to the URL.
-5.	Open Git Bash.
-6.	Ensure you are in the correct directory which you want to copy the code into. If not, change the directory.
-7.	In the terminal, write
-			$ git clone https://github.com/sctlcd/match-the-memory.git
-8.	Press the enter button and your clone will be created.
+Please note - in order to run this project locally on your own system, you will need the following installed:
+- [Python3](https://www.python.org/downloads) to run the application.
+- [PIP](https://pip.pypa.io/en/stable/installing) to install all app requirements.
+- Any IDE.
+- [GIT](https://www.atlassian.com/git/tutorials/install-git) for cloning and version control.
+- [MongoDB](https://www.mongodb.com) to develop your own database either locally or remotely on MongoDB Atlas.
+
+Next, there's a series of steps to take in order to proceed with local deployment:
+
+- Clone this GitHub repository by either clicking the green *Clone or download* button and downloading the project as a zip-file (remember to unzip it first), or by entering the following into the Git CLI terminal:
+    - `git clone TO_ADD`.
+- Navigate to the correct file location after unpacking the files.
+    - `cd <path to folder>`
+- Create a `.env` file with your credentials. An example can be found [here](https://github.com/bravoalpha79/environment-variables#how-to-set-up-python-environment-variables-in-gitpod). Be sure to include your *MONGO_URI*
+- Install all requirements from the [requirements.txt](TO_ADD) file using this command:
+    - `sudo -H pip3 -r requirements.txt`
+- Sign up for a free account on [MongoDB](https://www.mongodb.com) and create a new Database called **the_green_corner**. The *Collections* in that database should be as follows:  
+	- [database documentation](TO_ADD) in the database sub-directory
+	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](TO_ADD) in the database sub-directory
+
+
+**Plants**
+```
+PlantID PK int
+ScientificName string
+CommonName string
+Genus string
+Species string
+Family string
+Category string FK >- Categories.CategoryName
+PlantType string FK >- PlantTypes.PlantTypeName
+ShadeTolerance string FK >- ShadeTolerance.ShadeToleranceName
+Note NULL string
+```
+
+**Categories**
+```
+CategoryID PK int
+CategoryName string
+```
+
+**PlantTypes** as pt
+```
+PlantTypeID PK int
+PlantTypeName string
+```
+
+**ShadeTolerance** as st
+```
+ShadeToleranceID PK int
+ShadeToleranceName string
+```
+
+- You should now be able to launch your app using the following command in your terminal:
+    - `python app.py`
+- The app should now be running on *localhost* on an address similar to `http://127.0.0.1:5000`. Simply copy/paste this into the browser of your choice!
 
 Back to [top](#TableOfContents)
 
@@ -314,24 +574,55 @@ Back to [top](#TableOfContents)
 	- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
   - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), inspiring ideas for gardening,...
   - [Garden.ie](https://www.garden.ie), a website which offers accurate horticultural advices.
+	- [Bored panda - creative 404 error pages](https://www.boredpanda.com/50-cool-and-creative-404-error-pages/?utm_source=google&utm_medium=organic&utm_campaign=organic) for the [404 error page](TO_ADD)
 
+Back to [top](#TableOfContents)
+
+---
 
 ### Content <a name="Content"></a>
 
-TO_ADD
+- [Aujardin](https://www.aujardin.info/), a site dedicated to gardening with advices on plant cultivation, maintenance and development of gardens, vegetable gardens, orchards,...
+- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Media <a name="Media"></a>
 
 Sources of the images used on this site:
 
-- From images sub-directory - [Github](https://github.com/sctlcd/match-the-memory/tree/master/app/assets/images)
-	- pexels-mike-145685.jpg - [Pexel | copyright Mike]()
-	- gooseberry-176450_1920.jpg - [Pixabay | copyright GLady]()
-	- pexels-skitterphoto-3795.jpg - [Pixabay] | copyright Greg Montani]()
+- From images sub-directory - [Github](TO_ADD)
+	- [garden-min](https://www.pexels.com/photo/bloom-blooming-country-countryside-145685/) - [Pexel](https://www.pexels.com/) | copyright [Mike](https://www.pexels.com/@mikebirdy)
+	- [gooseberry-min](https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=176450) - [Pixabay](https://pixabay.com/) | copyright [GLady](https://pixabay.com/users/glady-768/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=176450)
+	- [leaves-min](https://pixabay.com/fr/photos/feuilles-%C3%A9t%C3%A9-vert-%C3%A9rable-saison-291024/) - [Pixabay](https://pixabay.com/) | copyright [Gregovish](https://pixabay.com/fr/users/gregovish-195074/)
+	- [lemon-min](https://pixabay.com/fr/photos/citron-citronnier-arbre-fruit-852244/) - [Pixabay](https://pixabay.com/) | copyright [GregMontani](https://pixabay.com/fr/users/gregmontani-1014946/)
+	- [meadow-min](https://www.pexels.com/photo/flowers-summer-meadow-wild-flowers-51548/) - [Pexel](https://www.pexels.com/) | copyright [Freddie Ramm](https://www.pexels.com/@freddie-ramm-6839)
+	- [wild-flowers-min](https://pixabay.com/fr/photos/fleurs-sauvages-fleurs-plante-macro-571940/) - [Pixabay](https://pixabay.com/) | copyright [DreamyArt](https://pixabay.com/fr/users/dreamyart-512893/)
+	- [the_green_corner_logo-min](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)  
+	- [search-min](https://www.flaticon.com/free-icon/loupe_882988?term=magnifying%20glass&page=1&position=12) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+	- [humour404error](https://www.pinterest.ie/pin/226587424989226051/ ) - [Pinterest](https://www.pinterest.com/) | copyright [Joe Dunaway](http://www.modelzone.com/mangrasshopper/)
+	- [favicon](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Code <a name="Code"></a>
 
 - Parallax Template - [Materialize CSS](https://materializecss.com/)
+- Parallax Materialize CSS - [Materialize CSS parallax](http://archives.materializecss.com/0.100.2/parallax.html)
+- Flask 1.1 documentation - [Flask](https://flask.palletsprojects.com/en/1.1.x/)
+- Jinja 2.11 documentation - [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+- MongoDB Atlas 3.10 documentation - [MongoDB Atlas](https://docs.atlas.mongodb.com/)
+- Readme file information - [Tim Nelson](https://github.com/TravelTimN) Software Developer and Tutor at [Code Institute](http://codeinstitute.net)
+- Environment variables - [Igor Basuga](https://github.com/bravoalpha79) Tutor at [Code Institute](http://codeinstitute.net)
+- Environment variables - Code Institute archive resources
+
+Back to [top](#TableOfContents)
+
+---
 
 ### Acknowledgements <a name="Acknowledgements"></a>
 

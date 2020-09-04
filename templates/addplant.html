@@ -1,51 +1,52 @@
 {% extends 'base.html' %}
+{% block title %}Add Plant{% endblock %}
 {% block content %}
 <div class="row">
   <h3><i class="fas fa-plus"></i> Add Plant</h3>
 
   <form action="{{ url_for('insert_plant') }}" method="POST" class="col s12">
     <div class="row col s12">
-      <div class="row">
-        <div>
+      <div class="row identity-section">
+        <div class="left">
           <i class="material-icons prefix">fingerprint</i>
-          <label for="identity">Identity</label>
+          <label id="identity">Identity</label>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <i class="material-icons prefix">assignment</i>
             <input id="scientific_name" name="scientific_name" type="text" class="validate" required="" aria-required="true">
-            <label for="icon_prefix" data-error="wrong" data-success="right">Scientific name</label>
+            <label for="scientific_name" data-error="wrong" data-success="right">Scientific name</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">assignment</i>
             <input id="common_name" name="common_name" type="text" class="validate" required="" aria-required="true">
-            <label for="icon_prefix" data-error="wrong" data-success="right">Common name</label>
+            <label for="common_name" data-error="wrong" data-success="right">Common name</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">subject</i>
             <input id="genus" name="genus" type="text" class="validate" required="" aria-required="true">
-            <label for="icon_prefix" data-error="wrong" data-success="right">Genus</label>
+            <label for="genus" data-error="wrong" data-success="right">Genus</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">subject</i>
             <input id="species" name="species" type="text" class="validate" required="" aria-required="true">
-            <label for="icon_prefix" data-error="wrong" data-success="right">Species</label>
+            <label for="species" data-error="wrong" data-success="right">Species</label>
           </div>
           <div class="input-field col s12">
             <i class="material-icons prefix">subject</i>
             <input id="family" name="family" type="text" class="validate" required="" aria-required="true">
-            <label for="icon_prefix" data-error="wrong" data-success="right">Family</label>
+            <label for="family" data-error="wrong" data-success="right">Family</label>
           </div>
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">category</i>
-          <label for="category">Category</label>
+          <label id="category">Category</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-category">
-            <select id="category_name" name="category_name" required="" aria-required="true">
+            <select id="category_name" name="category_name">
               <option value="" disabled selected>Choose Category</option>
               {% for category in categories %}
               <option value="{{category.category_name}}">{{category.category_name}}</option>
@@ -56,13 +57,13 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">eco</i>
-          <label for="botanic">Botanic</label>
+          <label id="botanic">Botanic</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-plant-type">
-            <select id="plant_type" name="plant_type" required="" aria-required="true">
+            <select id="plant_type" name="plant_type">
               <option value="" disabled selected>Choose Plant type</option>
               {% for type in plant_types %}
               <option value="{{type.plant_type}}">{{type.plant_type}}</option>
@@ -73,13 +74,13 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">wb_sunny</i>
-          <label for="culture">Culture</label>
+          <label id="culture">Culture</label>
         </div>
         <div class="row">
           <div class="input-field col s12 dropdown-shade-tolerance">
-            <select id="shade_tolerance" name="shade_tolerance" required="" aria-required="true">
+            <select id="shade_tolerance" name="shade_tolerance">
               <option value="" disabled selected>Choose Shade tolerance</option>
               {% for tolerance in shade_tolerance %}
               <option value="{{tolerance.shade_tolerance_name}}">{{tolerance.shade_tolerance_name}}</option>
@@ -90,14 +91,14 @@
         </div>
       </div>
       <div class="row">
-        <div>
+        <div class="left">
           <i class="material-icons prefix">sticky_note_2</i>
-          <label for="note_label">Note</label>
+          <label id="note_label">Note</label>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <textarea id="note" name="note" class="materialize-textarea"></textarea>
-            <label for="icon_prefix">Note</label>
+            <label for="note">Note</label>
           </div>
         </div>
       </div>
