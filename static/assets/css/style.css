@@ -623,9 +623,9 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 }
 
 .container-noresultsfound p {
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
-  margin-top: 60px;
+  margin-top: 5%;
 }
 
 .noresultsfound-img {
@@ -764,6 +764,16 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 14px;
+  }
 }
 
 /* extra small - small phones */
@@ -890,6 +900,16 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 30px;
     margin-bottom: 20px;
   }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 30px;
+    margin-top: 30px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 16px;
+  }
 }
 
 /* Small - phones */
@@ -1011,6 +1031,16 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
     margin-top: 30px;
     margin-bottom: 20px;
   }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 34px;
+    margin-top: 40px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 18px;
+  }
 }
 
 /* Medium - tablets */
@@ -1131,5 +1161,15 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   .contact-section p {
     margin-top: 40px;
     margin-bottom: 30px;
+  }
+
+  /* No results found page */
+  .container-noresultsfound h4 {
+    font-size: 38px;
+    margin-top: 50px;
+  }
+
+  .container-noresultsfound p {
+    font-size: 20px;
   }
 }

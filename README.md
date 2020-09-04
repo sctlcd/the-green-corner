@@ -241,7 +241,7 @@ Back to [top](#TableOfContents)
 - A section displaying the main motivations and benefits of the website
 - A section displaying a Contact description and a button redirecting to the [Gitter](https://gitter.im/) website (as no Gitter account has been yet created for this project) in a browser new tab.
 
-##### [Base template] <a name="Basetemplate"></a>
+##### Base template <a name="Basetemplate"></a>
 
 - A title section with the short description of the Website on the top of the page
 - A content section which loads all the various pages I am going to detail below.
@@ -319,7 +319,7 @@ Back to [top](#TableOfContents)
 - Humoristic picture and message letting know the user the page does not exist.
 - Link redirecting to Homepage.
 
-##### [Defensive features] <a name="Defensivefeatures"></a>
+##### Defensive features <a name="Defensivefeatures"></a>
 
 - All plants and categories fields throughout the various pages (View/Add/Edit/Delete pages) are mandatory except the *note* field. If the field is empty when submitting a message is display letting know the user the field has to be filled.
 - If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
@@ -382,25 +382,44 @@ Back to [top](#TableOfContents)
 
 ## Testing <a name="Testing"></a>
 
-My testing coverage for this project can be found [here](TO_ADD) in the testing sub-directory or below.
+My testing coverage for this project can be found [here](https://github.com/sctlcd/the-green-corner/tree/master/testing) in the testing sub-directory or below.
 
 ### User story validation <a name="UserStoryValidation"></a>
 
 |  | Galaxy S5 | Pixel | Pixel 2 XL |iPhone 6/7/8 | iPhone 6/7/8 Plus | iPhone X | iPad | iPad Pro | Desktop 1024px | Desktop >1200px |
 | :--- | :--- | :---| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-View the site from any devices (mobile, tablet, desktop)|  |  |  |  |  |  |  |  |  |  |  |
-View the presentation home page|  |  |  |  |  |  |  |  |  |  |  |
-View all the plants|  |  |  |  |  |  |  |  |  |  |  |
-Add a plant|  |  |  |  |  |  |  |  |  |  |  |
-Edit a plant|  |  |  |  |  |  |  |  |  |  |  |
-Delete a plant|  |  |  |  |  |  |  |  |  |  |  |
-View all the categories|  |  |  |  |  |  |  |  |  |  |  |
-Add a category|  |  |  |  |  |  |  |  |  |  |  |
-Edit a category|  |  |  |  |  |  |  |  |  |  |  |
-Delete a category|  |  |  |  |  |  |  |  |  |  |  |
-Search by scientific name, common name, category|  |  |  |  |  |  |  |  |  |  |  |
-View a specific message if no search result found|  |  |  |  |  |  |  |  |  |  |  |
-View a error page if the page doesn't exist|  |  |  |  |  |  |  |  |  |  |  |
+View the site from any devices (mobile, tablet, desktop)| Pass | - | Pass | - | Pass | - | Pass | - | Pass | - | Pass |
+View the presentation home page| Pass | - | - | - | - | - | - | - | - | - | |
+View all the plants|  | Pass | - | - | - | - | - | - | - | - | - |
+Add a plant| - | - | Pass | - | - | - | - | - | - | - | - |
+Edit a plant| - | - | - | Pass | - | - | - | - | - | - | - |
+Delete a plant| - | - | - | - | Pass | - | - | - | - | - | - |
+View all the categories| - | - | - | - | - | Pass | - | - | - | - | - |
+Add a category| - | - | - | - | - | - | Pass | - | - | - | - |
+Edit a category| - | - | - | - | - | - | - | Pass | - | - | - |
+Delete a category| - | - | - | - | - | - | - | - | Pass | - | - |
+Search by scientific name, common name, category| - | - | - | - | - | - | - | - | - | Fail | - |
+View a specific message if no search result found| Pass | - | - | - | - | - | - | - | - | - | Pass |
+View a error page if the page doesn't exist| - | Pass | - | - | - | - | - | - | - | - | - |
+
+Back to [top](#TableOfContents)
+
+---
+
+| User Stories - As a user, I want to... | Expected outcome | Actual outcome |
+| :--- | :--- | :---|
+| View the site from any devices (mobile, tablet, desktop) | The website should be responsible and displayed correctly | as expected |
+| View all the plants | Click on Plants menu then View plant or on "Get started" button from the home page, the list of plants should be displayed. Each plants should have a collapsible menu containing fields organized by section (Identity, Category, Botanic, Culture, Note) and modify and delete buttons | as expected |
+| Add a plant | Click on Plants menu then Add Plant sub-menu, fill all the fields and submit. The plant should be added in the Plants page and in the database | as expected |
+| Edit a plant | Click on Edit button for the chosen plant in the Plants page, update fields and submit. The plant should be updated in the Plants page and in the database | as expected |
+| Delete a plant | Click on Delete button for the chosen plant in the Plants page. A confirmation modal should pop up with yes and no buttons. Agree. The plant should be updated in the Plants page and in the database | as expected |
+| View all the categories | Click on Categories menu then View category, the list of categories should be displayed and modify and delete buttons | as expected |
+| Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit. The category should be added in the Categories page and in the database | as expected |
+| Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit. The category should be updated in the Categories page and in the database | as expected |
+| Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree. The category should be updated in the Categories page and in the database | as expected |
+| Search by scientific name, common name, category | Enter a scientific plant name (or part of it) and submit.  The result of the search should be displayed in the Plants page. Redo this test case with a common plant name and a plant category (or part of it) | as expected |
+| View a specific message if no search result found | Enter a search which does not exist. The No results found page should be displayed (example: *aaaaa* ) | not as expected |
+| View a error page if the page doesn't exist | Enter an URL which does not exist. The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
 
 Back to [top](#TableOfContents)
 
@@ -519,7 +538,7 @@ Back to [top](#TableOfContents)
 
 ### Known Issues <a name="KnownIssues"></a>
 
-TO_ADD
+- Search results doesn't displayed as expected
 
 Back to [top](#TableOfContents)
 
@@ -556,15 +575,15 @@ Please note - in order to run this project locally on your own system, you will 
 Next, there's a series of steps to take in order to proceed with local deployment:
 
 - Clone this GitHub repository by either clicking the green *Clone or download* button and downloading the project as a zip-file (remember to unzip it first), or by entering the following into the Git CLI terminal:
-    - `git clone TO_ADD`.
+    - `git clone https://github.com/sctlcd/the-green-corner.git`.
 - Navigate to the correct file location after unpacking the files.
     - `cd <path to folder>`
 - Create a `.env` file with your credentials. An example can be found [here](https://github.com/bravoalpha79/environment-variables#how-to-set-up-python-environment-variables-in-gitpod). Be sure to include your *MONGO_URI*
-- Install all requirements from the [requirements.txt](TO_ADD) file using this command:
+- Install all requirements from the [requirements.txt](https://github.com/sctlcd/the-green-corner/blob/master/requirements.txt) file using this command:
     - `sudo -H pip3 -r requirements.txt`
 - Sign up for a free account on [MongoDB](https://www.mongodb.com) and create a new Database called **the_green_corner**. The *Collections* in that database should be as follows:  
-	- [database documentation](TO_ADD) in the database sub-directory
-	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](TO_ADD) in the database sub-directory
+	- [database documentation](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram_documentation.png) in the database sub-directory
+	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram.png) in the database sub-directory
 
 
 **plants**
@@ -645,6 +664,7 @@ Sources of the images used on this site:
 	- [search-min](https://www.flaticon.com/free-icon/loupe_882988?term=magnifying%20glass&page=1&position=12) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
 	- [humour404error](https://www.pinterest.ie/pin/226587424989226051/ ) - [Pinterest](https://www.pinterest.com/) | copyright [Joe Dunaway](http://www.modelzone.com/mangrasshopper/)
 	- [favicon](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+	- [noresultsfound](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
 
 Back to [top](#TableOfContents)
 
