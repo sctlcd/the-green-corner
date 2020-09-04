@@ -40,7 +40,7 @@ def handle_exception(e):
     """
         Generic Error Handler
     """
-    return render_template("errors/errorpage.html")
+    return render_template("errors/404errorpage.html")
 
 
 # ---------------------- #
@@ -56,7 +56,7 @@ def get_home():
         Display the application purposes, contact and support the
         project, with option to Search.
     """
-    return render_template("home.html")
+    return render_template("/home.html")
 
 
 # ------------------------ #
@@ -171,10 +171,10 @@ def search_plants():
     search_text = request.form.get('search_text')
     plants_search = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}})) + list(mongo.db.plants.find({'category': {"$regex": f'.*{search_text}.*'}}))
     if search_text == "" or len(plants_search) == 0 :
-        return render_template("nosearchresults.html",
+        return render_template("noresultsfound.html",
         plants_search=plants_search)
     else:
-        return render_template("plantresults.html",
+        return render_template("plantsearchresults.html",
         plants_search=plants_search)
 
 

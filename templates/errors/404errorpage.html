@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block title %}Page Not Found{% endblock %}
 {% block content %}
+
 <!-- 404 page not found -->
 <div class="container-error">
   <div class="row">
@@ -9,25 +10,24 @@
     </div>
   </div>
   <div class="row">
-    <div class="col s8">
-      <img src="{{ url_for('static', filename='assets/images/errors/humour404error-min.jpg') }}" alt="Page Not Found" class="responsive-img">
+    <div class="col s12">
+      <img src="{{ url_for('static', filename='assets/images/errors/humour404error-min.jpg') }}" alt="Page Not Found" class="responsive-img error404-img">
     </div>
-    <div class="col s4 text">
-      <h4>
-        <span>I didn't eat it.</span>
-        <br>
-        <span>I swear!</span>
-      </h4>
+  </div>
+  <div class="row">
+    <div class="col s12 text blue-text">
+      <p>I didn't eat it. I swear ;) !</p>
     </div>
   </div>
   <div class="row">
     <div class="col s12 back-link">
-      <h4>
+      <p>
         <a id="back-homepage" href="{{ url_for('get_home') }}" class="blue-light-text">Back to homepage
           <i class="fas fa-arrow-alt-circle-right" aria-hidden="true"></i>
         </a>
-      </h4>
+      </p>
     </div>
   </div>
 </div>
+
 {% endblock %}
