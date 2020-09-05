@@ -42,44 +42,44 @@ View a error page if the page doesn't exist| - | Pass | - | - | - | - | - | - | 
 | website is responsive < 767 px | Good | Good | Good | Good | Good | Good | n/a | n/a | n/a | n/a |
 | website is responsive > 768 px | n/a | n/a | n/a | n/a | n/a | n/a | Good | Good | Good | Good |
 |**home.html** |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | plants.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | addplant.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | editplant.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | categories.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | addcategory.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | editcategory.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | noresultsfound.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | plantsearchresults.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | 404errorpage.html |
-| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
-| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good |  | Good |
+| Navigation bar: logo / buttons / links / search | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
+| Content page: Images / text / links / buttons | Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 | Footer: text / links / buttons| Good | Good | Good  | Good | Good | Good | Good | Good | Good | Good |
 
 
