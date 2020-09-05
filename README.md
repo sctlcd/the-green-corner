@@ -418,7 +418,7 @@ Back to [top](#TableOfContents)
 | Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit | The category should be added in the Categories page and in the database | as expected |
 | Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit | The category should be updated in the Categories page and in the database | as expected |
 | Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree | The category should be updated in the Categories page and in the database | as expected |
-| Search by scientific name, common name | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name (or part of it) | The result of the search should be displayed in the Plant search results page | The search feature filters by common name or scientific name but the list rendering fails. |
+| Search by scientific name, common name | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name (or part of it) | The result of the search should be displayed in the Plant search results page | The search results list fails to be displayed correctly. |
 | View a specific message if no search result found | Enter a search which does not exist | The No results found page should be displayed (example: *aaaaa* ) | as expected |
 | View an error page if the page doesn't exist | Enter an URL which does not exist | The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
 
@@ -539,7 +539,8 @@ Back to [top](#TableOfContents)
 
 ### Known Issues <a name="KnownIssues"></a>
 
-- When a search entry matches with some results, this list is not displayed as expected in the Plant search results page. The search feature filters by common name or scientific name but the list rendering fails.
+- When a search entry matches with some results, this list is not displayed as expected in the Plant search results page. The search results list fails to be displayed correctly.
+- When a category is updated/deleted, the category_name field associated in plants pages is not updated/deleted.
 
 Back to [top](#TableOfContents)
 
@@ -595,7 +596,7 @@ common_name string
 genus string
 species string
 family string
-category string FK >- categories.category_name
+category_name string FK >- categories.category_name
 plant_type string FK >- plant_types.plant_type_name
 shade_tolerance string FK >- shade_tolerance.shade_tolerance_name
 note NULL string
