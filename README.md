@@ -661,10 +661,9 @@ Sources of the images used on this site:
 	- [lemon-min](https://pixabay.com/fr/photos/citron-citronnier-arbre-fruit-852244/) - [Pixabay](https://pixabay.com/) | copyright [GregMontani](https://pixabay.com/fr/users/gregmontani-1014946/)
 	- [meadow-min](https://www.pexels.com/photo/flowers-summer-meadow-wild-flowers-51548/) - [Pexel](https://www.pexels.com/) | copyright [Freddie Ramm](https://www.pexels.com/@freddie-ramm-6839)
 	- [wild-flowers-min](https://pixabay.com/fr/photos/fleurs-sauvages-fleurs-plante-macro-571940/) - [Pixabay](https://pixabay.com/) | copyright [DreamyArt](https://pixabay.com/fr/users/dreamyart-512893/)
-	- [the_green_corner_logo-min](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)  
-	- [search-min](https://www.flaticon.com/free-icon/loupe_882988?term=magnifying%20glass&page=1&position=12) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+	- [the_green_corner_logo-min](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 	- [humour404error](https://www.pinterest.ie/pin/226587424989226051/ ) - [Pinterest](https://www.pinterest.com/) | copyright [Joe Dunaway](http://www.modelzone.com/mangrasshopper/)
-	- [favicon](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](www.flaticon.com) | copyright [Free](https://www.flaticon.com/authors/freepik)
+	- [favicon](https://www.flaticon.com/free-icon/planet-earth_1598196?term=earth&page=1&position=47) - [Flaticon](https://www.flaticon.com/) | copyright [Freepik](https://www.flaticon.com/authors/freepik)
 	- [noresultsfound](https://all-free-download.com/free-vector/download/exploration-job-background-searching-man-sketch-cartoon-design_6844384.html) - [Free vectors](https://all-free-download.com/free-vector/) | copyright [BSGStudio](http://buysellgraphic.com/)
 
 Back to [top](#TableOfContents)
