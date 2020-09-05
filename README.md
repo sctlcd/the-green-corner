@@ -107,7 +107,7 @@ Back to [top](#TableOfContents)
 "***As a user, I want to _____***"
 
 - [x] *View* the site from any devices (mobile, tablet, desktop)
-- [x] *View* the presentation home page
+- [x] *View* the presentation homepage
 - [x] *View* all the plants
 - [x] *Add* a plant
 - [x] *Edit* a plant
@@ -116,8 +116,8 @@ Back to [top](#TableOfContents)
 - [x] *Add* a category
 - [x] *Edit* a category
 - [x] *Delete* a category
-- [x] *Search* by scientific name, common name, category
-- [x] *View* a specific message if no search result found
+- [x] *Search* by scientific name, common name
+- [x] *View* a specific message if no search results found
 - [x] *View* a error page if the page doesn't exist
 
 <br>
@@ -130,8 +130,7 @@ Back to [top](#TableOfContents)
 
 ### Design <a name="Design"></a>
 
-Ideas which pop up in my mind when people talk about **botanic** and
-**gardening** are a calm and relaxing atmosphere, a sober and simple design, Green color obviously but not only, natural colors as well.    
+Ideas which pop up in my mind when people talk about **botanic** and **gardening** are a calm and relaxing atmosphere, a sober and simple design, Green color obviously but not only, natural colors as well.    
 This is why I have designed my entire project around **natural and sober colors** representing the **elements of Nature**.  
 
 I choose first the website logo representing the idea of **identifying flora worldwide**. Then I selected the palette by using the color scheme generator from a photo of the website logo, named [Coolors.co](https://coolors.co/image-picker).<br />
@@ -194,7 +193,7 @@ Back to [top](#TableOfContents)
 ### Wireframes <a name="Wireframes"></a>
 
 I have used [Balsamiq Wireframes](https://balsamiq.com/wireframes/) for my wireframes because:
-- Code Institute have provided all students a free licence until end of 2020. I got to use this software a few year ago and I am pretty happy to get the chance to use it again.
+- Code Institute have provided all students a free licence until end of 2020. I got to use this software a few years ago and I am pretty happy to get the chance to use it again.
 - The simplicity, rapidity and ease of use by focusing on structure and content.
 
 My wireframes for this project can be found [here](https://github.com/sctlcd/the-green-corner/tree/master/wireframes) in the wireframes sub-directory.
@@ -219,11 +218,11 @@ Back to [top](#TableOfContents)
 #####  Navigation bar <a name="Navigationbar"></a>
 
 - The navigation menu is fixed on the top thus facilitating the access of the navigation from anywhere on the website without having to scroll.
-- Clicking on the logo link reloads the Home page.
+- Clicking on the logo link reloads the Homepage.
 - Two dropdown menu items displaying 2 sub-menu items which are linked to the relevant page allowing the user to navigate smoothly between pages.
-- Search bar allowing the user to search a plant by scientific name, common name and category. If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
-- In mobile view the navigation bar is collapsed allowing the users more space on the screen. The users can click on the collapsed menu icon and still receive the full menu as a drop down function.
-- On mobile view the side bar menu displays a background image with the logo in foreground, a search bar and the two dropdown menu items I mentioned above.
+- Search bar allowing the user to search a plant by scientific name, common name. If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
+- In mobile view, the navigation bar is collapsed allowing the users more space on the screen. The users can click on the collapsed menu icon and still receive the full menu as a drop down function.
+- On mobile view, the side bar menu displays a background image with the logo in foreground, a search bar and the two dropdown menu items I mentioned above.
 
 ##### Footer <a name="Footer"></a>
 
@@ -237,15 +236,15 @@ Back to [top](#TableOfContents)
 ##### [Homepage](https://github.com/sctlcd/the-green-corner/blob/master/templates/home.html) <a name="Homepage"></a>
 
 - This is an introduction page presenting the project and the application.
-- A title section with the short description of the Website and a button "Get started", redirecting to the Plants page.  
+- A title section with the short description of the website and a button "Get started" redirecting to the Plants page.  
 - A section displaying the main motivations and benefits of the website
 - A section displaying a Contact description and a button redirecting to the [Gitter](https://gitter.im/) website (as no Gitter account has been yet created for this project) in a browser new tab.
 
 ##### Base template <a name="Basetemplate"></a>
 
-- A title section with the short description of the Website on the top of the page
+- A title section with the short description of the website on the top of the page are common elements of all pages.
 - A content section which loads all the various pages I am going to detail below.
-- A section with the short description of the Website at the bottom of the page are common elements of all pages.
+- A section with the short description of the website at the bottom of the page are common elements of all pages.
 
 
 ##### [Plants page](https://github.com/sctlcd/the-green-corner/blob/master/templates/plants.html) <a name="Plantspage"></a>
@@ -261,13 +260,13 @@ Back to [top](#TableOfContents)
 ##### [Add plant page](https://github.com/sctlcd/the-green-corner/blob/master/templates/addplant.html) <a name="Addplantpage"></a>
 
 - Access to this page by clicking on the Plants dropdown and then on the sub-menu item "Add Plant"
-- A form for adding a plant is displayed organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
+- A form for adding a plant is displayed and organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
 - Add plant and cancel buttons. Add plant button triggers the creation of the plant record in the database.
 
 ##### [Edit plant page](https://github.com/sctlcd/the-green-corner/blob/master/templates/editplant.html) <a name="Editplantpage"></a>
 
 - Access to this page by clicking on the Edit button of the selected plant in the Plants page.
-- A form for editing a plant is displayed organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
+- A form for editing a plant is displayed and organized by sections, Identity, Category, Botanic, Culture, Note, with the relevant fields.
 - Edit plant and cancel buttons. Edit plant button triggers the update of the plant record in the database
 
 Back to [top](#TableOfContents)
@@ -277,18 +276,18 @@ Back to [top](#TableOfContents)
 ##### [Delete plant modal](https://github.com/sctlcd/the-green-corner/blob/master/templates/plants.html) <a name="Deleteplantmodal"></a>
 
 - Access to this modal by clicking on the Delete button of the selected plant in the Plants page.
-- The modal displays a delete confirmation message and two buttons. Yes triggers the suppression of the plant record in the database. No redirects the user to the Plants page.
+- The modal displays a delete confirmation message and two buttons, yes and no. Yes button triggers the suppression of the plant record in the database. No button redirects the user to the Plants page.
 
 ##### [Categories page](https://github.com/sctlcd/the-green-corner/blob/master/templates/categories.html) <a name="Categoriespage"></a>
 
 - View all category records. Category name is shown.
-- Delete and Edit buttons  
+- Delete and Edit buttons.
 
 ##### [Add category page](https://github.com/sctlcd/the-green-corner/blob/master/templates/addcategory.html) <a name="Addcategorypage"></a>
 
-- Access to this page by clicking on the Categories dropdown and then on the sub-menu item "Add Category"
-- A form for adding a category is displayed
-- Add plant and cancel buttons. Add plant button triggers the creation of the plant record in the database.
+- Access to this page by clicking on the Categories dropdown and then on the sub-menu item "Add Category".
+- A form for adding a category is displayed.
+- Add category and cancel buttons. Add category button triggers the creation of the category record in the database.
 
 Back to [top](#TableOfContents)
 
@@ -297,17 +296,17 @@ Back to [top](#TableOfContents)
 ##### [Edit category page](https://github.com/sctlcd/the-green-corner/blob/master/templates/editcategory.html) <a name="Editcategorypage"></a>
 
 - Access to this page by clicking on the Edit button of the selected category in the Categories page.
-- A form for editing a category is displayed
-- Edit category and cancel buttons. Edit plant button triggers the update of the plant record in the database
+- A form for editing a category is displayed.
+- Edit category and cancel buttons. Edit category button triggers the update of the category record in the database.
 
 ##### [Delete category modal](https://github.com/sctlcd/the-green-corner/blob/master/templates/categories.html) <a name="Deletecategorymodal"></a>
 
 - Access to this modal by clicking on the Delete button of the selected category in the Categories page.
-- The modal displays a delete confirmation message and two buttons. Yes triggers the suppression of the category record in the database. No redirects the user to the Categories page.
+- The modal displays a delete confirmation message and two buttons, yes and no. Yes button triggers the suppression of the category record in the database. No button redirects the user to the Categories page.
 
 ##### [No result found page](https://github.com/sctlcd/the-green-corner/blob/master/templates/noresultsfound.html) <a name="Noresultfoundpage"></a>
 
-- Message letting know the user No result have been found matching with his/her search.
+- Humoristic picture and message letting know the user no result have been found matching with his/her search.
 - Link redirecting to Homepage.
 
 Back to [top](#TableOfContents)
@@ -321,8 +320,8 @@ Back to [top](#TableOfContents)
 
 ##### Defensive features <a name="Defensivefeatures"></a>
 
-- All plants and categories fields throughout the various pages (View/Add/Edit/Delete pages) are mandatory except the *note* field. If the field is empty when submitting a message is display letting know the user the field has to be filled.
-- If the search field is empty or there are no search results matching with the search entry a message is shown letting the user know they are no results found.
+- All plants and categories fields throughout the various pages (View/Add/Edit/Delete pages) are mandatory except the *note* field. If a required field is empty when submitting, a message is displayed letting know the user the field has to be filled.
+- If the search field is empty or if there are no search results matching with the search entry, a message is shown letting the user know they are no results found.
 - If the page doesn't exit the 404 error page is displayed informing the user.  
 
 Back to [top](#TableOfContents)
@@ -398,7 +397,7 @@ View all the categories| - | - | - | - | - | Pass | - | - | - | - | - |
 Add a category| - | - | - | - | - | - | Pass | - | - | - | - |
 Edit a category| - | - | - | - | - | - | - | Pass | - | - | - |
 Delete a category| - | - | - | - | - | - | - | - | Pass | - | - |
-Search by scientific name, common name, category| - | - | - | - | - | - | - | - | - | Fail | - |
+Search by scientific name, common name| - | - | - | - | - | - | - | - | - | Fail | - |
 View a specific message if no search result found| Pass | - | - | - | - | - | - | - | - | - | Pass |
 View a error page if the page doesn't exist| - | Pass | - | - | - | - | - | - | - | - | - |
 
@@ -417,9 +416,9 @@ Back to [top](#TableOfContents)
 | Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit | The category should be added in the Categories page and in the database | as expected |
 | Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit | The category should be updated in the Categories page and in the database | as expected |
 | Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree | The category should be updated in the Categories page and in the database | as expected |
-| Search by scientific name, common name, category | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name and a plant category (or part of it) | The result of the search should be displayed in the Plants page | as expected |
-| View a specific message if no search result found | Enter a search which does not exist | The No results found page should be displayed (example: *aaaaa* ) | not as expected |
-| View a error page if the page doesn't exist | Enter an URL which does not exist | The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
+| Search by scientific name, common name | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name (or part of it) | The result of the search should be displayed in the Plant search results page | The search feature filters by common name or scientific name but the list rendering fails. |
+| View a specific message if no search result found | Enter a search which does not exist | The No results found page should be displayed (example: *aaaaa* ) | as expected |
+| View an error page if the page doesn't exist | Enter an URL which does not exist | The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
 
 Back to [top](#TableOfContents)
 
@@ -530,7 +529,7 @@ Back to [top](#TableOfContents)
 
 **Python**
 - [Python validator](https://pythonbuddy.com/)
-    - TO_ADD !!to_fix!!
+    - No errors
 
 Back to [top](#TableOfContents)
 
@@ -538,7 +537,7 @@ Back to [top](#TableOfContents)
 
 ### Known Issues <a name="KnownIssues"></a>
 
-- Search results doesn't displayed as expected
+- When a search entry matches with a list of search results, this list is not displayed as expected in the Plant search results page. The search feature filters by common name or scientific name but the list rendering fails.
 
 Back to [top](#TableOfContents)
 
@@ -620,7 +619,7 @@ shade_tolerance_name string
 
 - You should now be able to launch your app using the following command in your terminal:
     - `python app.py`
-- The app should now be running on *localhost* on an address similar to `http://127.0.0.1:5000`. Simply copy/paste this into the browser of your choice!
+- The app should now be running on *localhost* on an address similar to `http://127.0.0.1:5000`. Simply copy/paste this into the browser of your choice.
 
 Back to [top](#TableOfContents)
 
@@ -634,7 +633,7 @@ Back to [top](#TableOfContents)
 	- [Garden.com](https://garden.org/), a website for learning how to garden and grow plants successfully.
   - [Better home & garden](https://www.bhg.com/gardening/plant-dictionary/), inspiring ideas for gardening,...
   - [Garden.ie](https://www.garden.ie), a website which offers accurate horticultural advices.
-	- [Bored panda - creative 404 error pages](https://www.boredpanda.com/50-cool-and-creative-404-error-pages/?utm_source=google&utm_medium=organic&utm_campaign=organic) for the [404 error page](https://github.com/sctlcd/the-green-corner/blob/master/templates/errors/404errorpage.html)
+	- [Bored panda - creative 404 error pages](https://www.boredpanda.com/50-cool-and-creative-404-error-pages/?utm_source=google&utm_medium=organic&utm_campaign=organic) for the [404 error page](https://the-green-corner.herokuapp.com/aa)
 
 Back to [top](#TableOfContents)
 
