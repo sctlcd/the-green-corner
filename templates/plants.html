@@ -74,7 +74,7 @@
             </div>
             <div class="plant-section-content">
               <label id="category-label">Category: </label>
-              <span id="category">{{ plant.category }}</span>
+              <span id="category">{{ plant.category_name }}</span>
             </div>
           </div>
           <div id="botanic-section">
@@ -103,8 +103,14 @@
               <label id="note-label-section">Note</label>
             </div>
             <div class="plant-section-content">
-              <label id="note-label">Note</label>
-              <span id="note" class="materialize-textarea">{{ plant.note }}</span>
+              <label id="note-label">Note: </label>
+              <span id="note" class="materialize-textarea">
+                {% if plant.note == "" %}
+                -
+                {% else %}
+                {{ plant.note }}
+                {% endif %}
+              </span>
             </div>
           </div>
         </div>

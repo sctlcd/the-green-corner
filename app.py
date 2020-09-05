@@ -140,6 +140,7 @@ def update_plant(plant_id):
         'genus': request.form.get('genus'),
         'species': request.form.get('species'),
         'family': request.form.get('family'),
+        'category_name': request.form.get('category_name'),
         'plant_type': request.form.get('plant_type'),
         'shade_tolerance': request.form.get('shade_tolerance'),
         'note': request.form.get('note')
@@ -163,16 +164,16 @@ def delete_plant(plant_id):
 @app.route('/search_plants', methods=['POST'])
 def search_plants():
     """
-        Search plant by common name from database.
+        Search plant by common name and scientific name from database.
 
         Display all the database records matching with the search text
         entered.
     """
     search_text = request.form.get('search_text')
-    plants_search_cn = list(mongo.db.plants.find({'common_name': {"$regex": f'.*{search_text}.*'}}))
-    plants_search_sn = list(mongo.db.plants.find({'scientific_name': {"$regex": f'.*{search_text}.*'}}))
-    plants_search_c = list(mongo.db.categories.find({'category_name': {"$regex": f'.*{search_text}.*'}}))
-    plants_search = plants_search_cn + plants_search_sn + plants_search_c
+    plants_search = list(mongo.db.plants.find(
+        {'common_name': {"$regex": f'.*{search_text}.*'}})) \
+        + list(mongo.db.plants.find(
+        {'scientific_name': {"$regex": f'.*{search_text}.*'}}))
 
     if search_text == "" or len(plants_search) == 0:
         return render_template("noresultsfound.html",

@@ -30,9 +30,9 @@ View a error page if the page doesn't exist| - | Pass | - | - | - | - | - | - | 
 | Add a category | Click on Categories menu then Add category sub-menu, fill all the fields and submit | The category should be added in the Categories page and in the database | as expected |
 | Edit a category | Click on Edit button for the chosen category in the Categories page, update fields and submit | The category should be updated in the Categories page and in the database | as expected |
 | Delete a category | Click on Delete button for the chosen category in the Categories page. A confirmation modal should pop up. Agree | The category should be updated in the Categories page and in the database | as expected |
-| Search by scientific name, common name, category | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name and a plant category (or part of it) | The result of the search should be displayed in the Plants page | as expected |
-| View a specific message if no search result found | Enter a search which does not exist | The No results found page should be displayed (example: *aaaaa* ) | not as expected |
-| View a error page if the page doesn't exist | Enter an URL which does not exist | The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
+| Search by scientific name, common name | Enter a scientific plant name (or part of it) and submit. Redo this test case with a common plant name (or part of it) | The result of the search should be displayed in the Plant search results page | The search feature filters by common name or scientific name but the list rendering fails. |
+| View a specific message if no search result found | Enter a search which does not exist | The No results found page should be displayed (example: *aaaaa* ) | as expected |
+| View an error page if the page doesn't exist | Enter an URL which does not exist | The 404 error page should be displayed (example: *https://the-green-corner.herokuapp.com/get_plants/bb* ) | as expected |
 
 
 ## Layout responsiveness

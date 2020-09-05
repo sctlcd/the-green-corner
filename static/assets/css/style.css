@@ -47,7 +47,7 @@ h4 {
 
 .contact-section {
   margin-bottom: 60px;
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .main-container h3 {
@@ -55,11 +55,6 @@ h4 {
 }
 
 /* -------------------------------------------------------- Plants page ---------------------------------*/
-.plant-section-title {
-  text-align: left;
-  margin-left: 250px;
-}
-
 .prefix~label {
   margin-left: 0.5rem;
 }
@@ -109,7 +104,7 @@ strong {
 
 .contact-section p {
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* -------------------------------------------------------- Mobile-sidenav ---------------------------------*/
@@ -787,6 +782,24 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   .contact-section a {
     margin-top: 5%;
   }
+
+  /* plants page */
+  .plant-section-title {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  .plant-section-content {
+    margin-left: 30px;
+  }
+
+  .section div #identity-section div, .section div #identity-section div label,
+  .section div #plant-section div, .section div #plant-section div label,
+  .section div #botanic-section div, .section div #botanic-section div label,
+  .section div #culture div, .section div #culture div label,
+  .section div #note-section div, .section div #note-section div label {
+    font-size: 10px;
+  }
 }
 
 /* extra small - small phones */
@@ -932,6 +945,24 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   .contact-section a {
     margin-top: 5%;
   }
+
+  /* plants page */
+  .plant-section-title {
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+
+  .plant-section-content {
+    margin-left: 100px;
+  }
+
+  .section div #identity-section div, .section div #identity-section div label,
+  .section div #plant-section div, .section div #plant-section div label,
+  .section div #botanic-section div, .section div #botanic-section div label,
+  .section div #culture div, .section div #culture div label,
+  .section div #note-section div, .section div #note-section div label {
+    font-size: 12px;
+  }
 }
 
 /* Small - phones */
@@ -1072,6 +1103,23 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
   .contact-section a {
     margin-top: 5%;
   }
+
+  /* plants page */
+  .plant-section-title {
+    margin-left: 150px;
+  }
+
+  .plant-section-content {
+    margin-left: 200px;
+  }
+
+  .section div #identity-section div, .section div #identity-section div label,
+  .section div #plant-section div, .section div #plant-section div label,
+  .section div #botanic-section div, .section div #botanic-section div label,
+  .section div #culture div, .section div #culture div label,
+  .section div #note-section div, .section div #note-section div label {
+    font-size: 12px;
+  }
 }
 
 /* Medium - tablets */
@@ -1211,5 +1259,14 @@ textarea.materialize-textarea.valid:focus, .select-wrapper.valid>input.select-dr
 
   .container-noresultsfound p {
     font-size: 20px;
+  }
+
+  /* plants page */
+  .plant-section-title {
+    margin-left: 200px;
+  }
+
+  .plant-section-content {
+    margin-left: 250px;
   }
 }
