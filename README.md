@@ -315,7 +315,7 @@ Back to [top](#TableOfContents)
 
 ---
 
-##### [404 error page](https://github.com/sctlcd/the-green-corner/blob/master/templates/404errorpage.html) <a name="404errorpage"></a>
+##### [404 error page](https://github.com/sctlcd/the-green-corner/blob/master/templates/errors/404errorpage.html) <a name="404errorpage"></a>
 
 - Humoristic picture and message letting know the user the page does not exist.
 - Link redirecting to Homepage.
@@ -530,7 +530,7 @@ Back to [top](#TableOfContents)
 	- Console Navigating through the Website rendered no critical fails/errors in the console that were necessary to fix.
 
 **Python**
-- [Python validator](https://pythonbuddy.com/)
+- [Python validator](http://pep8online.com/)
     - No errors
 
 Back to [top](#TableOfContents)
@@ -539,7 +539,7 @@ Back to [top](#TableOfContents)
 
 ### Known Issues <a name="KnownIssues"></a>
 
-- When a search entry matches with a list of search results, this list is not displayed as expected in the Plant search results page. The search feature filters by common name or scientific name but the list rendering fails.
+- When a search entry matches with some results, this list is not displayed as expected in the Plant search results page. The search feature filters by common name or scientific name but the list rendering fails.
 
 Back to [top](#TableOfContents)
 
@@ -583,8 +583,8 @@ Next, there's a series of steps to take in order to proceed with local deploymen
 - Install all requirements from the [requirements.txt](https://github.com/sctlcd/the-green-corner/blob/master/requirements.txt) file using this command:
     - `sudo -H pip3 -r requirements.txt`
 - Sign up for a free account on [MongoDB](https://www.mongodb.com) and create a new Database called **the_green_corner**. The *Collections* in that database should be as follows:  
-	- [database documentation](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram_documentation.png) in the database sub-directory
-	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram.png) in the database sub-directory
+	- [database documentation](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram_doc-the_green_corner-min.png) in the database sub-directory
+	- [database diagram](https://app.quickdatabasediagrams.com/#/d/sYgu2Z) or [here](https://github.com/sctlcd/the-green-corner/blob/master/database/db_diagram-the_green_corner-min.png) in the database sub-directory
 
 
 **plants**
