@@ -4,8 +4,10 @@
 <dl>
 <dd>Hey! Are you a plant lover?</dd>
 <dd>and/or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
-<dd>Here you go! [The Green Corner](https://the-green-corner.herokuapp.com/)</dd>
-<dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt><br>
+
+[Here you go!](https://the-green-corner.herokuapp.com/)
+<dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt>  
+<br>
 
 ---
 
