@@ -1,11 +1,13 @@
 # [The Green Corner](https://the-green-corner.herokuapp.com/)
 
+## **New deployed app coming soon (Heroku has ended its free product plans)**
+
 <img src="https://github.com/sctlcd/the-green-corner/blob/master/wireframes/multi_device_website_mockups-min.png" alt="The Green Corner" width="700">
 <dl>
 <dd>Hey! Are you a plant lover?</dd>
-<dd>and/or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
+<dd>and / or do you want to become the <strong>Christopher Columbus of plants</strong>?</dd>
 
-[Here you go!](https://the-green-corner.herokuapp.com/)
+<!-- [Here you go!](https://the-green-corner.herokuapp.com/) -->
 <dt>A modern responsive Web tool for gathering plant specifications and identifying flora worldwide</dt>  
 <br>
 
