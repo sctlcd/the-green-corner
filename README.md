@@ -1,6 +1,7 @@
 # [The Green Corner](https://the-green-corner.herokuapp.com/)
 
-## **New deployed app coming soon (Heroku has ended its free product plans)**
+### **New deployed app coming soon (Heroku has ended its free product plans)**
+<br>
 
 <img src="https://github.com/sctlcd/the-green-corner/blob/master/wireframes/multi_device_website_mockups-min.png" alt="The Green Corner" width="700">
 <dl>
