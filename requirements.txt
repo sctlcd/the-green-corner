@@ -5,7 +5,7 @@ click==7.1.2
 colorama==0.4.3
 dnspython==1.16.0
 flash==1.0.3
-Flask==1.1.2
+Flask==2.3.2
 Flask-PyMongo==2.3.0
 idna==2.9
 isort==4.3.21
